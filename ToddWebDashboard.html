@@ -1,0 +1,1506 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+<link rel="stylesheet" type="text/css" href="ToddWebDashboard.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+
+<link rel="stylesheet" href="path/to/plyr.css" />
+<!-- Video JS Styling Below: -->
+  <link href="https://vjs.zencdn.net/7.8.4/video-js.css" rel="stylesheet" />
+  <link href="https://unpkg.com/@videojs/themes@1/dist/forest/index.css" rel="stylesheet">
+
+<!-- slider : https://kenwheeler.github.io/slick/  .... https://github.com/kenwheeler/slick/ -->
+  <!-- Add the slick-theme.css if you want default styling -->
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+
+
+<!-- favicon below and header -->
+<link rel="icon" draggable="false" href="Toddlit-Logo.png">
+	<title>Toddlit Dashboard</title>
+</head>
+<body>
+  <div class="" style="display : none;">
+    <img src="../ChirstmasArt.jpg" class="HomeLanderImage">
+    <img src="../black.jpg" style="display : none;">
+    <img src="../e1.png" style="display : none;">
+    <img src="../e2.png" style="display : none;">
+    <img src="../e3.png" style="display : none;">
+    <img src="../e4.png" style="display : none;">
+    <img src="../e5.png" style="display : none;">
+
+    <img src="toddWorks/script.png" alt="">
+    <img src="toddWorks/dash.png" alt="">
+    <img src="toddWorks/pay.png" alt="">
+    <img src="toddWorks/storyProccess/TODDLIT-6.png" alt="">
+    <img src="toddWorks/storyProccess/TODDLIT-1.png" alt="">
+    <img src="toddWorks/storyProccess/TODDLIT-2.png" alt="">
+    <img src="toddWorks/storyProccess/TODDLIT-3.png" alt="">
+    <img src="toddWorks/storyProccess/TODDLIT-4.png" alt="">
+    <img src="toddWorks/storyProccess/TODDLIT-5.png" alt="">
+
+    <img src="BlueTools.png" alt="">
+    <img src="BlueAnalytics.png" alt="">
+    <img src="BlueUser.png" alt="">
+    <img src="BlueCard.png" alt="">
+    <img src="GrayHome.png">
+
+  </div>
+
+    <div class="EntireView">
+        <div class="topControl">
+            <div class="LogoDiv">
+                <img class= "logo" alt="Toddlit Logo" draggable="false" src="WebToddlitTitleLogoPNG.png" >
+            </div>
+            <div class="userTopTab">
+                <label id="UserName"></label>
+                <img id="UserIdImage" draggable="false" src="../Christmas.jpg">
+            </div>
+
+            <div class="NotificationDiv">
+                <div class="notificationButton">
+                    <img src="notification.png" draggable="false" class="BellIcon">
+                </div>
+                <!-- Icon frome here: Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> -->
+            </div>
+        </div>
+
+        <div class="Controls">
+            <div class="sideMenu">
+                <div class="VerticleMenuDiv">
+
+                    <div class="SideCreateNewProjectsDiv">
+                        <div class="SideCreateNewProjectsButton">
+                            <div class="SideCreateNewProjectsHStack">
+                                <div class="SideAddNewProjectUIDiv">
+                                    <img class="SideAddNewProjectUI" src="BlueAddUI.png" draggable="false" alt="Add">
+                                </div>
+                                <div class="SideAddNewProjectLabelDiv">
+                                    <label class="SideAddNewProjectLabel">New Project</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="SideCreateNewScriptDiv">
+                        <div class="SideCreateScriptButton">
+                            <div class="SideCreateNewScriptHStack">
+                                <div class="SideAddNewScriptUIDiv">
+                                    <img class="SideAddNewScriptUI" src="typewriter.png" draggable="false" alt="Add">
+                                </div>
+                                <div class="SideAddNewScriptLabelDiv">
+                                    <label class="SideAddNewScriptLabel">New Script</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="Main">
+                        <div class="MainSideMoveLeft">
+                            <div class="SideMenuCenter">
+                                <div class="SideMenuHStack">
+                                    <img src="BlueHome.png" id="Main" class="sideMenuUI" alt="">
+                                    <div class="SideLabelDiv">
+                                        <label class="MenuLabels MainHomeLabel" for="">Home</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="Analytics">
+                        <div class="MainSideMoveLeft">
+                            <div class="SideMenuCenter">
+                                <div class="SideMenuHStack">
+                                        <img src="GrayAnalytics.png" id="Analytics" class="sideMenuUI" alt="">
+                                        <div class="SideLabelDiv">
+                                            <label class="MenuLabels" for="">Analytics</label>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="AnalyticsDropDown">
+
+
+                        <div class="AnalyticsMainSideMoveLeft" id="OverviewButton">
+                            <div class="AnalyticsSideMenuCenter">
+                                        <div class="AnalyticsSideLabelDiv">
+                                            <label class="AnalyticsMenuLabels" id="SAna0" for="" style="color : #428FFF">Overview</label>
+                                        </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="AnalyticsMainSideMoveLeft" id="ViewCountButton">
+                            <div class="AnalyticsSideMenuCenter">
+                                        <div class="AnalyticsSideLabelDiv">
+                                            <label class="AnalyticsMenuLabels" id="SAna1" for="">View Count</label>
+                                        </div>
+                            </div>
+                        </div>
+
+
+                        <div class="AnalyticsMainSideMoveLeft" id="FollowersButton">
+                            <div class="AnalyticsSideMenuCenter">
+                                        <div class="AnalyticsSideLabelDiv">
+                                            <label class="AnalyticsMenuLabels" id="SAna2"  for="">Followers</label>
+                                        </div>
+                            </div>
+                        </div>
+
+
+                        <div class="AnalyticsMainSideMoveLeft" id="ArtLikesButton">
+                            <div class="AnalyticsSideMenuCenter">
+                                        <div class="AnalyticsSideLabelDiv">
+                                            <label class="AnalyticsMenuLabels" id="SAna3"  for="">Art Likes</label>
+                                        </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+
+
+
+
+                    <div class="Tools" >
+                        <div class="MainSideMoveLeft">
+                            <div class="SideMenuCenter">
+                                <div class="SideMenuHStack">
+                                    <img src="GrayTools.png" id="Tools" class="sideMenuUI" alt="">
+                                    <div class="SideLabelDiv">
+                                        <label class="MenuLabels" for="">Tools</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="User">
+                        <div class="MainSideMoveLeft">
+                            <div class="SideMenuCenter">
+                                <div class="SideMenuHStack">
+                                    <img src="GrayUser.png" id="User" class="sideMenuUI" alt="">
+                                    <div class="SideLabelDiv">
+                                        <label class="MenuLabels" for="">Profile</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="Pay">
+                        <div class="MainSideMoveLeft">
+                            <div class="SideMenuCenter">
+                                <div class="SideMenuHStack">
+                                    <img src="GrayCard.png" id="Pay" class="sideMenuUI" alt="">
+                                    <div class="SideLabelDiv">
+                                        <label class="MenuLabels" for="">Pay</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="SignOutDiv">
+                        <div class="grayDivider"></div>
+                            <button id="SignOut">Sign Out</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="NotificationsDiv">
+                <div class="Notifications">
+                    <div class="NotificationModal">
+                        <div class="NoNotifLabelDiv">
+                            <label class="NoNotifLabel"> No Notifications Yet...</label>
+                        </div>
+                        <div class="NotifyContent"></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="contentControls">
+
+
+
+                <div class="UpdatesNewProjectsDiv">
+
+                    <div class="HomeLanderImageAndLabel">
+                        <div class="HomeLanderImageDiv">
+                            <img src="../ChirstmasArt.jpg" class="HomeLanderImage">
+                        </div>
+                        <div class="HomeLabelAndDividerDiv">
+                            <!-- <div class="HomeColorDivider"></div> -->
+
+                            <div class="DashboardLabel">
+                                <label class="DashboardLabelTodd">Toddlit </label>
+                                <label class="DashboardLabelCreDash">Creatives Dashboard </label>
+                            </div>
+
+                            <div class="HomeLanderButtonDiv">
+                                <div class="homeLanderNewProjectsButton">
+                                    <div class="SideCreateNewProjectsHStack">
+                                        <div class="SideAddNewProjectUIDiv">
+                                            <img class="SideAddNewProjectUI" src="BlueAddUI.png" draggable="false" alt="Add">
+                                        </div>
+                                        <div class="SideAddNewProjectLabelDiv">
+                                            <label class="SideAddNewProjectLabel">Christmas Project</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="ProjectsTutorialsUpdates">
+
+
+                        <div class="homeSmallAnalytics">
+                            <div class="HomeSmallHStack">
+
+
+                                <div class="homeSmallViews">
+
+                                    <div class="SmallVStack">
+                                        <div class="smallLabelDiv">
+                                            <label class="smallLabel">Views Count</label>
+                                        </div>
+
+                                        <div class="smallDataDiv">
+                                            <div class="SmallDataDiv">
+                                                <label class="SmallData">0<label class="Klabel">k</label></label>
+                                            </div>
+                                            <div class="IndicatorDiv">
+                                                <div class="indicatorVStack">
+                                                    <div class="indicatorUIDiv">
+                                                        <img src="AnalyticsIdicators/up-arrow.png" class="IndicatorUI">
+                                                    </div>
+                                                    <div class="indicatorUIDiv">
+                                                        <label class="IndicatorLabel">up</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="smallTimeLabelDiv">
+                                            <label class="smallTimeLabel">Past 24 Hours</label>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+
+                                <div class="homeSmalLikes">
+
+                                    <div class="SmallVStack">
+                                        <div class="smallLabelDiv">
+                                            <label class="smallLabel">Likes Count</label>
+                                        </div>
+
+                                        <div class="smallDataDiv">
+                                            <div class="SmallDataDiv">
+                                                <label class="SmallData">0<label class="Klabel">k</label></label>
+                                            </div>
+                                            <div class="IndicatorDiv">
+                                                <div class="indicatorVStack">
+                                                    <div class="indicatorUIDiv">
+                                                        <img src="AnalyticsIdicators/down-arrow.png" class="IndicatorUI">
+                                                    </div>
+                                                    <div class="indicatorUIDiv">
+                                                        <label class="IndicatorLabel">Down</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="smallTimeLabelDiv">
+                                            <label class="smallTimeLabel">Past 24 Hours</label>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+                                <div class="homeSmallSub">
+
+                                    <div class="SmallVStack">
+                                        <div class="smallLabelDiv">
+                                            <label class="smallLabel">Subscription Count</label>
+                                        </div>
+
+                                        <div class="smallDataDiv">
+                                            <div class="SmallDataDiv">
+                                                <label class="SmallData">0<label class="Klabel">k</label></label>
+                                            </div>
+                                            <div class="IndicatorDiv">
+                                                <div class="indicatorVStack">
+                                                    <div class="indicatorUIDiv">
+                                                        <img src="AnalyticsIdicators/up-arrow.png" class="IndicatorUI">
+                                                    </div>
+                                                    <div class="indicatorUIDiv">
+                                                        <label class="IndicatorLabel">up</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="smallTimeLabelDiv">
+                                            <label class="smallTimeLabel">Past 24 Hours</label>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+                                <div class="homeSmallNa">
+
+                                    <div class="SmallVStack">
+                                        <div class="smallLabelDiv">
+                                            <label class="smallLabel">Na Count</label>
+                                        </div>
+
+                                        <div class="smallDataDiv">
+                                            <div class="SmallDataDiv">
+                                                <label class="SmallData">0<label class="Klabel">k</label></label>
+                                            </div>
+                                            <div class="IndicatorDiv">
+                                                <div class="indicatorVStack">
+                                                    <div class="indicatorUIDiv">
+                                                        <img src="AnalyticsIdicators/Na.png" class="IndicatorUI">
+                                                    </div>
+                                                    <div class="indicatorUIDiv">
+                                                        <label class="IndicatorLabel">up</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="smallTimeLabelDiv">
+                                            <label class="smallTimeLabel"></label>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+                        <div class="NewProjectDivStation">
+                            <div class="NewProjectModal">
+                                <div class="NewProjectDiv" style="display: none;">
+                                    <label class="NewProjectsTitleLabel">Creat A New Project : </label>
+                                    <div class="AddNewProjectsButtonDiv">
+                                        <div class="AddButton">
+                                            <div class="AddButtonVStack">
+                                                <div class="NewProjectCenterDiv">
+                                                    <img class="AddNewProjectUI" src="BlueAddUI.png" draggable="false" alt="Add">
+                                                </div>
+                                                <div class="NewProjectCenterDiv">
+                                                    <label class="AddNewProjectLabel">New Project</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- <div class="ScriptButton"><label class="">Script Writer</label></div> -->
+                                        <!-- Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> -->
+                                        <div class="ScriptButton">
+
+                                            <div class="AddButtonVStack">
+                                                <div class="NewProjectCenterDiv">
+                                                    <img src="typewriter.png" draggable="false" class="ScriptUI">
+                                                </div>
+                                                <div class="NewProjectCenterDiv">
+                                                    <label class="AddNewProjectLabel" style="color: black;">New Script</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="OldProjectDiv">
+                                    <label class="OldProjectsTitleLabel">Existing Projects : </label>
+                                    <div class="OldProjectsVStack">
+                                        <label class="NoProjectsLabelPublicScripts" for="">No Existing Projects Yet...</label>
+
+                                        <div class="scrollableOldProjects">
+                                          <div class="OldProjectsHStack">
+
+                                          </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                      <!-- <div class="InstructionsDiv">
+                        <div class="your-class">
+                          <div>your content</div>
+                          <div>your content</div>
+                          <div>your content</div>
+                        </div>
+                      </div> -->
+
+
+
+
+
+                        <div class="PublicScriptsMini">
+                          <div class="PublicScriptsDiv">
+                            <div class="PublicScriptsModal">
+
+                              <div class="PublicScriptsStation">
+                                  <label class="PublicScriptsStationLabel">Public Scripts : </label>
+                                  <label class="PublicScriptsStationLabelDef"> Don't have a script? Make Art and Stories from public scripts written by you, me, and anyone in our creative community.  </label>
+                                  <div class="PublicScriptsHStack">
+                                      <label class="NoProjectsLabel" for="">No Existing Public Scripts Yet...</label>
+
+                                  </div>
+                              </div>
+
+                            </div>
+                          </div>
+
+                        </div>
+
+
+                        <div class="IphoneDiv" >
+                          <div class="IphoneDemoContentHStack">
+
+                            <div class="IphoneTextContent">
+                              <div class="IphoneTextContentVStack">
+                                <label class="IphoneLabelTitle">Story Demo :</label>
+                                <label class="IphoneLabelDef" style="margin-top: 3vh;"> This is a simple display of how your story will look on mobile devices. </label>
+                                <label class="IphoneLabelDef" style="margin-top: 2vh;">The Demo doen't include all the bells and whistles like Sound Effect, Story Music, and Recorded Audio. We'll let your create a story and discover that magic for yourself.</label>
+
+                              </div>
+                            </div>
+
+                            <div class="iphoneDemo">
+                                <div class="iphoneDemoImages">
+                                  <div class="DemoPlayObject">
+
+
+                                      <div class="DemoImageObject" draggable="false">
+                                          <img id="DemoImage" src="../black.jpg" draggable="false">
+                                          <div class="OverlayColor"></div>
+                                      </div>
+                                  </div>
+                                    <div class="DemoStoryTextDiv">
+                                      <label class="DemoStoryText"></label>
+                                    </div>
+                                </div>
+
+                                <div class="iphoneUIDiv">
+                                  <img src="iphoneTemp.png" draggable="false" alt="" class="DemoIphone">
+                                </div>
+
+                            </div>
+                          </div>
+                        </div>
+
+
+                        <div class="HundredStories">
+                          <div class="HundredStoriesModal">
+                            <div class="HundredStoriesVStack">
+                              <label class="PublicScriptsStationLabel">Count To 100 Toddlit Stories : <label class="HundredCountLabel"> 0</label> </label>
+                              <label class="PublicScriptsStationLabelDef">The official release date for Toddlit is on December 18, 2020. We are aiming for 100 stories by then to capture some magic of a new experice with the option for variety.</label>
+                              <label class="HundredStoriesLabel"></label>
+                              <div class="HundredProgressBar">
+                                <div class="HundredProgress"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+
+
+
+
+                        <style>
+                        $primary-foreground-color: #428FFF;
+                        $primary-background-color: #428FFF;
+                        $--vjs-theme-forest--primary:#428FFF;
+                        $--vjs-theme-forest--secondary:#FFC842;
+                        .vjs-theme-forest{
+                              --vjs-theme-forest--primary:#428FFF;
+                              --vjs-theme-forest--secondary:#FFC842;
+                        }
+                        </style>
+
+
+
+                          <video id="player"
+                            playsinline
+                            controls
+                            poster="../ToddArtHome.png"
+                            data-poster="../ToddArtHome.png"
+                            style="
+                            display: none;
+                            width: calc(100% - 3vh);
+                            height: 49vw;
+                            border-radius: 2vh;
+                            margin-top: 3vh;
+                            margin-left : 1vh;
+                            /* margin-bottom: 3vh; */
+                            overflow-y : hidden;
+                            outline: transparent;
+                            background-color: black;
+                          ">
+                            <source src="../fire.mp4" type="video/mp4" />
+                              <!-- Captions are optional -->
+                              <track kind="captions" label="English captions" src="/path/to/captions.vtt" srclang="en" default />
+                          </video>
+
+
+
+                        <div class="UpdatedContentDiv">
+                            <div class="UpdatesVerticleDiv">
+                                <div class="UpdatesTitleDiv">
+                                    <label class="UpdatesTitle" for=""> Toddlit News</label>
+
+                                    <div class="WelcomeDiv">
+                                      <h2 style="color: #428FFF;">Welcome to Toddlit Beta!</h2>
+                                      <div class="welcomeImgAndDemos">
+                                        <div class="welcomImage">
+                                          <img src="toddWorks/storyProccess/TODDLIT-6.png" id="WelcomeImage">
+                                        </div>
+<!-- Icons made by <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> thanks! -->
+                                        <div class="welcomeControls">
+                                          <div class="PreButton">
+                                            <img src="left-arrow.png" class="WelcomeLeftArrow">
+                                          </div>
+
+                                          <div class="NextButton">
+                                            <img src="right-arrow.png" class="WelcomeRightArrow">
+                                          </div>
+
+                                        </div>
+                                      </div>
+
+                                      <div class="welcomeInstructLabelDiv">
+                                        <label class="welcomeInstructLabel">Simple Steps To Create Great Story</label>
+                                      </div>
+
+                                      <p style="font-weight : 500; ">
+
+Discover a new way to be creative telling story and leverage your skills to shape the minds of the future. </p>
+
+<p style="font-weight : 500; "> The official release date Toddlit isn’t until December 18th, 2020, So be sure you take your time. Aim to make work that is meaningful and full of deep lessons, that you think are important for the 21st century. We know the world is complicated. We know that everyone has endured through hardship to be here. We want everyone to dig into their hearts and pull out lesson that they never forgot and understandings, they truly hope younger kids never forget either.</p>
+
+<p style="font-weight : 500; ">
+On December 18th, We aren’t expecting a big boom, but it should at least give everyone a small understanding of scale and scope of Toddlit as a project.</p>
+<p style="font-weight : 500; ">
+At Toddlit, we believe in this old idea of “good capitalism”, which only goes to say, good work should be paid for. So as Toddlit scales financially, so do you. We know all the hoops needed to get paid for your work. You can have a Patreon Account. We don’t want you to need one.  Initially, the pay will be small, simply because we’ll have a small user base. As Toddlit gains traction, payment will be proportional. So even if you only produce one story and never work with Toddlit again, you’ve made an investment that pays off long term.
+</p>
+<div class="" style="height: 3vh;"></div>
+                                    </div>
+                                </div>
+                                <!-- <div></div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="AnalyticsBoard" style="display: none;">
+                    <div class="AnalyticsTabDiv">
+                        <div class="ScrollablePage">
+
+
+                            <div class="Overview" >
+                                <div class="OverViewContent">
+                                    <div class="OverViewVStack">
+                                        <div class="OverViewLabelDiv">
+                                            <label class="OverViewLabel">Overview</label>
+                                        </div>
+
+                                        <div class="SpaceLabelsDiv"><label class="SpaceLabel" style="top: 3vh;">Bi-Weekly Analytics : </label></div>
+                                        <div class="SmallAnalytics">
+                                            <div class="smallHStack">
+
+
+                                                <div class="SmallViews">
+
+                                                    <div class="SmallVStack">
+                                                        <div class="smallLabelDiv">
+                                                            <label class="smallLabel">Views Count</label>
+                                                        </div>
+
+                                                        <div class="smallDataDiv">
+                                                            <div class="SmallDataDiv">
+                                                                <label class="SmallData">0<label class="Klabel">k</label></label>
+                                                            </div>
+                                                            <div class="IndicatorDiv">
+                                                                <div class="indicatorVStack">
+                                                                    <div class="indicatorUIDiv">
+                                                                        <img src="AnalyticsIdicators/up-arrow.png" class="IndicatorUI">
+                                                                    </div>
+                                                                    <div class="indicatorUIDiv">
+                                                                        <label class="IndicatorLabel">up</label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+
+                                                        <div class="smallTimeLabelDiv">
+                                                            <label class="smallTimeLabel">Past Two Weeks</label>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+
+
+                                                <div class="SmallLikes">
+
+                                                    <div class="SmallVStack">
+                                                        <div class="smallLabelDiv">
+                                                            <label class="smallLabel">Likes Count</label>
+                                                        </div>
+
+                                                        <div class="smallDataDiv">
+                                                            <div class="SmallDataDiv">
+                                                                <label class="SmallData">0<label class="Klabel">k</label></label>
+                                                            </div>
+                                                            <div class="IndicatorDiv">
+                                                                <div class="indicatorVStack">
+                                                                    <div class="indicatorUIDiv">
+                                                                        <img src="AnalyticsIdicators/down-arrow.png" class="IndicatorUI">
+                                                                    </div>
+                                                                    <div class="indicatorUIDiv">
+                                                                        <label class="IndicatorLabel">Down</label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+
+                                                        <div class="smallTimeLabelDiv">
+                                                            <label class="smallTimeLabel">Past Two Weeks</label>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="SmallSub">
+
+                                                    <div class="SmallVStack">
+                                                        <div class="smallLabelDiv">
+                                                            <label class="smallLabel">Subscription Count</label>
+                                                        </div>
+
+                                                        <div class="smallDataDiv">
+                                                            <div class="SmallDataDiv">
+                                                                <label class="SmallData">0<label class="Klabel">k</label></label>
+                                                            </div>
+                                                            <div class="IndicatorDiv">
+                                                                <div class="indicatorVStack">
+                                                                    <div class="indicatorUIDiv">
+                                                                        <img src="AnalyticsIdicators/up-arrow.png" class="IndicatorUI">
+                                                                    </div>
+                                                                    <div class="indicatorUIDiv">
+                                                                        <label class="IndicatorLabel">up</label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+
+                                                        <div class="smallTimeLabelDiv">
+                                                            <label class="smallTimeLabel">Past Two Weeks</label>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="SmallNa">
+
+                                                    <div class="SmallVStack">
+                                                        <div class="smallLabelDiv">
+                                                            <label class="smallLabel">Na Count</label>
+                                                        </div>
+
+                                                        <div class="smallDataDiv">
+                                                            <div class="SmallDataDiv">
+                                                                <label class="SmallData">0<label class="Klabel">k</label></label>
+                                                            </div>
+                                                            <div class="IndicatorDiv">
+                                                                <div class="indicatorVStack">
+                                                                    <div class="indicatorUIDiv">
+                                                                        <img src="AnalyticsIdicators/Na.png" class="IndicatorUI">
+                                                                    </div>
+                                                                    <div class="indicatorUIDiv">
+                                                                        <label class="IndicatorLabel">up</label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+
+                                                        <div class="smallTimeLabelDiv">
+                                                            <label class="smallTimeLabel">Past Two Weeks</label>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="SpaceLabelsDiv"><label class="SpaceLabel">Monthly Analytics : </label></div>
+                                        <div class="SpaceLabels"></div>
+                                        <div class="BigAnalytics">
+                                            <div class="OverviewBigChart">
+                                                <div class="BigLabelExplaination">
+                                                    <div class="BigVStack">
+                                                        <label class="LabelBig">Monthly Growth Curve:</label>
+                                                        <label class="ExplanaitionBig">This graph gives you an average explaination of your stats over the whole of thirty days, with out you needing to look at all stats individually.</label>
+                                                    </div>
+                                                </div>
+                                                <canvas class="OverViewChart" id="myChart1"></canvas>
+                                            </div>
+
+                                            <div class="BottomSmallAnalytics">
+                                                <div class="BottomSmallHStack">
+
+
+                                                    <div class="BottomSmallViews">
+
+                                                        <div class="BottomSmallVStack">
+                                                            <div class="smallLabelDiv">
+                                                                <label class="smallLabel">Avg. View Durration</label>
+                                                            </div>
+
+                                                            <div class="BottomSmallDataDiv">
+                                                                <canvas class="OverViewChart" id="myPieViewDurration"></canvas>
+                                                            </div>
+
+
+                                                            <div class="smallTimeLabelDiv">
+                                                                <label class="smallTimeLabel">Past Month</label>
+                                                            </div>
+
+                                                        </div>
+
+                                                    </div>
+
+
+                                                    <div class="BottomSmallViews" id="AnimationObjects">
+
+                                                        <div class="BottomSmallVStack" id="AnimationObjects">
+                                                            <div class="smallLabelDiv">
+                                                                <label class="smallLabel">Avg. # of Art Animations</label>
+                                                            </div>
+
+                                                            <div class="BottomSmallDataDiv" id="AnimationObjects">
+                                                                <canvas class="OverViewChart" id="myAnimationUsage"></canvas>
+                                                            </div>
+
+
+                                                            <!-- <div class="smallTimeLabelDiv">
+                                                                <label class="smallTimeLabel">Past Month</label>
+                                                            </div> -->
+
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="SpacerDiv"></div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="ViewCount" style="display: none;">
+                                <div class="AnalyticsCenter">
+                                    <div class="AnalyticsVStack">
+
+
+                                        <div class="BigAnalytics">
+                                            <div class="OverviewBigChart">
+                                                <div class="BigLabelExplaination">
+                                                    <div class="BigVStack">
+                                                        <label class="LabelBig">Viewership Analytics:</label>
+                                                        <label class="ExplanaitionBig">This graph gives you close look of the Number of Views you recieved for each story.</label>
+                                                    </div>
+                                                </div>
+                                                <canvas class="OverViewChart" id="ViewChart"></canvas>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="Followers" style="display: none;">
+                                <div class="AnalyticsCenter">
+                                    <div class="AnalyticsVStack">
+
+
+                                        <div class="BigAnalytics">
+                                            <div class="OverviewBigChart">
+                                                <div class="BigLabelExplaination">
+                                                    <div class="BigVStack">
+                                                        <label class="LabelBig">Follower Analytics:</label>
+                                                        <label class="ExplanaitionBig">This graph gives you a close look at your follower statistics.</label>
+                                                    </div>
+                                                </div>
+                                                <canvas class="OverViewChart" id="FollowerChart"></canvas>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                            <div class="ArtLikes" style="display: none;">
+                                <div class="AnalyticsCenter">
+                                    <div class="AnalyticsVStack">
+
+
+                                        <div class="BigAnalytics">
+                                            <div class="OverviewBigChart">
+                                                <div class="BigLabelExplaination">
+                                                    <div class="BigVStack">
+                                                        <label class="LabelBig">Art Likes Analytics:</label>
+                                                        <label class="ExplanaitionBig">This graph gives you a close look at your Art likes statistics.</label>
+                                                    </div>
+                                                </div>
+                                                <canvas class="OverViewChart" id="ArtLikesChart"></canvas>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="AddNewProjectAcrossTabsDiv">
+                            <div class="AddNewProjectAcrossTabsButton"><img src="AddUIPng.png" draggable="false" class="AddNewProjectsButtonUI"></div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="ToolsBoard" style="display: none;">
+                    <div class="ToolsTabDiv">
+
+                      <div class="ToodlsDiv">
+                        <div class="ToolsCenter">
+                          <div class="ToolsVStack">
+
+
+                            <div class="ToolsLabelDiv">
+                                <label class="ToolsLabel">Tools</label>
+                            </div>
+
+
+                            <div class="TutorialsToolsDiv" style="display: none;">
+
+                              <div class="TutorialContentDiv">
+                                  <div class="TutorialsModal">
+                                      <div class="LeftVerticalDividers"></div>
+                                      <div class="TutorialContent">
+                                          <div class="TutorialVerticalDiv">
+                                              <label class="TutorialTitleLabel">Tutorials : </label>
+                                              <div class="TutorialsDiv">
+
+
+                                                  <div class="TutorialsVStack">
+                                                      <div class="ImagePlayButton">
+                                                          <img class="TutorialThumbnail" src="5.JPG" alt="">
+                                                          <img class="PlayUI" src="PlayUI.png" alt="">
+                                                      </div>
+                                                          <label class="TutorialsTitolo"> What are Toddlit's main goals?</label>
+                                                  </div>
+
+                                                  <div class="TutorialsVStack">
+                                                      <div class="ImagePlayButton">
+                                                          <img class="TutorialThumbnail" src="../Christmas.jpg" alt="">
+                                                          <img class="PlayUI" src="PlayUI.png" alt="">
+                                                      </div>
+                                                          <label class="TutorialsTitolo"> How to use Toddlit New Projects?</label>
+                                                  </div>
+
+                                                  <div class="TutorialsVStack">
+                                                      <div class="ImagePlayButton">
+                                                          <img class="TutorialThumbnail" src="4.JPG" alt="">
+                                                          <img class="PlayUI" src="PlayUI.png" alt="">
+                                                      </div>
+                                                          <label class="TutorialsTitolo"> How our reccomendation system works?</label>
+                                                  </div>
+
+                                                  <div class="TutorialsVStack">
+                                                      <div class="ImagePlayButton">
+                                                          <img class="TutorialThumbnail" src="6.jpeg" alt="">
+                                                          <img class="PlayUI" src="PlayUI.png" alt="">
+                                                      </div>
+                                                          <label class="TutorialsTitolo"> How we review projects?</label>
+                                                  </div>
+
+                                                  <div class="TutorialsVStack">
+                                                      <div class="ImagePlayButton">
+                                                          <img class="TutorialThumbnail" src="5.JPG" alt="">
+                                                          <img class="PlayUI" src="PlayUI.png" alt="">
+                                                      </div>
+                                                          <label class="TutorialsTitolo"> How to insure that you're story's tags represent the work?</label>
+                                                  </div>
+
+                                                  <div class="TutorialsVStack">
+                                                      <div class="ImagePlayButton">
+                                                          <img class="TutorialThumbnail" src="../Christmas.jpg" alt="">
+                                                          <img class="PlayUI" src="PlayUI.png" alt="">
+                                                      </div>
+                                                          <label class="TutorialsTitolo"> How we pay people for their work?</label>
+                                                  </div>
+
+                                                  <div class="TutorialsVStack">
+                                                      <div class="ImagePlayButton">
+                                                          <img class="TutorialThumbnail" src="5.JPG" alt="">
+                                                          <img class="PlayUI" src="PlayUI.png" alt="">
+                                                      </div>
+                                                          <label class="TutorialsTitolo"> What are Toddlit's main goals?</label>
+                                                  </div>
+
+                                                  <div class="TutorialsVStack">
+                                                      <div class="ImagePlayButton">
+                                                          <img class="TutorialThumbnail" src="../Christmas.jpg" alt="">
+                                                          <img class="PlayUI" src="PlayUI.png" alt="">
+                                                      </div>
+                                                          <label class="TutorialsTitolo"> How to use Toddlit New Projects?</label>
+                                                  </div>
+
+                                                  <div class="TutorialsVStack">
+                                                      <div class="ImagePlayButton">
+                                                          <img class="TutorialThumbnail" src="4.JPG" alt="">
+                                                          <img class="PlayUI" src="PlayUI.png" alt="">
+                                                      </div>
+                                                          <label class="TutorialsTitolo"> How our reccomendation system works?</label>
+                                                  </div>
+
+                                                  <div class="TutorialsVStack">
+                                                      <div class="ImagePlayButton">
+                                                          <img class="TutorialThumbnail" src="4.JPG" alt="">
+                                                          <img class="PlayUI" src="PlayUI.png" alt="">
+                                                      </div>
+                                                          <label class="TutorialsTitolo"> What are some of the best ways to communicate story with our system?</label>
+                                                  </div>
+
+                                                  <div class="TutorialsVStack">
+                                                      <div class="ImagePlayButton">
+                                                          <img class="TutorialThumbnail" src="5.JPG" alt="">
+                                                          <img class="PlayUI" src="PlayUI.png" alt="">
+                                                      </div>
+                                                          <label class="TutorialsTitolo"> What are Toddlit's main goals?</label>
+                                                  </div>
+
+                                                  <div class="TutorialsVStack">
+                                                      <div class="ImagePlayButton">
+                                                          <img class="TutorialThumbnail" src="../Christmas.jpg" alt="">
+                                                          <img class="PlayUI" src="PlayUI.png" alt="">
+                                                      </div>
+                                                          <label class="TutorialsTitolo"> How to use Toddlit New Projects?</label>
+                                                  </div>
+
+                                                  <div class="TutorialsVStack">
+                                                      <div class="ImagePlayButton">
+                                                          <img class="TutorialThumbnail" src="4.JPG" alt="">
+                                                          <img class="PlayUI" src="PlayUI.png" alt="">
+                                                      </div>
+                                                          <label class="TutorialsTitolo"> How our reccomendation system works?</label>
+                                                  </div>
+
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="RightVerticalDividers"></div>
+                                  </div>
+                              </div>
+
+                            </div>
+
+                            <div class="PublicScriptsDiv">
+                              <div class="PublicScriptsModal">
+
+                                <div class="PublicScriptsStation">
+                                    <label class="PublicScriptsStationLabel">Public Scripts : </label>
+                                    <label class="PublicScriptsStationLabelDef"> Don't have a script? Make Art and Stories from public scripts written by you, me, and anyone in our creative community.  </label>
+                                    <div class="PublicScriptsHStack">
+                                        <label class="NoProjectsLabel" for="">No Existing Public Scripts Yet...</label>
+
+                                    </div>
+                                </div>
+
+                              </div>
+                            </div>
+
+
+
+
+
+                            <div class="ThreeToolsDiv">
+                              <div class="HStackThreeToolsDiv">
+
+
+                                <div class="CharacterGenDiv">
+                                  <div class="ThreeToolsDivCard">
+
+
+                                    <div class="ThreeToolsVStack">
+                                      <div class="ThreeToolsLabelDiv">
+                                        <label class="ThreeToolsLabel"> Character Name Generator : </label>
+                                      </div>
+
+                                      <div class="ThreeToolsContentDiv">
+                                        <div class="GenVStack">
+
+                                          <!-- <div class="GenInputType">
+                                            <select class="" name="">
+                                              <option value="">Girl</option>
+                                            </select>
+                                          </div> -->
+
+                                          <div class="GenContentDiv">
+                                            <label class="GenContent" id="GenName">John Doe</label>
+                                          </div>
+
+                                          <div class="GenButtonDiv">
+                                            <div class="GenButton" id="GenCharStoryButton">
+                                              <label class="GenButtonLabel">Generate</label>
+                                            </div>
+                                          </div>
+
+                                        </div>
+
+                                      </div>
+                                    </div>
+
+
+
+                                  </div>
+                                </div>
+
+                                <div class="StoryTitleGenorator" >
+                                  <div class="ThreeToolsDivCard">
+
+
+                                    <div class="ThreeToolsVStack">
+                                      <div class="ThreeToolsLabelDiv">
+                                        <label class="ThreeToolsLabel"> Story Title Generator : </label>
+                                      </div>
+
+                                      <div class="ThreeToolsContentDiv">
+                                        <div class="GenVStack">
+
+                                          <div class="GenContentDiv">
+                                            <label class="GenContent" id="GenStoryTitle">A Story Of A Life Time</label>
+                                          </div>
+
+                                          <div class="GenButtonDiv">
+                                            <div class="GenButton" id="GenStoryButton">
+                                              <label class="GenButtonLabel">Generate</label>
+                                            </div>
+                                          </div>
+
+                                        </div>
+                                      </div>
+                                    </div>
+
+
+
+                                  </div>
+                                </div>
+
+                              </div>
+                            </div>
+
+
+                            <div class="oneToolsDiv">
+                              <div class="HStackThreeToolsDiv">
+
+
+                                <div class="TextureDiv">
+                                  <div class="ThreeToolsDivCard">
+
+                                    <div class="ThreeToolsVStack">
+                                      <div class="ThreeToolsLabelDiv">
+                                        <label class="ThreeToolsLabel"> Textures Station :</label>
+                                      </div>
+
+                                      <div class="ThreeToolsContentDiv">
+                                        <div class="TextureViewAndDownloadButton">
+                                          <div class="TextureVStacK">
+
+                                            <div class="TexturesDiv">
+                                              <img src="../texture.jpg" alt="" class="Textures" draggable="false">
+                                              <img src="" alt="" class="nextTextures" draggable="false" style="display:none">
+                                            </div>
+
+                                            <div class="DownloadNextPreviousButtons">
+                                              <div class="HStackTextureButtons">
+
+                                                <div class="textureButtonDiv">
+                                                  <div class="textureButton preText" id="GenStoryButton" style="background-color: #FFC842;" >
+                                                    <label class="GenButtonLabel">Previous</label>
+                                                  </div>
+                                                </div>
+
+                                                <div class="textureButtonDiv" >
+                                                  <a class="textureButton downText" id="GenStoryButton" href="" download  target="_blank">
+                                                    <label class="GenButtonLabel">Download</label>
+
+                                                    <!-- <a href="" class="dowloadTexture" download style="display:none;"></a> -->
+                                                  </a>
+                                                </div>
+
+                                                <div class="textureButtonDiv">
+                                                  <div class="textureButton nextText" id="GenStoryButton" style="background-color: #FFC842;">
+                                                    <label class="GenButtonLabel">Next</label>
+                                                  </div>
+                                                </div>
+
+                                              </div>
+                                            </div>
+
+                                          </div>
+
+
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+
+
+
+                              </div>
+                            </div>
+
+
+                            <div style="height : 7vh; width:100%"></div>
+                          </div>
+                        </div>
+                      </div>
+
+
+                        <div class="AddNewProjectAcrossTabsDiv">
+                            <div class="AddNewProjectAcrossTabsButton"><img src="AddUIPng.png" draggable="false" class="AddNewProjectsButtonUI"></div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="UserBoard" style="display: none;">
+                    <div class="UserBackGroundImageDiv">
+                        <div class="UserBlackBackgroundImageDiv">
+                            <img src="../Christmas.jpg" draggable="false" class="UserBackgroundUI">
+                        </div>
+                    </div>
+
+
+
+                    <div class="UserTabDiv">
+                        <div class="ScrollUserTab">
+                            <div class="UserTab">
+                                <div class="UserSettingLabelDiv"><label class="UserSettingsLabel">Creative Profile </label></div>
+
+
+                                <div class="ProfilePhotoDivAndArtistName">
+                                    <div class="PhotoNameLinerDiv">
+                                        <div class="ProfilePhotoDiv">
+                                            <img src="../Christmas.jpg" class="ProfileImage">
+                                            <input id="ImageFiles" type="file" name="file" accept="image/*"  style="display: none;">
+                                        </div>
+                                        <div class="ArtistNameDiv">
+                                                <input type="text" placeholder="Artist Name" class="ArtistName">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="SummaryDiv">
+                                    <div class="SummaryVStack">
+                                        <label class="SummaryLabel">Summary : </label>
+                                        <textarea  placeholder="Summarize yourself and your work..." class="Summary" minlength="1" maxlength="600"></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="RefPassNameDiv">
+
+                                    <div class="RefferenceLinksDiv">
+                                        <label class="ReffernceTitle">Places To Find Your Work :</label>
+                                        <div class="ReffLinksHStack">
+                                            <div class="BlackUIbackground"><img src="Pinterest.png" class="Pinterest"></div>
+                                            <div class="BlackUIbackground"><img src="Instagram.png" class="Instagram"></div>
+                                            <div class="BlackUIbackground"><img src="Portfolio.png" class="Portfolio"></div>
+
+                                            <div class="CreateUpdateRefferenceDiv" style="display: none;" >
+                                                <label class="RefLabel">Url</label>
+                                                <input type="text" name=""  class="ReffInput">
+                                                <!-- <div class="AddRefButtom"><label class="AddRef">add</label></div> -->
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="EmailPasswordHStack">
+                                        <div class="EmailDiv">
+                                            <div class="EmailHStack">
+                                                <label class="UserEmailLabel">Email : </label>
+                                                <input type="text" placeholder="Email" class="Email">
+                                            </div>
+                                        </div>
+
+                                        <div class="PasswordDiv">
+                                            <div class="PassowrdHStack">
+                                                <label class="UserPassowrdLabel">Password : </label>
+                                                <input type="password" placeholder="Password" class="Password">
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="FirstNameAndLastName">
+                                        <div class="FirstNameDiv">
+                                            <div class="FirstNameHStack">
+                                                <label class="UserFirsNameLabel">First Name : </label>
+                                                <input type="text" placeholder="First Name" class="FirstName">
+                                            </div>
+                                        </div>
+
+                                        <div class="LastNameDiv">
+                                            <div class="LastNameHStack">
+                                                <label class="LastNameLabel">Last Name : </label>
+                                                <input type="text" placeholder="Last Name" class="LastName">
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="SaveData">
+                                    <div class="SaveNewDataButton">
+                                        <label class="SaveNewData">Save</label>
+                                    </div>
+                                </div>
+
+                                <div class="SavedDataDiv" style="display: none;">
+                                    <div class="DataSavedModal">
+                                        <div class="DataSavedDiv">
+                                            <img src="check.png" class="UpdatesSavedCheckUI">
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+                                <div class="paddingDiv"></div>
+
+                            </div>
+                        </div>
+
+                        <div class="AddNewProjectAcrossTabsDiv">
+                            <div class="AddNewProjectAcrossTabsButton"><img src="AddUIPng.png" draggable="false" class="AddNewProjectsButtonUI"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="PayBoard">
+                    <div class="HomeColorDivider"></div>
+                    <div class="PayTabDiv">
+                        <!-- <div class="HomeColorDivider"></div> -->
+
+                        <div class="PayCard">
+                            <div class="payVStack">
+
+                                <div class="Title">
+                                    <div class="UserSettingLabelDiv"><label class="UserSettingsLabel">Get Paid!</label></div>
+                                </div>
+
+
+                                <div class="UIAndExplainationDiv">
+                                    <div class="UIAndExplaainationHStack">
+                                        <div class="Explaination">
+                                            <label class="explainationDiv">
+                                                <div class="PayContentVStack">
+                                                    <div>
+                                                        <label class="PayFirstHalf">
+                                                            At Toddlit, we want you to get the most for your work. Though we aren't against any artist using third party donations systems, we don't want any artist to need donations.
+                                                        </label>
+                                                    </div>
+                                                    <div style="margin-top: 2vh ;"></div>
+
+                                                    <div>
+                                                        <label class="PayFirstHalf">
+                                                            At Toddlit we pay you by the merit of your work, We use a very simple calculation. The more views you get from quality of your content the more money you make.
+                                                        </label>
+                                                    </div>
+                                                    <div style="margin-top: 2vh ;"></div>
+
+                                                    <div>
+                                                        <label class="PayFirstHalf">
+                                                        We also want your data to be secure. So we chose PayPal...
+                                                        </label>
+                                                    </div>
+                                                    <div style="margin-top: 2vh ;"></div>
+                                                    <div>
+                                                        <label class="PaySecondHalf">
+                                                            Sign up or Sign in to PayPal through the PayPal button below:
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="UIDiv">
+                                            <img src="CardUI.png" class="CardUI">
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div>
+                                    <div>
+                                        <label for=""></label>
+                                    </div>
+                                </div>
+
+                                <div class="PayPalButtonDiv">
+                                    <span id='cwppButton'></span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="AddNewProjectAcrossTabsDiv">
+                            <div class="AddNewProjectAcrossTabsButton"><img src="AddUIPng.png" draggable="false" class="AddNewProjectsButtonUI"></div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+            <div class="PreviewScriptModal" style="display: none;">
+              <div class="DialogeAndDiscriptionBubblesStation" id="PublicScriptContainer">
+                  <div class="PaperDiv">
+                          <ul class="ContentHolder">
+                            <div class="PublicScriptTitleDiv">
+                              <label class="PublciScriptTitle"></label>
+                            </div>
+
+                            <div class="ArtistLabelDiv">
+                              <label class="ArtistLabel"></label>
+                            </div>
+                          </ul>
+                          <div style="width: 100%; height: 2vh;"></div>
+                  </div>
+              </div>
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link type="text/css" rel="stylesheet" href="Jquery2014.css" />
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+
+
+
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-storage.js"></script>
+
+    <!-- <script src="Verification.js"></script> -->
+
+    <!-- Charts for todd: https://www.chartjs.org/   &&  https://www.chartjs.org/docs/latest/charts/line.html -->
+    <!-- Video JS Playing -->
+
+
+    <script src="https://vjs.zencdn.net/7.8.4/video.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+
+<!-- https://github.com/sampotts/plyr -->
+<script src="https://cdn.plyr.io/3.6.2/plyr.js"></script>
+
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/pizzicato/0.6.4/Pizzicato.js"></script> -->
+
+
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <script src='https://www.paypalobjects.com/js/external/connect/api.js'></script>
+    <!-- <script src="../node_modules/client-oauth2/src/client-oauth2.js"></script>
+    <script src="../node_modules/client-oauth2/src/request/browser.js"></script>
+    <script src="https://www.paypal.com/sdk/js?Ack2Rql7Gc4NRhWUH97ljbV6LsuiGNZr-krK6eYHEBok-elQ5yCj5UNbdRE7ONi6jWIaJdfOzCVYPtXQ"></script> -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script src="ToddWebDashboard.js"></script>
+
+
+                                            <!-- Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> -->
+                                            <!-- Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> -->
+
+    <script>
+    </script>
+</body>
+</html>

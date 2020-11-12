@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+    <link rel="stylesheet" type="text/css" href="NewProject.css">
+    <link rel="stylesheet" href="jquery-ui.css">
+    <!-- Color Picker -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/nano.min.css"/> <!-- 'nano' theme -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <!-- favicon below and header -->
+    <link rel="icon" href="Toddlit-Logo.png">
+	<title>Toddlit New Project</title>
+</head>
+<body onload="viewDidLoad()">
+
+  <div class="loadNeededImgClass" style="display:none;">
+    <img src="NewProjectsUI/BlackPauseUIImage.png" alt="">
+  </div>
+    <div class="WholeView">
+        <div class="LoadPage">
+
+            <div class="LoadDiv">
+                <div class="LoadContent">
+                    <div class="LoadLogoAndLabel">
+                        <img class="LoadToddCreativeLogo" src="ToddWebSignInLogo.png">
+                        <label class="NewProjectsLoadLabel" for="">Your Project</label>
+                    </div>
+
+                    <div class="LoadProgressBarContainer">
+                        <div class="LoadUnfinishedProgressBar">
+                            <div class="LoadProgressBar"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="MobileError">
+                <div class="MobileErrorContent">
+                    <img class="MobileErrorToddLogo" src="WebToddlitTitleLogoPNG.png">
+                    <label class="MobileErrorLabel">Unfortunately, You are attempting to access Toddlit Creative on a mobile device. Toddlit Creative is currently only a for desktop. (e.g. laptop or pc)</label>
+                </div>
+            </div>
+        </div>
+
+        <div id="AddAnotherArtistModal">
+            <div class="AddAnotherArtistModalObject">
+                <div class="DismissButtonDiv">
+                     <button class="DismissButton">x</button>
+                </div>
+
+                <div class="InstructionsLabelDismissButton">
+                    <label class="AddArtistInputLabel">Add Artist Name : </label>
+                </div>
+                <div class="ArtistsLabelsAddDiv">
+                    <!-- <label class="LocationOfToBeAddedArtists">Rosso Leo, Joesph Hue</label> -->
+                </div>
+
+                <div class="InputAndAddArtistButton">
+                    <div class="AddArtistIputAndErrorMessage">
+                        <input class="AddingArtistInput" type="text" placeholder="Add Artist">
+                        <label class="AddArtistErrorMessage">You Must Enter An Artist Name</label>
+                    </div>
+                    <button class="AddArtistButton">Add</button>
+                </div>
+
+
+                <button class="AddArtistConfirmationButton">Confirm</button>
+                <button class="RemoveArtistButton">Remove</button>
+            </div>
+        </div>
+
+        <div class="CustomAlertModal">
+            <div class="AlertCard">
+                <label class="AlertLabel">Words that says stuff</label>
+            </div>
+        </div>
+
+
+
+
+        <div class="allContent">
+            <div class="viewBeloControllView"></div>
+            <div class="topControl">
+                <img class= "logo" alt="Toddlit Logo" src="WebToddlitTitleLogoPNG.png"  draggable="false">
+                <div class="savePublish">
+                    <button id="save">Save</button>
+                    <button id="publish">Publish</button>
+                </div>
+            </div>
+
+            <div class="controlsAndFunctionality">
+                         <div class="verticalSelection">
+                                <div class="SelectionObjects">
+
+
+                                    <div class="verticalSelectTitle">
+                                        <label class="verticalTabTitle">Selection Board : </label>
+                                    </div>
+
+                                    <div class="SelectionBoard">
+
+                                        <div class="TagOptions">
+                                            <div>
+                                                <label class="TagSelectionLabel">Category Tags : </label>
+                                            </div>
+                                            <div class="TagObjectPlacment">
+
+                                                 <div class="selectedTags">
+                                                    <label class="UnSelectedStatusLabel">Selected Tags : </label>
+                                                </div>
+
+
+                                                <div class="nonSelectedTags">
+                                                    <label class="SelectedStatusLabel">Non Selected Tags : </label>
+                                                </div>
+                                            </div>
+                                         </div>
+
+
+
+
+
+                                    <div class="ArtOptions">
+                                        <div class="SelectionArtLabelSelect">
+                                            <label class="ArtSelectionLabel">Art Controls :</label>
+                                            <div class="ArtSelectRemove">
+                                                <input id="NewSetOfImages" type="file" name="file" accept="images/*" style="display: none;" multiple>
+                                                <button class="ArtSelectionButton">Add</button>
+                                                <button class="ArtRemoveButton">Remove</button>
+                                            </div>
+                                        </div>
+                                        <div class="SelectableArtDiv">
+                                            <div class="SelectableArt">
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+
+                                    <div class="AnimationOptions">
+                                        <div class="SelectionAnimationLabelSelect">
+                                            <label class="AnimationSelectionLabel">Animations :</label>
+                                            <div class="selectRemoveAnimations">
+                                                <button class="AnimationSelectionButton">Select</button>
+                                                <button class="AnimationDeleteSelectionButton">Remove</button>
+                                            </div>
+                                        </div>
+                                        <div class="SelectableAnimationDiv">
+                                            <div class="SelectableAnimations">
+                                                <!-- <button class="AnimationSelectObject">Horizontal Shake</button>
+                                                <button class="AnimationSelectObject">Vertical Shake</button>
+                                                <button class="AnimationSelectObject">Chaotic Shake</button> -->
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+
+
+                                    <div class="AudioOptions">
+                                        <div class="SelectionAudioLabelSelect">
+                                            <label class="AudioSelectionLabel">Audio Options :</label>
+                                            <button class="AudioRemoveButton">Remove</button>
+                                        </div>
+                                        <div class="SelectableAudioDiv">
+                                            <div class="SelectableAudio">
+                                                <!-- <button class="AudioSelectObject">Horizontal Shake</button>
+                                                <button class="AudioSelectObject">Vertical Shake</button>
+                                                <button class="AudioSelectObject">Chaotic Shake</button> -->
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="MusicOptions">
+                                        <div class="SelectionMusicLabelSelect">
+                                            <label class="MusicSelectionLabel">Music Options :</label>
+                                            <button class="MusicSelectionButton">Select</button>
+                                        </div>
+                                        <div class="SelectableMusicDiv">
+                                            <div class="SelectableMusic">
+                                                <!-- <button class="MusicSelectObject">Horizontal Shake</button>
+                                                <button class="MusicSelectObject">Vertical Shake</button>
+                                                <button class="MusicSelectObject">Chaotic Shake</button> -->
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="SFXOptions">
+                                        <div class="SelectionSFXLabelSelect">
+                                            <label class="SFXSelectionLabel">Sound Effects Options :</label>
+                                            <button class="SFXSelectionButton">Select</button>
+                                        </div>
+                                        <div class="SelectableSFXDiv">
+                                            <div class="SelectableSFX">
+                                                <!-- <button class="SFXSelectObject">Horizontal Shake</button>-->
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="TextOptions">
+                                        <div class="SelectionTextLabelSelect">
+                                            <label class="TextSelectionLabel">Caption Text :</label>
+                                            <button class="TextRemoveButton">Remove</button>
+                                        </div>
+                                        <div class="SelectableTextDiv">
+                                            <div class="SelectableText">
+                                                <!-- <button class="TextSelectObject">Horizontal Shake</button>
+                                                <button class="TextSelectObject">Vertical Shake</button>
+                                                <button class="TextSelectObject">Chaotic Shake</button> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                         </div>
+
+
+
+
+
+
+
+                             <div class="newProjectData">
+
+                                <div class="basicDataAndDemo">
+                                    <div class="standardData">
+                                        <div class="TitleObject">
+                                            <div class="TitleStringDiv">
+                                                <label class= "title">Title:</label>
+                                            </div>
+                                            <input id="title" placeholder="Title">
+                                        </div>
+
+                                        <div class="AuthorsObject">
+                                            <!-- <label class= "Author" >By:</label> -->
+                                            <div class="AddAuthorTextDiv">
+                                                <label id="DefaultAuthor"> By: Rosso Leo</label>
+                                                <!-- <button id="AddAuthor"><img src="WebUIAddObject.png">Add Author</button> -->
+                                                <!-- <div class="centerAddAuthorsButton"> -->
+                                                    <button id="AddAuthor"><img class="AddButtonImg" src="WebUIAddObject.png" draggable="false"></button>
+                                                <!-- </div>                                                -->
+                                                 <!-- </div>   -->
+                                            </div>
+
+
+                                            <!-- <button id="AddAuthor">Add Author</button> -->
+                                        </div>
+
+                                        <div class="TagsObject">
+                                            <div class="addTagsDiv">
+                                                <label class= "Tags">Categories: <label id= "Tags"> No Tags Selected</label></label>
+                                                <Button id="AddTags"><img class="AddTagsImage" src="WebUIAddObject.png" draggable="false"></Button>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="SummaryObject">
+                                            <label class= "summary" rows="1">Summary:</label>
+                                            <textarea  rows="2" id="summary" placeholder="Enter the summary of your story (max 600 characters)" required
+                                            minlength="1" maxlength="600"></textarea>
+                                        </div>
+
+
+                                    </div>
+                                    <div class="VerticleDivider"></div>
+
+
+                                    <div class="ExplainationAndAdvanced">
+                                        <div class="ExplainationAndAdvancedButtons">
+                                            <Button class="ExplainationButton" >Explaination</Button>
+                                            <button class="AdvancedButton" >Advanced</button>
+                                        </div>
+
+                                        <div class="ExplainationObject">
+                                            <label class="explainationBox">Explaination Box: </label>
+                                            <!-- <label id="explainationBox">No Object Selected</label> -->
+                                            <label id="explainationBox">This Explaination Box gives a brief description on how each active component works on Toddlit's New Projects.</label>
+                                        </div>
+
+
+
+
+                                        <div class="AdvancedControls">
+
+                                          <div class="AdvanceArtControls" style="display : none;" >
+                                              <div class="AdvancedArtContent">
+                                                  <label class="AdvancedArtTitle">Art Controls:</label>
+
+
+                                                  <div class="AnmationControlsDropDown">
+                                                    <label  class="AnimationControlsLabels">Default Runtime :</label>
+                                                    <select id="defaultRuntime" name="Runtime" onchange="updateDefaultTime()">
+                                                      <option class="Options">0.5 seconds</option>
+                                                      <option class="Options">1 seconds</option>
+                                                      <option class="Options">2 seconds</option>
+                                                      <option class="Options">3 seconds</option>
+                                                      <option class="Options">4 seconds</option>
+                                                      <option selected="selected" class="Options">Default</option>
+                                                      <option class="Options">6 seconds</option>
+                                                      <option class="Options">7 seconds</option>
+                                                      <option class="Options">8 seconds</option>
+                                                      <option class="Options">9 seconds</option>
+                                                      <option class="Options">10 seconds</option>
+                                                      <!-- <option class="Options">Custom</option> -->
+                                                    </select>
+                                                  </div>
+
+                                                  <div class="ArtControlsDropDown">
+                                                    <label  class="AnimationControlsLabels">Overlay Color Blend Mode :</label>
+                                                    <div class="ArtControlsHStack">
+                                                      <div class="colorPicker"></div>
+                                                      <select id="blendMode" name="blendMode" onchange="updateBlendMode();">
+                                                        <option selected="selected" class="Options">Normal</option>
+                                                        <option class="Options">Color</option>
+                                                        <option class="Options">Multiply</option>
+                                                        <option class="Options">Darken</option>
+                                                        <option class="Options">Color Burn</option>
+                                                        <option class="Options">Color Dodge</option>
+                                                        <option class="Options">Difference</option>
+                                                        <option class="Options">Hard Light</option>
+                                                        <option class="Options">Hue</option>
+                                                        <option class="Options">Lighten</option>
+                                                        <option class="Options">Overlay</option>
+                                                        <option class="Options">Soft Light</option>
+                                                        <option class="Options">Hard Light</option>
+                                                        <option class="Options">Saturation</option>
+                                                      </select>
+                                                    </div>
+                                                    </div>
+
+
+
+
+                                              </div>
+                                          </div>
+
+                                            <div class="AdvanceAnimationControls" style="display : none;">
+                                                <div class="AdvancedAnimationContent">
+                                                    <label class="AdvancedAnimationTitle">Animation Controls:</label>
+                                                    <!-- <div class="speedDiv"></div>
+                                                    <div class="distanceDiv"></div>
+                                                    <div class="attackDiv"></div> -->
+                                                    <!-- the range sliders start at 5 so that animation adjustments are at default value and can be adjusted in both directions.... for ex. starting at 0 for speed means that the default speed is the slowest speed. but it should not be. the user should be able to slow down the animations and speed it up. so default is set to 5 (the middle) for speed and every other animation control. -->
+                                                    <div class="AnimationsRangeControls">
+                                                      <label for="speed" class="AnimationControlsLabels">Animation Speed : <label class="AnimationSpeedLabel">0</label> </label>
+                                                      <input class="speedDiv" id="speed" type="range" min="-5" max="5" step="1" value="0" data-orientation="vertical" onchange="speedSliderValue(this.value)">
+                                                    </div>
+
+                                                    <div class="AnimationsRangeControls">
+                                                      <label for="speed" id="displacement" class="AnimationControlsLabels">Animation Displacement : <label class="AnimationDisplacementLabel"> 0</label></label>
+                                                      <input class="distanceDiv" id='distanceDiv' type="range" min="-5" max="5" step="1" value="0" data-orientation="vertical" onchange="distanceSliderValue(this.value)">
+                                                    </div>
+
+                                                    <div class="AnimationsRangeControls">
+                                                      <label for="speed" class="AnimationControlsLabels" >Animation Attack : <label class="AnimationAttackLabel"> 0</label></label>
+                                                      <input class="attackDiv" id="attack" type="range" min="-5" max="5" step="1" value="0" data-orientation="vertical" onchange="attackSliderValue(this.value)">
+                                                    </div>
+
+
+                                                    <div class="AnmationControlsDropDown">
+                                                      <label for="speed" class="AnimationControlsLabels">Animation Start Time :</label>
+                                                      <select name="AnimationStartTime" id="timing">
+                                                        <option class="Options" style="color : #FFC842; ">Beginning</option>
+                                                        <option selected="selected" class="Options">Default</option>
+                                                        <option class="Options">End</option>
+                                                      </select>
+                                                    </div>
+
+
+                                                    <div class="AnmationControlsDropDown">
+                                                      <label for="AnimationVibrate" class="AnimationControlsLabels">Device Vibrate :</label>
+                                                      <select name="speed" id="Vibarate">
+                                                        <option  class="Options">true</option>
+                                                        <option selected="selected" class="Options">false</option>
+                                                      </select>
+                                                    </div>
+
+
+
+
+                                                </div>
+                                            </div>
+
+                                            <div class="AdvanceAudioControlsNVM" style="display: none;">
+                                                <div class="AdvancedAudioContent">
+                                                    <label class="AdvancedAudioTitle">Recorded Audio Controls:</label>
+
+                                                    <div class="AnimationsRangeControls">
+                                                      <label for="speed" class="AnimationControlsLabels">Recorded Volume</label>
+                                                      <input class="speedDiv" id="speed" type="range" min="-5" max="5" step="1" value="0" data-orientation="vertical" onchange="speedSliderValue(this.value)">
+                                                    </div>
+
+
+                                                    <div class="AnmationControlsDropDown">
+                                                      <label for="speed" class="AnimationControlsLabels">Panning :</label>
+                                                      <select name="speed" id="timing">
+                                                        <option class="Options" style="color : #FFC842; ">Left</option>
+                                                        <option selected="selected" class="Options">Default</option>
+                                                        <option class="Options">Right</option>
+                                                        <option class="Options">Left To Right</option>
+                                                        <option class="Options">Chaotic</option>
+                                                        <option class="Options">Back and Fourth</option>
+                                                      </select>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="AdvanceMusicControls" style="display: none">
+                                                <div class="AdvancedMusicContent">
+                                                    <label class="AdvancedMusicTitle">Story Music Controls:</label>
+
+
+                                                    <div class="AnimationsRangeControls">
+                                                      <label for="speed" class="AnimationControlsLabels">Volume : <label class="MusicVolumeLabel">5</label> </label>
+                                                      <input class="MusicVolumeDiv" id="MusicVolume" type="range" min="1" max="10" step="1" value="5" data-orientation="vertical" onchange="MusicVolumeSliderValue(this.value)">
+                                                    </div>
+
+
+                                                    <div class="IntroTaperingDiv">
+                                                      <label for="speed" class="AnimationControlsLabels"> Volume Intro:</label>
+                                                      <select id="IntroTapering" onchange="updateIntroTaper()" name="introTaper">
+                                                        <option selected="selected" class="Options">Default</option>
+                                                        <option class="Options">Soft</option>
+                                                      </select>
+                                                    </div>
+
+
+                                                    <div class="OutroTaperingDiv">
+                                                      <label for="speed" class="AnimationControlsLabels"> Volume Leaving :</label>
+                                                      <select id="OutroTapering" onchange="updateOutroTaper()" name="outroTaper">
+                                                        <option selected="selected" class="Options">Default</option>
+                                                        <option class="Options">Soft</option>
+                                                      </select>
+                                                    </div>
+
+
+
+                                                </div>
+                                            </div>
+
+                                            <div class="AdvanceSFXControls" style="display: none">
+                                                <div class="AdvancedSFXContent">
+                                                    <label class="AdvancedSFXTitle">Sound Effect Controls:</label>
+
+
+                                                    <div class="AnimationsRangeControls">
+                                                      <label for="speed" class="AnimationControlsLabels">Volume : <label class="AnimationSpeedLabel">0</label> </label>
+                                                      <input class="sfxVolumeDiv" id="sfxVolume" type="range" min="-5" max="5" step="1" value="0" data-orientation="vertical" onchange="speedSliderValue(this.value)">
+                                                    </div>
+
+
+                                                    <label for="speed" class="AnimationControlsLabels"> Volume Intro:</label>
+
+                                                    <div class="">
+                                                      <select id="IntroTapering">
+                                                        <option selected="selected" class="Options">Default</option>
+                                                        <option class="Options">Soft</option>
+                                                      </select>
+                                                    </div>
+
+                                                    <label for="speed" class="AnimationControlsLabels"> Volume Leaving :</label>
+
+                                                    <div class="">
+                                                      <select id="OutroTapering">
+                                                        <option selected="selected" class="Options">Default</option>
+                                                        <option class="Options">Soft</option>
+                                                      </select>
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+
+
+                                            <div class="AdvanceTextControlsNVM" style="display: none">
+                                                <div class="AdvancedTextContent">
+                                                    <label class="AdvancedTextTitle">Story Text Controls:</label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div> <!-- Explaination Dic-->
+
+                                    <div class="demoScene">
+
+                                        <label class="DemoLabel"> Demo Scene: </label>
+
+                                        <div class="DemoPlayObject">
+
+
+                                            <div class="DemoImageObject" draggable="false">
+                                                <img id="DemoImage" src="ToddArtHome.png" draggable="false">
+                                                <div class="OverlayColor"></div>
+                                            </div>
+
+                                            <!-- <button id="DemoPlay"  onclick="GrabTitleAuthorCategoriesSummary()"><img class="DemoPlayUI" src="WebPlayButtonUI.png" draggable="false"></button> -->
+
+                                        </div>
+                                        <!-- <div class="centerDemoStoryTextDiv"> -->
+                                          <div class="DemoStoryTextDiv">
+                                            <label class="DemoStoryText">The Kid : It's okay blue man. The future looks different than you think.</label>
+                                          </div>
+                                        <!-- </div> -->
+
+
+                                    </div>
+                                    
+                                </div>
+                                <div class="controlBoardWorkStation">
+                                    <div class="controlBoard">
+                                        <div class="controlsTab">
+
+                                            <div class="controlsAndAddButtons">
+                                                <div class="controls">
+
+
+                                                    <div class="ArtLabelImageTitle">
+                                                    <label class="ControlBoardLabel">Control Board: </label>
+
+                                                    <div class="PlyFfRewCenterStack">
+                                                        <div class="PlyFfRewHStack">
+                                                            <div class="ControlBoardPlayButtonDiv">
+                                                                <div class="SkipBackButton">
+                                                                    <img src="NewProjectsUI/SkipBack.png" class="PlayButtonUI">
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="ControlBoardPlayButtonDiv">
+                                                                <div class="PlayButton">
+                                                                    <img src="NewProjectsUI/BlackPLayButton.png" class="PlayButtonUI">
+                                                                </div>
+                                                            </div>
+
+
+                                                            <div class="ControlBoardPlayButtonDiv">
+                                                                <div class="SkipForwardButton">
+                                                                    <img src="NewProjectsUI/SkipForward.png" class="PlayButtonUI">
+                                                                </div>
+                                                            </div>
+
+
+
+                                                        </div>
+                                                    </div>
+
+<!--                                                         <div class="ArtTitle">
+                                                            <label class="ArtLabel"> Art: </label>
+                                                            <label id="ImageTitle">No Image Selected</label>
+                                                        </div> -->
+                                                    </div>
+
+                                                    <div class="AnimationObject">
+                                                        <label class= "Animation">Animation : </label>
+                                                    </div>
+
+                                                    <div class="RecorededObject">
+                                                        <label class= "RecorededDialogue">Recoreded Dialogue : </label>
+                                                    </div>
+
+
+                                                    <div class="MusicScoreObject">
+                                                        <label class= "MusicScore">Story Music : </label>
+                                                    </div>
+
+                                                    <div class="StorySFXObject">
+                                                        <label class= "StorySFX">Sound Effects : </label>
+                                                    </div>
+
+                                                    <div class="StoryTextObject">
+                                                        <label class= "StoryText">Story Text : </label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="AddButtonsContainerDiv">
+                                                    <div class="AddButtonsDiv">
+                                                        <div class="AnimationObject"><Button id="Animation"><img class="AddButtonImg" src="WebUIAddObject.png" draggable="false"></Button></div>
+                                                        <div class="RecorededObject"><Button id="RecorededDialogue"><img class="AddButtonImg" src="WebUIAddObject.png" draggable="false"></Button></div>
+                                                        <div class="MusicScoreObject"><Button id="MusicScore"><img class="AddButtonImg" src="WebUIAddObject.png" draggable="false"></Button></div>
+                                                        <div class="StorySFXObject"><Button id="StorySFX"><img class="AddButtonImg" src="WebUIAddObject.png" draggable="false"></Button></div>
+                                                        <div class="StoryTextObject"><Button id="StoryText"><img class="AddButtonImg" src="WebUIAddObject.png" draggable="false"></Button></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                        <div class="workStation">
+                          <div class="WorkStationHStack">
+
+
+                            <ul class="WorkStationDiv">
+                            </ul>
+
+                            <div class="SFXMusicStation">
+                              <div class="MusicheStation">
+                              </div>
+
+                              <div class="SfxStation">
+                              </div>
+                            </div>
+
+
+                            <div class="SfxMusicWorkStation" style="display: none;">
+
+                              <div class="GridImageWork">
+                              </div>
+
+                              <div class="SMAnimation">
+                              </div>
+
+                              <div class="SMDialogueStation">
+                              </div>
+                            </div>
+
+
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="BackgroundModalCover" >
+                <div class="ArtUploadModal">
+                    <div class="ArtUploadModalCard">
+
+                        <div class="ArtUploadTitleInfoInfoToddlit">
+                            <div class="ArtUploadLabelAndInfoButton">
+                                <label class="ArtUploadStationLabel">Art Upload Station</label>
+                                 <button class="ArtUploadInfoButton"><img class="ArtInfoUploadPng" src="Info.png" alt="Info"></button>
+                            </div>
+                            <img class="ArtUplaodToddLogo" src="WebToddlitTitleLogoPNG.png" draggable="false">
+                        </div>
+
+
+                        <div class="ArtUploadImgInstruction">
+                            <img class="ImmagineArtPng" src="Immagine.png" alt="Upload Image Logo" draggable="false">
+                            <div class="ImmagineInstructionsAndUploadType">
+                                <label class="ImmagineUploadInstructions">Before you can begin to construct your story, you will need your Art Work. This Upload station is built for that purpose. Click on the blue 'Upload' button below to upload your work from your files. Your art will be placed in the order you selected them below. All your images must be in .jpeg or .jpg format.</label>
+                                <label class="ImmagineUploadMoreInstructions">(if you have any questions click on the information icons for a more clear understanding and examples)</label>
+                            </div>
+                        </div>
+
+
+                        <div class="ArtTitleUploadTypeAndArt">
+                            <div class="UploadArtTitleAndType">
+                                <label class="ArtUploadLabel">Art: </label>
+                                <label class="ArtUploadType"> (only .jpeg or .jpg files)</label>
+                            </div>
+                            <div class="ArtUploadStation">
+                                <div class="ArtListElemtDiv">
+                                    <ul class="UlArtSortableList">
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="ImmagineUploadButtonDiv">
+                                <input id="ImageFiles" type="file" name="file" accept="image/*" multiple style="display: none;">
+                                <button class="ImmagineUploadButton">Upload</button>
+                                <button class="ImmagineRemoveButton">Remove</button>
+                                <button class="ImmagineUploadStationConfirmButton">Confirm</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="UploadTextStation" >
+                    <div class="UploadTextCard">
+                        <div class="TextStationLabelInfoAndLogo">
+                            <div class="TextUploadLabelAndInfoButton">
+
+
+                              <div class="BackArrowButton" id="TextStationBackArrow">
+                                <img src="BackArrow.png" class="BackArrowUI">
+                              </div>
+
+
+                                <label class="ArtUploadStationLabel">Story Text Station</label>
+                                <button class="ArtUploadInfoButton"><img class="ArtInfoUploadPng" src="Info.png" alt="Info"></button>
+                            </div>
+                            <img class="ArtUplaodToddLogo" src="WebToddlitTitleLogoPNG.png" draggable="false">
+                        </div>
+
+                        <div class="InstrunctionsAndPurpose">
+                            <img class="TextUploadPng" src="Testo.png" alt="Text Image" draggable="false">
+                            <div class="UploadInstrunctionsDiv">
+                                <label class="TestoUploadInstructions"> Now that you have your art uploaded, We can now move on to uploading your story script. Paste the text from your script into text area below, or you may opt for uploading a .pdf or .doc file. This story script will be used as captions for the children to read along with.</label>
+                                <label class="ImmagineUploadMoreInstructions">(if you have any questions click on the information icons for a clearer understandings and examples)</label>
+                            </div>
+                        </div>
+
+                        <div class="UploadConentArea">
+                          <div class="TextPlacementArea" >
+                            <div class="requestScriptStation" >
+
+                              <div class="ScriptLoadLabelDiv">
+                                <label class="ScriptLoadLabel">Choose From Your Scripts : </label>
+                              </div>
+
+                              <div class="requestScriptHStack">
+                                <div class="ScriptsDiv">
+                                  <label class="noScipts">You have't written any story yet.</label>
+                                </div>
+                              </div>
+
+                            </div>
+
+                              <!-- <textarea class="ScriptDropZone" type="text" placeholder="Place your story script text here:"></textarea> -->
+                          </div>
+
+                          <div class="UploadWriteScriptButtonsDiv">
+                            <div class="UploadScriptButtonsVStack">
+                              <div class="OrDiv">
+                                <label class="orLabel"> - or - </label>
+                              </div>
+                              <!-- <button class="ConfirmScriptTextButton">Upload Script</button> -->
+                              <div class="WriteAScriptButtonDiv">
+                                <button class="WriteScriptTextButton">Write A Script</button>
+                              </div>
+
+
+                            </div>
+                          </div>
+                        </div>
+
+
+
+                        <div class="TextCuttingStationUpload">
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="UploadAudioStation" >
+                    <div class="UploadAudioCard">
+
+                      <div class="TextStationLabelInfoAndLogo">
+                          <div class="TextUploadLabelAndInfoButton">
+
+
+                            <div class="BackArrowButton" id="AudioStationBackArrow">
+                              <img src="BackArrow.png" class="BackArrowUI">
+                            </div>
+
+
+                              <label class="ArtUploadStationLabel" >Audio Station</label>
+                              <button class="ArtUploadInfoButton"><img class="ArtInfoUploadPng" src="Info.png" alt="Info"></button>
+                          </div>
+                          <img class="AudioUplaodToddLogo" src="WebToddlitTitleLogoPNG.png" draggable="false"  style="position : absolute; right: 3vh; ">
+                      </div>
+
+                      <div class="InstrunctionsAndPurpose">
+                          <div class="RecordUploadInstrunctionsDiv">
+
+                            <div class="RecordInstructionHStack">
+                              <img class="RecordUploadPng" src="Discorso.png" alt="Text Image" draggable="false" >
+                              <div class="RecordInstructionDiv">
+                                <label class="RecordUploadInstructions">There is something truly special about those moments when someone reads a book out loud with liveliness and care, that expresses something beyond plane text and pictures. We hope to capture some of verbal storytelling magic, so we've built Toddlit around expressive vocals.</label>
+                                <label class="RecordUploadInstructions">Don’t worry too much about having perfect vocals. We have your back. We have editors to adjust, edit, and change your vocals after the project is published. We just need to know what you’re aiming for in your story, so that our changes reflect your artistic intentions. </label>
+                                <label class="RecordUploadInstructions">Happy Recording!</label>
+                              </div>
+                            </div>
+
+                              <div class="RecordAudioControlsDiv">
+                                <div class="RecordAudioVStackDiv">
+
+
+                                  <div class="RecordAudioTextDiv">
+                                    <div class="RecordAudioTextVStack">
+
+                                      <div class="PreviousAudioTextDiv">
+                                        <div class="PreviousAudioCenterTextDiv">
+                                          <label class="PreviousAudioTextLabel"></label>
+                                        </div>
+                                      </div>
+
+                                      <div class="CurrentAudioTextDiv">
+                                        <div class="CurrentAudioCenterTextDiv">
+                                          <label class="CurrentAudioTextLabel"></label>
+                                        </div>
+                                      </div>
+
+                                      <div class="NextAudioTextDiv">
+                                        <div class="NextAudioCenterTextDiv">
+                                          <label class="NextAudioTextLabel"></label>
+                                        </div>
+                                      </div>
+
+                                      <div class="RecordIndicatorPlayAudioDiv">
+                                        <div class="RecordIndicatorDiv">
+                                          <!-- Will be postion absolute -->
+                                          <div class="RecordIndicator"></div>
+                                        </div>
+                                        <div class="RecordIndicatorPlayAudioCenter">
+                                          <div class="playPauseRecordingPng">
+                                            <img src="NewProjectsUI/BlackPLayButton.png" alt="Play" class="PlayPauseRecoordingUI">
+                                          </div>
+                                        </div>
+                                      </div>
+
+
+                                      <div class="RecordedObjectsList">
+                                        <div class="RecordedObjectsListCard">
+                                          <div class="centerRecordedAudioDiv">
+                                            <div class="RecordedObjectsHstack">
+
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+
+
+                                    </div>
+                                  </div>
+
+
+                                  <div class="RecordAudioButtonsDiv">
+                                    <div class="RecordedAudioButtonsHStack">
+
+                                      <div class="PreviousScriptButtonDiv">
+                                        <div class="" id="PreviousRecord">
+                                          <label class="confiremRecordingLabel">Previous</label>
+                                        </div>
+                                      </div>
+
+                                        <div class="RecordButtonDiv">
+                                          <div class="RecordButton">
+                                            <label class="RecordLabel">Record</label>
+                                          </div>
+                                        </div>
+
+                                        <div class="StopRecordingButtonDiv">
+                                          <div class="StopRecordingButton" disabled>
+                                            <label class="StopRecordingLabel">Stop</label>
+                                          </div>
+                                        </div>
+
+
+                                        <div class="NextscriptButtonDiv">
+                                          <div class="" id="NextRecord">
+                                            <label class="confiremRecordingLabel">Next</label>
+                                          </div>
+                                        </div>
+
+                                    </div>
+
+                                  </div>
+
+
+                                <div class="ConfirmButtonDiv">
+                                  <div class="confirmRecordingButton">
+                                    <label class="confiremRecordingLabel">Confirm</label>
+                                  </div>
+                                </div>
+
+
+
+                                </div>
+                              </div>
+                              <!-- <label class="ImmagineUploadMoreInstructions">(if you have any questions click on the information icons for a clearer understandings and examples)</label> -->
+                          </div>
+                      </div>
+
+
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+        <div class="ImageWidthDivForJSResizingMusicStretch"></div>
+        <div class="MeasureGridDiv"></div>
+        <div class="MeasureGridDivTwo"></div>
+
+        </div><--! All Content end -->
+    </div>
+
+
+
+<div class="SelectedAudioObjectContainer">
+  <audio class="RecordedAudioObject" controls preload="none">
+      <source class="AudioSRC" src="" type='audio/mpeg'>
+  </audio>
+</div>
+
+<div class="AudioObjectContainer">
+  <audio class="my_audio" controls preload="none">
+      <source id='sound_src' src="" type='audio/mpeg'>
+  </audio>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="ImageWidthDivForJSResizingMusicStretch"></div>
+<div class="MeasureGridDiv"></div>
+<div class="MeasureGridDivTwo"></div>
+
+</div><--! All Content end -->
+ </div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
+<link type="text/css" rel="stylesheet" href="Jquery2014.css" />
+<!-- this is p5.js I will use this to build the audio recorder -->
+
+<!-- <script src="/Users/clarkekent/Public/launchTODD/audio-recorder-polyfill/index.js"></script>
+<script src="web-audio-recorder-js/lib/WebAudioRecorder.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/p5@1.1.9/lib/p5.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/p5@1.1.9/lib/p5.js"></script> -->
+
+
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-storage.js"></script>
+
+<!-- <script src="waveform-playlist"></script> -->
+
+<!-- <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script> -->
+
+
+
+<!-- To create a range slider min js -->
+<script src="rangeslider.js/dist/rangeslider.min.js"></script>
+
+<script src="Recorderjs/dist/recorder.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.0/howler.min.js"></script>
+
+<!-- Color Picker -->
+<script src="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/pickr.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/pickr.es5.min.js"></script>
+
+<script src="ToddNewProjectJS.js"></script>
+
+</body>
+</html>

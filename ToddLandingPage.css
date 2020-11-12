@@ -1,0 +1,2950 @@
+html, body{
+	margin: 0;
+	padding: 0;
+	height:  100%;
+	width: 100%;
+    background-color:black;
+    font-family:"Avenir Next", Roboto , cursive, Arial, sans-serif;
+    overflow: hidden;
+
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color : black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    overflow: hidden;
+    font-family:"Avenir Next", Roboto , cursive, Arial, sans-serif;
+
+}
+/*  He */
+.Page{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border-top-left-radius: 2vh;
+    border-top-right-radius: 2vh;
+    border-radius: 2vh;
+    scroll-snap-align: start;
+    scroll-behavior: smooth;
+}
+
+.Header{
+    position: fixed;
+    width: 100%;
+    height: 8vh;
+    background-color: rgba(255, 255, 255, 0.125);
+    /* box-shadow: 0vh 0.2vh 0.2vh rgb(0, 0, 0, 0.25); */
+    z-index: 7;
+    transition: all 1.5s ease-in-out;
+}
+.HStackLogoAbout{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+.logoDiv{
+    position: relative;
+    width: 5vh;
+    height: 5vh;
+    left: 6vh;
+    top: calc(50% - 2.5vh);
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+}
+
+.logo{
+    position: relative;
+    width: auto;
+    height: 5vh;
+    margin-right: 1vh;
+}
+
+.Home , .About , .Design , .Lang, .Parents{
+    position: relative;
+    /* color: rgb(100, 100, 100, 0.75); */
+    color: white;
+    border: none;
+    font-weight: 600;
+    font-size: 2vh;
+    background-color: transparent;
+    margin-left: 6.5vh;
+    display : inline-block ;
+    white-space: nowrap;
+    outline: none;
+    transition: all .3s ease-in;
+		color: black;
+
+}
+
+
+
+
+.HomeAboutContactCreatives{
+    position: relative;
+    width: 3vh;
+    height: 4.5vh;
+    left : calc(100% - 11vh);
+    top: calc(50% - 2.25vh);
+    flex-shrink: 0;
+}
+
+.HomeAboutContactCreativesBox{
+    position: absolute;
+    width: auto;
+    right: 100%;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.SignIn{
+    position: relative;
+    /* color: rgb(80, 80, 80); */
+    color: white;
+    border: none;
+    font-weight: 600;
+    font-size: 2vh;
+    background-color: transparent;
+    margin-left: 6.5vh;
+    display : inline-block ;
+    white-space: nowrap;
+    outline: none;
+}
+
+.SignIn:hover{
+    transition: all .3s ease-in;
+    transform: scale(1.0, 1.0);
+
+ }
+ .SignIn:not(:hover){
+    transition: all .3s ease-in;
+    transform: scale(1.0, 1.0);
+
+ }
+ .SignIn:active{
+     opacity: 0.35;
+ }
+
+
+
+#Creatives{
+    position: relative;
+    background: transparent;
+    width: 11.3vh;
+    height: 4.5vh;
+    color :#FFC842;
+    border: 0.15vh solid #FFC842;;
+    white-space: nowrap;
+    font-weight: bold;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 4vh;
+    font-size: 1.7vh;
+    font-family: "Avenir Next", Roboto, cursive, Arial, sans-serif;
+    text-align: center;
+    outline: none;
+    white-space: nowrap;
+    margin-left: 4vh;
+
+
+ }
+
+#Creatives:hover{
+    border: rgb(231, 208, 73);
+    border-radius: 0.4vh;
+    transition: all .3s ease-in;
+    transform: scale(1.0, 1.0);
+    background: #FFC842;
+    color :white;
+ }
+#Creatives:not(:hover){
+    transition: all .3s ease-in;
+    transform: scale(1.0, 1.0);
+
+ }
+#Creatives:active{
+     background:rgb(207, 163, 51);
+
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Content{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    flex-grow: 0;
+
+}
+
+.BlueDivider{
+    position: relative;
+    width: 100%;
+    height: 3vh;
+    background-color: #428FFF;
+    box-shadow: 0vh 0.2vh 0.2vh rgb(0, 0, 0, 0.25);
+    z-index: 2;
+    flex-shrink: 0;
+}
+
+.LanderImageDiv{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    flex-shrink: 0;
+    overflow: hidden;
+    top: 0vh;
+    /* background: linear-gradient( rgb(0 , 0 , 0, 0.85), rgb(0, 0, 0, 0.85) , rgb(0, 0, 0, 1)); */
+		background-color: white;
+}
+.LanderImage{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    flex-shrink: 0;
+    opacity: 0.85;
+		opacity: 0;
+}
+
+.ContentOverLanderImage{
+    position: relative;
+    width: 100vw;
+    height: 60vh;
+    bottom: 77.5vh;
+    z-index: 3;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.BigTextDiv{
+    position: relative;
+    height: 100%;
+    width: 60%;
+    display: grid;
+    place-items: center;
+    bottom: 1vh;
+}
+
+.ToddlitText{
+    position: relative;
+    font-size: 7vh;
+    font-weight: bolder;
+    color: #FFC842;
+}
+
+.Underline{
+    position: relative;
+    width: 100%;
+    height: 0.8vh;
+    border-radius: 0.8vh;
+    background-color: #428FFF;
+}
+
+.DiscoverText{
+    position: relative;
+    font-size: 5vh;
+    font-weight: bolder;
+    color: rgba(255, 255, 255, 0.9);
+		color: black;
+}
+
+.BigConceptsText{
+    position: relative;
+    font-size: 3.3vh;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.85);
+		color: black;
+}
+
+.DemoDiv{
+	position: absolute;
+	width: 35%;
+	right: 0vh;
+	top:-23.3vh;
+	height: 100vh;
+	background-color: white;
+	/* bottom : 23.3vh; */
+	display: grid;
+	place-items: center;
+	border-top-left-radius: 5vh;
+	border-bottom-left-radius: 5vh;
+	border-top-right-radius: 2vh;
+	overflow: visible;
+	z-index: -10;
+}
+
+.replacementArtDiv{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	/* right: 0vh; */
+
+}
+
+.replacementArt{
+	position: absolute;
+	width: auto;
+	height: 100%;
+	right: calc(-50vh);
+}
+
+
+/* .DemoDiv{
+	position: absolute;
+	width: 35%;
+	right: 0vh;
+	top:-23.3vh;
+	height: 100vh;
+	background-color: black;
+	display: grid;
+	place-items: center;
+	border-top-left-radius: 5vh;
+	border-bottom-left-radius: 5vh;
+	border-top-right-radius: 2vh;
+	overflow: hidden;
+} */
+
+.demoHolder{
+	position: relative;
+	width: 100%;
+	height: 35vw;
+	display: grid;
+	place-items: center;
+}
+
+.demoImages{
+	position: relative;
+	height: 35vw;
+	width: 35vw;
+	object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+.DividerAndContent{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.BlackDivider{
+    position: relative;
+    width: 100%;
+    height: 15vh;
+    background-color: black;
+    flex-shrink: 0;
+    box-shadow: 0vh 0.2vh 0.2vh rgb(0, 0, 0, 0.25);
+    z-index: 2;
+}
+
+.grayDivider{
+    position: relative;
+    width: 100%;
+    height: 0.3vh;
+    background-color: rgb(0, 0, 0, 0.5);
+    flex-shrink: 0;
+}
+
+
+
+
+
+.ToddContent{
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: white;
+}
+
+
+.PurposeClass{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: #FFC842;
+}
+
+.PurposeVStack{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+}
+
+
+.PurposeTitleDiv , .PurposeContentDiv{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: grid;
+    place-items: center;
+}
+
+.PurposeTitle {
+    position: relative;
+    width: auto;
+    height: auto;
+}
+.PurposeContent{
+    position: relative;
+    width: 90vw;
+    height: auto;
+    display: grid;
+    place-items: center;
+    margin-top: 2.5vh;
+}
+
+.PurposeTitleLabel{
+    position: relative;
+    text-align: center;
+    color: black;
+    font-weight: 700;
+    font-size: 6vh;
+}
+
+.PurposeContentLabel{
+    position: relative;
+    text-align: center;
+    color: black;
+    font-weight: 700;
+    font-size: 2.5vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+.UIAndMissionClass{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    display: grid;
+    place-items: center;
+}
+
+
+
+.MissionMoadalDiv{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    left: 0%;
+    top: 5vh;
+}
+.MissionStatementModal{
+    position: relative;
+    height: 45vh;
+    width: 35vh;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 2vh;
+    box-shadow: 0vh 0.3vh 0.3vh rgb(0, 0, 0, 0.25);
+    display: grid;
+    place-items: center ;
+}
+
+.MissionStatementCenterDiv{
+    position: relative;
+    height: 30vh;
+    width: 22.5vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.MissionStatmentText{
+    position: relative;
+    font-size: 3vh;
+    font-weight: 600;
+    margin-bottom: 0.5vh;
+}
+.MissionStatmentBigBold{
+    position: relative;
+    font-size: 3.3vh;
+    font-weight: bolder;
+    margin-right: 1vh;
+    margin-bottom: 2vh;
+}
+.MissionStatmentTextDiv{
+    position: relative;
+    height: 3.3vh;
+    width: 3.3vh;
+    top: 0.3vh;
+
+}
+
+.HStack{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.VStack{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.ThroughStoryPng{
+    position: relative;
+    width: 5vh;
+    height: 5vh;
+    object-fit: contain;
+    margin-right: 0.5vh;
+}
+
+.ThroughStoryTextDiv{
+    position: relative;
+    height: 3vh;
+    width: 3vh;
+    top: 1.5vh;
+    white-space: nowrap;
+}
+
+.ThroughStoryText{
+    position: relative;
+    font-size: 3vh;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+.UILabelDiv{
+    position: absolute;
+    width: auto;
+    height: auto;
+    top: 6vh;
+    left: 10vh;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+.UILabel{
+    position: relative;
+    text-align: left;
+    color: black;
+    font-weight: 700;
+    font-size: 5vh;
+}
+
+
+
+.UIContentLabelDiv{
+    position: relative;
+    height: auto;
+    width: calc(100%);
+    margin-top: 3vh;
+}
+
+
+.UIAlignContentLabelDiv{
+    position: relative;
+    width: 70%;
+    height: auto;
+}
+
+.UIContentLabel{
+    position: relative;
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 600;
+    font-size: 3vh;
+}
+
+
+
+.iconHStack{
+    position: relative;
+    width: 70%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    margin-top: 4vh;
+    right: 3vh;
+}
+
+.Icons{
+    position: relative;
+    width: 6vh;
+    height: 6vh;
+    margin-left: 3vh;
+
+}
+
+.UIIcon{
+    position: relative;
+    width: 6vh;
+    height: 6vh;
+    object-fit: contain;
+
+}
+
+
+.ShapesUIDiv{
+    position: relative;
+    width: 70%;
+    height: 20vh;
+    display: grid;
+    place-items: center;
+    margin-top: 10vh;
+}
+.shapesUI{
+    position: relative;
+    height: 15vh;
+    width: auto;
+    object-fit: contain;
+}
+
+
+
+
+
+
+.UIMobileDiv{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    right: 0%;
+    top: 0%;
+}
+
+
+
+.UIMobilHStack{
+    position: relative;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+}
+
+.UIHomeDiv{
+    position: relative;
+    height: auto;
+    width: auto;
+    object-fit: contain;
+
+}
+
+.UIContentDiv{
+    position: relative;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    z-index: 1;
+    right: calc(16.25vh);
+    top: calc(32.5vh);
+}
+
+
+.UIHome{
+    position: relative;
+    height: 65vh;
+    width: 32.5vh;
+    object-fit: contain;
+}
+
+
+.UIContent{
+    position: relative;
+    width: 65vh;
+    height: 32.5vh;
+    object-fit: contain;
+}
+
+/* .UIHome:hover{
+	transition: all 0.5s ease-in-out;
+	transform: rotate(-45deg);
+}
+
+.UIContent:hover{
+	transition: all 0.5s ease-in-out;
+	transform: rotate(-45deg);
+} */
+
+.UIMobilHStack:hover  .UIContent {
+	transition: all 0.5s ease-in-out;
+	transform: rotate(-45deg);
+}
+
+.UIMobilHStack:hover .UIHome  {
+	transition: all 0.5s ease-in-out;
+	transform: rotate(-45deg);
+}
+
+.UIMobilHStack:not(:hover)  .UIContent {
+	transition: all 0.5s ease-in-out;
+	transform: rotate(0deg);
+}
+
+.UIMobilHStack:not(:hover) .UIHome  {
+	transition: all 0.5s ease-in-out;
+	transform: rotate(0deg);
+}
+
+
+
+.TranslateClass{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    /* background-color: blue; */
+}
+
+.UIQotationsAndTitle{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: grid;
+    place-items: center;
+    bottom: 9vh;
+    /* margin-top: 4vh; */
+}
+
+
+.UIQotationsAndTitleHStack{
+    position: relative;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+}
+
+.QuotationUI{
+    position: relative;
+    width: 8vh;
+    height: 8vh;
+    object-fit: contain;
+}
+
+.TitleLabel{
+    position: relative;
+    text-align: center;
+    color: black;
+    font-weight: 700;
+    font-size: 6vh;
+    top: 4vh;
+}
+
+
+
+
+
+
+.TranslateExplainationDiv{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: grid;
+    place-items: center;
+    margin-top: 6vh;
+}
+
+.TranslateExplainationPlacment{
+    position: relative;
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+
+.TranslateExplaination{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    color: black;
+    font-weight: 600;
+    font-size: 3vh;
+    top: 4vh;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+.TranslateExplainationLangDiv{
+    position: relative;
+    width: 100%;
+    height: 5vh;
+    display: grid;
+    place-items: center;
+    margin-top: 8vh;
+}
+
+
+
+
+.TranslateLangPlacment{
+    position: relative;
+    width: 80%;
+    height: 5vh;
+    display: grid;
+    place-items: center;
+}
+
+.TranslateHStack{
+    position: relative;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    margin-top: 4vh;
+}
+
+.TranlsatedLangHStack{
+    position: relative;
+    height: 5vh;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    margin-left: 5vh;
+}
+
+
+
+.centerObjectsDiv{
+    position: relative;
+    height: 5vh;
+    width: auto;
+    display: grid;
+    place-items: center;
+
+}
+
+.EnglishColor{
+    position: relative;
+    height: 1.3vh;
+    width: 3vw;
+    background-color: #428FFF;
+    border-radius: 1.3vh;
+    top: 2.15vh;
+}
+
+.SpanishColor{
+    position: relative;
+    height: 1.3vh;
+    width: 3vw;
+    background-color: #42ff5b;
+    border-radius: 1.3vh;
+    top: 2.15vh;
+}
+
+.FrenchColor{
+    position: relative;
+    height: 1.3vh;
+    width: 3vw;
+    background-color: #ff4242;
+    border-radius: 1.3vh;
+    top: 2.15vh;
+}
+
+.GermanColor{
+    position: relative;
+    height: 1.3vh;
+    width: 3vw;
+    background-color: #FFC842;
+    border-radius: 1.3vh;
+    top: 2.15vh;
+}
+
+.TranslateLanguages{
+    position: relative;
+    color: black;
+    font-weight: 600;
+    font-size: 4vh;
+    margin-left: 1.5vh;
+}
+
+
+
+
+
+.TranslateExplainationDivFunfact{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: grid;
+    place-items: center;
+    top: 8vh;
+    opacity: 0.75;
+}
+
+.TranslateExplainationPlacmentFunFact{
+    position: relative;
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+.TranslateFunFact{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    color: black;
+    font-weight: 600;
+    font-size: 3vh;
+    top: 4vh;
+    text-align: center;
+}
+
+
+
+.SooooDiv{
+    position: relative;
+    width: auto;
+    height: auto;
+    font-size: 4vh;
+    font-weight: 700;
+    margin-top: 6vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.PControlsDiv{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    /* background-color: bal; */
+    display: grid;
+    place-items: center;
+
+    /* background-color: #e23939; */
+    /* border-bottom-left-radius: 5vh;
+    border-bottom-right-radius: 5vh; */
+    /* border-radius: 5vh; */
+    box-shadow: 0vh 0.3vh 0.5vh #701c1c94 ;
+    z-index: 1;
+
+		border-top-left-radius: 5vh;
+    border-top-right-radius: 5vh;
+    background-color: black;
+}
+
+.PCContorlsCenter{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    bottom: 18vh;
+}
+
+.UIPCDiv{
+    position: relative;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+}
+
+
+
+.PCContentCenter{
+    position: relative;
+    width: 70%;
+    height: auto;
+    display: grid;
+    place-items: center;
+}
+
+
+.PCContentDiv{
+    position: relative;
+    width: calc(90%);
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    margin-bottom: 3vh;
+}
+
+.UIPCTitle{
+    position: relative;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    font-size: 5vh;
+    margin-bottom: 3vh;
+}
+
+.UIPCText{
+    position: r9lative;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    font-size: 2.5vh;
+}
+
+.UIPCText2{
+    position: relative;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    font-size: 2.5vh;
+}
+
+
+
+.UISettingsUI{
+    position: relative;
+    width: 30%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.SettingsDiv{
+    position: relative;
+    width: 24vw;
+    height: auto;
+    border-radius: 3vh;
+}
+
+.SettinsUI{
+    position: relative;
+    width: 24vw;
+    height: auto;
+    object-fit: contain;
+    border-radius: 3vh;
+}
+
+
+
+
+.BottomContent{
+    position: absolute;
+    height: 32.5vh;
+    width: calc(100% - 12vh);
+    left: 6vh;
+    bottom: 10vh;
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+}
+
+.TopContent{
+    position: absolute;
+    height: 32.5vh;
+    width: calc(100% - 12vh);
+    left: 6vh;
+    top: 2.5vh;
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+}
+
+
+.TopPC .BottomPC{
+    position: relative;
+    width: 88vw;
+    height: 16.25vh;
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+}
+
+.PCHStack{
+    position: relative;
+    width: 44vw;
+    height: 16.25vh;
+    display: grid;
+    place-items: center;
+}
+
+#PCHStack2 , #PCHStack4{
+    /* left: 5vh; */
+}
+#PCHStack1 , #PCHStack3{
+    margin-right: 6vh;
+}
+
+.PCControlHStack{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+}
+
+
+.PCUIsDiv{
+    position: relative;
+    height: 7vh;
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+.PCUIs{
+    position: relative;
+    height: 7vh;
+    height: 7vh;
+    border-radius: 10vh;
+    object-fit: cover;
+}
+
+.PCUILabelsDiv{
+    position: relative;
+    width: auto;
+    height: 7vh;
+    display: grid;
+    place-items: center;
+    margin-left: 3vh;
+}
+
+.PCUILabels{
+    position: relative;
+    font-size: 2.5vh;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.75);
+    text-align: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.SusbscriptionDiv{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: bal;
+    display: grid;
+    place-items: center;
+    background-color: white;
+}
+
+.SubscriptionContent{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+
+
+.SubContent{
+    position: relative;
+    width: auto;
+    height: auto;
+    display: grid;
+    place-items: center;
+    margin-bottom: 10vh;
+}
+
+.SubHstack{
+    position: relative;
+    width: calc(100% - 12vh);
+    height: 40vh;
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+}
+
+.SubText{
+    position: relative;
+    height: 100%;
+    width: 65%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    margin-right: 20vw;
+}
+
+.SubVStack{
+    position: relative;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+.SignULabelDiv , .SubBottomLabelDiv{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.SubBottomLabelDiv{
+    margin-top: 3vh;
+}
+
+.SignUpLabel{
+    position: relative;
+    font-size: 5vh;
+    color: black;
+    font-weight: 700;
+}
+
+.SubBottomLabel{
+    position: relative;
+    font-size: 3.8vh;
+    color: black;
+    font-weight: 700;
+    /* color: #FFC842; */
+}
+
+
+
+.SignUpButtonDiv{
+    position: relative;
+    height: 100%;
+    width: 35%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.SignUpButton{
+    position: relative;
+    height: 30vh;
+    width: 40vh;
+    background-color: #428FFF;
+    border-radius: 0.5vh;
+    box-shadow: 0 0.5vh 1vh #2d548fc4;
+    display: grid;
+    place-items: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.SignUpButton:active{
+    box-shadow: 0 0.5vh 0.3vh #2d548fc4;
+}
+
+.SignUpButonLabel{
+    position: relative;
+    font-size: 3.4vh;
+    color: white;
+    font-weight: 600;
+}
+
+
+
+
+
+
+.Save{
+    position: absolute;
+    height: auto;
+    width: calc(100% - 12vh);
+    left: 6vh;
+    bottom: 20vh;
+    display: grid;
+    place-items: center;
+}
+
+.SaveInline{
+    position: relative;
+    width: auto;
+    height: auto;
+    display: inline-block;
+}
+.SaveLabel{
+    position: relative;
+    text-align: center;
+    font-size: 4vh;
+    color: black;
+    font-weight: 700;
+}
+.Percent{
+    position: relative;
+    text-align: center;
+    font-size: 4.3vh;
+    color: black;
+    font-weight: 800;
+    margin-left: 1vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.SubHStack{
+    position: relative;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+}
+
+
+.OptionsDiv{
+    position: relative;
+    width: calc(33% - 3vh);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    /* background-color: red; */
+}
+
+
+.NoSubDiv{
+    position: relative;
+    width: calc(15% - 3vh);
+    height: 100%;
+    /* margin-left: 3vh; */
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    /* background-color: blue; */
+}
+
+
+.SubDiv{
+    position: relative;
+    width: calc(15% - 3vh);
+    height: 100%;
+    /* margin-left: 3vh; */
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    /* background-color: yellow; */
+}
+
+
+.OptionTitleDiv{
+    position: relative;
+    width: 100%;
+    height: 12vh;
+    background-color: white;
+}
+
+
+
+.GrayStack{
+    position: relative;
+    background-color: rgb(233, 233, 233);
+    width: 100%;
+    height: 10vh;
+    /* border-radius: 0.9vh; */
+}
+
+
+
+.WhiteStack{
+    position: relative;
+    background-color: white;
+    width: 100%;
+    height: 10vh;
+}
+
+.BlackUnderline{
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: calc(100%);
+    height: 0.2vh;
+    margin-bottom: 2vh;
+}
+
+
+.CenterCheck{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.CheckUI{
+    position: relative;
+    width: 5vh;
+    height: 5vh;
+    object-fit: contain;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Footer{
+    position: relative;
+    background-color: black;
+    height: 15vh;
+    width: 100%;
+}
+
+
+
+@media all and (max-width : 768px){
+    /* For Ipad and Tabelt : */
+    .Page{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+    }
+}
+
+
+@media all and (max-width : 375px){
+				/* For Iphone and Mobile devices : */
+    .Page{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+    }
+
+
+
+		html, body{
+			margin: 0;
+			padding: 0;
+			height:  100%;
+			width: 100%;
+	    background-color:black;
+	    font-family:"Avenir Next", Roboto , cursive, Arial, sans-serif;
+	    overflow: hidden;
+		}
+
+		body {
+		    height: 100%;
+		    width: 100%;
+		    position: absolute;
+		    background-color : black;
+		    background-size: cover;
+		    background-repeat: no-repeat;
+		    background-position: 50% 50%;
+		    overflow: hidden;
+		    font-family:"Avenir Next", Roboto , cursive, Arial, sans-serif;
+		}
+
+		/*  He */
+		.Page{
+		    position: relative;
+		    width: 100%;
+		    height: 100%;
+		    background-color: black;
+		    display: flex;
+		    flex-direction: column;
+		    flex-shrink: 0;
+		    overflow-y: scroll;
+		    overflow-x: hidden;
+		    border-top-left-radius: 2vh;
+		    border-top-right-radius: 2vh;
+		    border-radius: 2vh;
+		    scroll-snap-align: start;
+		    scroll-behavior: smooth;
+		}
+
+		.Header{
+		    position: fixed;
+		    width: 100%;
+		    height: 8vh;
+		    background-color: rgba(255, 255, 255, 0.125);
+		    /* box-shadow: 0vh 0.2vh 0.2vh rgb(0, 0, 0, 0.25); */
+		    z-index: 7;
+		    transition: all 1.5s ease-in-out;
+		}
+		.HStackLogoAbout{
+		    position: relative;
+		    display: flex;
+		    flex-direction: row;
+		    flex-shrink: 0;
+		    width: 100%;
+		    height: 100%;
+
+		}
+
+		.logoDiv{
+		    position: relative;
+		    width: 5vh;
+		    height: 5vh;
+		    left: 6vh;
+		    top: calc(50% - 2.5vh);
+		    display: flex;
+		    flex-direction: row;
+		    flex-shrink: 0;
+		}
+
+		.logo{
+		    position: relative;
+		    width: auto;
+		    height: 5vh;
+		    margin-right: 1vh;
+		}
+
+		.Home , .About , .Design , .Lang, .Parents{
+		    position: relative;
+		    /* color: rgb(100, 100, 100, 0.75); */
+		    color: white;
+		    border: none;
+		    font-weight: 600;
+		    font-size: 2vh;
+		    background-color: transparent;
+		    margin-left: 6.5vh;
+		    display : inline-block ;
+		    white-space: nowrap;
+		    outline: none;
+		    transition: all .3s ease-in;
+				color: black;
+				display: none;
+
+		}
+
+
+
+
+		.HomeAboutContactCreatives{
+		    position: relative;
+		    width: 3vh;
+		    height: 4.5vh;
+		    left : calc(100% - 11vh);
+		    top: calc(50% - 2.25vh);
+		    flex-shrink: 0;
+		}
+
+		.HomeAboutContactCreativesBox{
+		    position: absolute;
+		    width: auto;
+		    right: 100%;
+		    display: flex;
+		    flex-direction: row;
+
+		}
+
+		.SignIn{
+		    position: relative;
+		    /* color: rgb(80, 80, 80); */
+		    color: white;
+		    border: none;
+		    font-weight: 600;
+		    font-size: 2vh;
+		    background-color: transparent;
+		    margin-left: 6.5vh;
+		    display : inline-block ;
+		    white-space: nowrap;
+		    outline: none;
+		}
+
+		.SignIn:hover{
+		    transition: all .3s ease-in;
+		    transform: scale(1.0, 1.0);
+
+		 }
+		 .SignIn:not(:hover){
+		    transition: all .3s ease-in;
+		    transform: scale(1.0, 1.0);
+
+		 }
+		 .SignIn:active{
+		     opacity: 0.35;
+		 }
+
+
+
+		#Creatives{
+		    position: relative;
+		    background: transparent;
+		    width: 11.3vh;
+		    height: 4.5vh;
+		    color :#FFC842;
+		    border: 0.15vh solid #FFC842;;
+		    white-space: nowrap;
+		    font-weight: bold;
+		    display: inline-block;
+		    cursor: pointer;
+		    border-radius: 4vh;
+		    font-size: 1.7vh;
+		    font-family: "Avenir Next", Roboto, cursive, Arial, sans-serif;
+		    text-align: center;
+		    outline: none;
+		    white-space: nowrap;
+		    margin-left: 4vh;
+
+
+		 }
+
+		#Creatives:hover{
+		    border: rgb(231, 208, 73);
+		    border-radius: 0.4vh;
+		    transition: all .3s ease-in;
+		    transform: scale(1.0, 1.0);
+		    background: #FFC842;
+		    color :white;
+		 }
+		#Creatives:not(:hover){
+		    transition: all .3s ease-in;
+		    transform: scale(1.0, 1.0);
+
+		 }
+		#Creatives:active{
+		     background:rgb(207, 163, 51);
+
+		 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		.Content{
+		    position: relative;
+		    width: 100vw;
+		    height: 100vh;
+		    display: flex;
+		    flex-direction: column;
+		    flex-shrink: 0;
+		    flex-grow: 0;
+
+		}
+
+		.BlueDivider{
+		    position: relative;
+		    width: 100%;
+		    height: 3vh;
+		    background-color: #428FFF;
+		    box-shadow: 0vh 0.2vh 0.2vh rgb(0, 0, 0, 0.25);
+		    z-index: 2;
+		    flex-shrink: 0;
+		}
+
+		.LanderImageDiv{
+		    position: relative;
+		    width: 100vw;
+		    height: 50vh;
+		    flex-shrink: 0;
+		    overflow: hidden;
+		    top: 0vh;
+		    /* background: linear-gradient( rgb(0 , 0 , 0, 0.85), rgb(0, 0, 0, 0.85) , rgb(0, 0, 0, 1)); */
+				background-color: white;
+		}
+		.LanderImage{
+		    position: relative;
+		    width: 100vw;
+		    height: 100vh;
+		    object-fit: cover;
+		    flex-shrink: 0;
+		    opacity: 0.85;
+				opacity: 0;
+		}
+
+		.ContentOverLanderImage{
+		    position: relative;
+		    width: 100vw;
+		    height: auto;
+		    bottom: 77.5vh;
+		    z-index: 3;
+		    display: flex;
+		    flex-direction: column;
+				flex-shrink: 0;
+		}
+
+
+		.BigTextDiv{
+		    position: relative;
+		    height: 100%;
+		    width: 100%;
+		    display: grid;
+		    place-items: center;
+		    bottom: 1vh;
+		}
+
+		.ToddlitText{
+		    position: relative;
+		    font-size: 4vh;
+		    font-weight: bolder;
+		    color: #FFC842;
+		}
+
+		.Underline{
+		    position: relative;
+		    width: 60%;
+		    height: 0.8vh;
+		    border-radius: 0.8vh;
+		    background-color: #428FFF;
+		}
+
+		.DiscoverText{
+		    position: relative;
+		    font-size: 2.5vh;
+		    font-weight: bolder;
+		    color: rgba(255, 255, 255, 0.9);
+				color: black;
+		}
+
+		.BigConceptsText{
+		    position: relative;
+		    font-size: 2vh;
+		    font-weight: 700;
+		    color: rgba(255, 255, 255, 0.85);
+				color: black;
+		}
+
+
+
+		.DemoDiv{
+
+			position: relative;
+			width: 100%;
+			right: 0vh;
+			height: 35vw;
+			background-color: black;
+			display: grid;
+			place-items: center;
+			overflow: hidden;
+			display: none;
+		}
+
+		.demoHolder{
+			position: relative;
+			width: 100%;
+			height: 35vw;
+			display: grid;
+			place-items: center;
+		}
+
+		.demoImages{
+			position: relative;
+			height: 35vw;
+			width: 35vw;
+			object-fit: cover;
+		}
+
+
+
+
+
+
+
+
+
+		.DividerAndContent{
+		    position: relative;
+		    width: 100%;
+		    height: auto;
+		}
+
+		.BlackDivider{
+		    position: relative;
+		    width: 100%;
+		    height: 15vh;
+		    background-color: black;
+		    flex-shrink: 0;
+		    box-shadow: 0vh 0.2vh 0.2vh rgb(0, 0, 0, 0.25);
+		    z-index: 2;
+		}
+
+		.grayDivider{
+		    position: relative;
+		    width: 100%;
+		    height: 0.3vh;
+		    background-color: rgb(0, 0, 0, 0.5);
+		    flex-shrink: 0;
+		}
+
+
+
+
+
+		.ToddContent{
+		    position: relative;
+		    width: 100%;
+		    height: auto;
+		    background-color: #FFC842;
+		}
+
+
+		.PurposeClass{
+		    position: relative;
+		    width: 100vw;
+		    height: 50vh;
+		    display: grid;
+		    place-items: center;
+		    background-color: #FFC842;
+		}
+
+		.PurposeVStack{
+		    position: relative;
+		    width: 100%;
+		    height: auto;
+		    display: flex;
+		    flex-direction: column;
+		    flex-shrink: 0;
+		    padding-top: 3vh;
+		    padding-bottom: 3vh;
+		}
+
+
+		.PurposeTitleDiv , .PurposeContentDiv{
+		    position: relative;
+		    width: 100%;
+		    height: auto;
+		    display: grid;
+		    place-items: center;
+		}
+
+		.PurposeTitle {
+		    position: relative;
+		    width: 100vw;
+		    height: auto;
+				display: grid;
+				place-items:center;
+		}
+		.PurposeContent{
+		    position: relative;
+		    width: 90vw;
+		    height: auto;
+		    display: grid;
+		    place-items: center;
+		    margin-top: 2.5vh;
+
+		}
+
+		.PurposeTitleLabel{
+		    position: relative;
+		    text-align: center;
+		    color: black;
+		    font-weight: 700;
+		    font-size: 3vh;
+		}
+
+		.PurposeContentLabel{
+		    position: relative;
+		    text-align: center;
+		    color: black;
+		    font-weight: 700;
+		    font-size: 1.5vh;
+		}
+
+
+
+
+
+
+
+
+
+
+
+		.UIAndMissionClass{
+		    position: relative;
+		    width: 100vw;
+		    height: 100vh;
+		    background-color: white;
+		    display: grid;
+		    place-items: center;
+		}
+
+
+
+		.MissionMoadalDiv{
+		    position: absolute;
+		    width: 50%;
+		    height: 100%;
+		    display: grid;
+		    place-items: center;
+		    left: 0%;
+		    top: 5vh;
+		}
+		.MissionStatementModal{
+		    position: relative;
+		    height: 45vh;
+		    width: 35vh;
+		    background-color: rgba(255, 255, 255, 1);
+		    border-radius: 2vh;
+		    box-shadow: 0vh 0.3vh 0.3vh rgb(0, 0, 0, 0.25);
+		    display: grid;
+		    place-items: center ;
+		}
+
+		.MissionStatementCenterDiv{
+		    position: relative;
+		    height: 30vh;
+		    width: 22.5vh;
+		    display: flex;
+		    flex-direction: column;
+		}
+
+
+		.MissionStatmentText{
+		    position: relative;
+		    font-size: 3vh;
+		    font-weight: 600;
+		    margin-bottom: 0.5vh;
+		}
+		.MissionStatmentBigBold{
+		    position: relative;
+		    font-size: 3.3vh;
+		    font-weight: bolder;
+		    margin-right: 1vh;
+		    margin-bottom: 2vh;
+		}
+		.MissionStatmentTextDiv{
+		    position: relative;
+		    height: 3.3vh;
+		    width: 3.3vh;
+		    top: 0.3vh;
+
+		}
+
+		.HStack{
+		    position: relative;
+		    display: flex;
+		    flex-direction: row;
+		}
+
+		.VStack{
+		    position: relative;
+		    display: flex;
+		    flex-direction: column;
+		}
+
+		.ThroughStoryPng{
+		    position: relative;
+		    width: 5vh;
+		    height: 5vh;
+		    object-fit: contain;
+		    margin-right: 0.5vh;
+		}
+
+		.ThroughStoryTextDiv{
+		    position: relative;
+		    height: 3vh;
+		    width: 3vh;
+		    top: 1.5vh;
+		    white-space: nowrap;
+		}
+
+		.ThroughStoryText{
+		    position: relative;
+		    font-size: 3vh;
+		    font-weight: bolder;
+		    display: flex;
+		    flex-direction: column;
+		}
+
+
+
+
+		.UILabelDiv{
+		    position: absolute;
+		    width: auto;
+		    height: auto;
+		    top: 6vh;
+		    left: 10vh;
+		    display: flex;
+		    flex-direction: column;
+		    flex-shrink: 0;
+		}
+		.UILabel{
+		    position: relative;
+		    text-align: left;
+		    color: black;
+		    font-weight: 700;
+		    font-size: 5vh;
+		}
+
+
+
+		.UIContentLabelDiv{
+		    position: relative;
+		    height: auto;
+		    width: calc(100%);
+		    margin-top: 3vh;
+		}
+
+		.UIAlignContentLabelDiv{
+		    position: relative;
+		    width: 70%;
+		    height: auto;
+		}
+
+		.UIContentLabel{
+		    position: relative;
+		    color: rgba(0, 0, 0, 0.5);
+		    font-weight: 600;
+		    font-size: 3vh;
+		}
+
+
+
+		.iconHStack{
+		    position: relative;
+		    width: 70%;
+		    height: auto;
+		    display: flex;
+		    flex-direction: row;
+		    flex-shrink: 0;
+		    margin-top: 4vh;
+		    right: 3vh;
+		}
+
+		.Icons{
+		    position: relative;
+		    width: 6vh;
+		    height: 6vh;
+		    margin-left: 3vh;
+
+		}
+
+		.UIIcon{
+		    position: relative;
+		    width: 6vh;
+		    height: 6vh;
+		    object-fit: contain;
+
+		}
+
+
+		.ShapesUIDiv{
+		    position: relative;
+		    width: 70%;
+		    height: 20vh;
+		    display: grid;
+		    place-items: center;
+		    margin-top: 10vh;
+		}
+		.shapesUI{
+		    position: relative;
+		    height: 15vh;
+		    width: auto;
+		    object-fit: contain;
+		}
+
+
+
+
+
+
+		.UIMobileDiv{
+		    position: absolute;
+		    width: 50%;
+		    height: 100%;
+		    display: grid;
+		    place-items: center;
+		    right: 0%;
+		    top: 0%;
+				display: none;
+		}
+
+
+
+		.UIMobilHStack{
+		    position: relative;
+		    width: auto;
+		    height: auto;
+		    display: flex;
+		    flex-direction: row;
+		    flex-shrink: 0;
+		}
+
+		.UIHomeDiv{
+		    position: relative;
+		    height: auto;
+		    width: auto;
+		    object-fit: contain;
+
+		}
+
+		.UIContentDiv{
+		    position: relative;
+		    width: auto;
+		    height: auto;
+		    object-fit: contain;
+		    z-index: 1;
+		    right: calc(16.25vh);
+		    top: calc(32.5vh);
+		}
+
+
+		.UIHome{
+		    position: relative;
+		    height: 65vh;
+		    width: 32.5vh;
+		    object-fit: contain;
+		}
+
+
+		.UIContent{
+		    position: relative;
+		    width: 65vh;
+		    height: 32.5vh;
+		    object-fit: contain;
+		}
+
+
+
+
+
+		.TranslateClass{
+		    position: relative;
+		    width: 100vw;
+		    height: 100vh;
+		    display: grid;
+		    place-items: center;
+		    /* background-color: blue; */
+				display: none;
+		}
+
+		.UIQotationsAndTitle{
+		    position: relative;
+		    width: 100%;
+		    height: auto;
+		    display: grid;
+		    place-items: center;
+		    bottom: 9vh;
+		    /* margin-top: 4vh; */
+		}
+
+
+		.UIQotationsAndTitleHStack{
+		    position: relative;
+		    width: auto;
+		    height: auto;
+		    display: flex;
+		    flex-direction: row;
+		    flex-shrink: 0;
+		}
+
+		.QuotationUI{
+		    position: relative;
+		    width: 8vh;
+		    height: 8vh;
+		    object-fit: contain;
+		}
+
+		.TitleLabel{
+		    position: relative;
+		    text-align: center;
+		    color: black;
+		    font-weight: 700;
+		    font-size: 6vh;
+		    top: 4vh;
+		}
+
+
+
+
+
+
+		.TranslateExplainationDiv{
+		    position: relative;
+		    width: 100%;
+		    height: auto;
+		    display: grid;
+		    place-items: center;
+		    margin-top: 6vh;
+		}
+
+		.TranslateExplainationPlacment{
+		    position: relative;
+		    width: 80%;
+		    height: auto;
+		    display: flex;
+		    flex-direction: column;
+		    flex-shrink: 0;
+		}
+
+
+		.TranslateExplaination{
+		    position: relative;
+		    width: 100%;
+		    text-align: center;
+		    color: black;
+		    font-weight: 600;
+		    font-size: 3vh;
+		    top: 4vh;
+		    text-align: center;
+		}
+
+
+
+
+
+
+
+
+
+
+		.TranslateExplainationLangDiv{
+		    position: relative;
+		    width: 100%;
+		    height: 5vh;
+		    display: grid;
+		    place-items: center;
+		    margin-top: 8vh;
+		}
+
+
+
+
+		.TranslateLangPlacment{
+		    position: relative;
+		    width: 80%;
+		    height: 5vh;
+		    display: grid;
+		    place-items: center;
+		}
+
+		.TranslateHStack{
+		    position: relative;
+		    width: auto;
+		    height: auto;
+		    display: flex;
+		    flex-direction: row;
+		    flex-shrink: 0;
+		    margin-top: 4vh;
+		}
+
+		.TranlsatedLangHStack{
+		    position: relative;
+		    height: 5vh;
+		    width: auto;
+		    display: flex;
+		    flex-direction: row;
+		    flex-shrink: 0;
+		    margin-left: 5vh;
+		}
+
+
+
+		.centerObjectsDiv{
+		    position: relative;
+		    height: 5vh;
+		    width: auto;
+		    display: grid;
+		    place-items: center;
+
+		}
+
+		.EnglishColor{
+		    position: relative;
+		    height: 1.3vh;
+		    width: 3vw;
+		    background-color: #428FFF;
+		    border-radius: 1.3vh;
+		    top: 2.15vh;
+		}
+
+		.SpanishColor{
+		    position: relative;
+		    height: 1.3vh;
+		    width: 3vw;
+		    background-color: #42ff5b;
+		    border-radius: 1.3vh;
+		    top: 2.15vh;
+		}
+
+		.FrenchColor{
+		    position: relative;
+		    height: 1.3vh;
+		    width: 3vw;
+		    background-color: #ff4242;
+		    border-radius: 1.3vh;
+		    top: 2.15vh;
+		}
+
+		.GermanColor{
+		    position: relative;
+		    height: 1.3vh;
+		    width: 3vw;
+		    background-color: #FFC842;
+		    border-radius: 1.3vh;
+		    top: 2.15vh;
+		}
+
+		.TranslateLanguages{
+		    position: relative;
+		    color: black;
+		    font-weight: 600;
+		    font-size: 4vh;
+		    margin-left: 1.5vh;
+		}
+
+
+
+
+
+		.TranslateExplainationDivFunfact{
+		    position: relative;
+		    width: 100%;
+		    height: auto;
+		    display: grid;
+		    place-items: center;
+		    top: 8vh;
+		    opacity: 0.75;
+		}
+
+		.TranslateExplainationPlacmentFunFact{
+		    position: relative;
+		    width: 80%;
+		    height: auto;
+		    display: flex;
+		    flex-direction: column;
+		    flex-shrink: 0;
+		}
+
+		.TranslateFunFact{
+		    position: relative;
+		    width: 100%;
+		    text-align: center;
+		    color: black;
+		    font-weight: 600;
+		    font-size: 3vh;
+		    top: 4vh;
+		    text-align: center;
+		}
+
+
+
+		.SooooDiv{
+		    position: relative;
+		    width: auto;
+		    height: auto;
+		    font-size: 4vh;
+		    font-weight: 700;
+		    margin-top: 6vh;
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		.PControlsDiv{
+		    position: relative;
+		    width: 100vw;
+		    height: 100vh;
+		    /* background-color: bal; */
+		    display: grid;
+		    place-items: center;
+
+		    /* background-color: #e23939; */
+		    /* border-bottom-left-radius: 5vh;
+		    border-bottom-right-radius: 5vh; */
+		    /* border-radius: 5vh; */
+		    box-shadow: 0vh 0.3vh 0.5vh #701c1c94 ;
+		    z-index: 1;
+
+				/* border-top-left-radius: 5vh;
+		    border-top-right-radius: 5vh; */
+		    background-color: black;
+		}
+
+		.PCContorlsCenter{
+		    position: relative;
+		    width: 100%;
+		    height: 100%;
+		    display: grid;
+		    place-items: center;
+		    /* bottom: 18vh; */
+		}
+
+		.UIPCDiv{
+		    position: relative;
+		    width: auto;
+		    height: auto;
+		    display: flex;
+		    flex-direction: row;
+		    flex-shrink: 0;
+		}
+
+
+
+		.PCContentCenter{
+		    position: relative;
+		    width: 70%;
+		    height: auto;
+		    display: grid;
+		    place-items: center;
+		}
+
+
+		.PCContentDiv{
+		    position: relative;
+		    width: calc(90%);
+		    height: auto;
+		    display: flex;
+		    flex-direction: column;
+		    flex-shrink: 0;
+		    margin-bottom: 3vh;
+		}
+
+		.UIPCTitle{
+		    position: relative;
+		    text-align: center;
+		    color: white;
+		    font-weight: 700;
+		    font-size: 3vh;
+		    margin-bottom: 3vh;
+		}
+
+		.UIPCText{
+		    position: relative;
+		    text-align: center;
+		    color: white;
+		    font-weight: 700;
+		    font-size: 3vh;
+		}
+
+		.UIPCText2{
+		    position: relative;
+		    text-align: center;
+		    color: white;
+		    font-weight: 700;
+		    font-size: 2.5vh;
+		}
+
+
+
+		.UISettingsUI{
+		    position: relative;
+		    width: 30%;
+		    height: 100%;
+		    display: grid;
+		    place-items: center;
+		}
+
+		.SettingsDiv{
+		    position: relative;
+		    width: 24vw;
+		    height: auto;
+		    border-radius: 3vh;
+				display: none;
+		}
+
+		.SettinsUI{
+		    position: relative;
+		    width: 24vw;
+		    height: auto;
+		    object-fit: contain;
+		    border-radius: 3vh;
+		}
+
+
+
+
+		.BottomContent{
+		    position: absolute;
+		    height: 32.5vh;
+		    width: calc(100% - 12vh);
+		    left: 6vh;
+		    bottom: 10vh;
+		    display: flex;
+		    flex-direction: row;
+		    flex-shrink: 0;
+				display: none;
+		}
+
+		.TopContent{
+		    position: absolute;
+		    height: 32.5vh;
+		    width: calc(100% - 12vh);
+		    left: 6vh;
+		    top: 2.5vh;
+		    display: flex;
+		    flex-direction: row;
+		    flex-shrink: 0;
+		}
+
+
+		.TopPC .BottomPC{
+		    position: relative;
+		    width: 88vw;
+		    height: 16.25vh;
+		    display: flex;
+		    flex-direction: row;
+		    flex-shrink: 0;
+		}
+
+		.PCHStack{
+		    position: relative;
+		    width: 44vw;
+		    height: 16.25vh;
+		    display: grid;
+		    place-items: center;
+		}
+
+		#PCHStack2 , #PCHStack4{
+		    /* left: 5vh; */
+		}
+		#PCHStack1 , #PCHStack3{
+		    margin-right: 6vh;
+		}
+
+		.PCControlHStack{
+		    position: relative;
+		    width: 100%;
+		    height: auto;
+		    display: flex;
+		    flex-direction: row;
+		    flex-shrink: 0;
+		}
+
+
+		.PCUIsDiv{
+		    position: relative;
+		    height: 7vh;
+		    height: 100%;
+		    display: grid;
+		    place-items: center;
+		}
+		.PCUIs{
+		    position: relative;
+		    height: 7vh;
+		    height: 7vh;
+		    border-radius: 10vh;
+		    object-fit: cover;
+		}
+
+		.PCUILabelsDiv{
+		    position: relative;
+		    width: auto;
+		    height: 7vh;
+		    display: grid;
+		    place-items: center;
+		    margin-left: 3vh;
+		}
+
+		.PCUILabels{
+		    position: relative;
+		    font-size: 2.5vh;
+		    font-weight: 600;
+		    color: rgba(255, 255, 255, 0.75);
+		    text-align: left;
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+		.SusbscriptionDiv{
+		    position: relative;
+		    width: 100vw;
+		    height: 100vh;
+		    background-color: bal;
+		    display: grid;
+		    place-items: center;
+		    background-color: white;
+		}
+
+		.SubscriptionContent{
+		    position: relative;
+		    width: 100%;
+		    height: 100%;
+		    display: grid;
+		    place-items: center;
+		}
+
+
+		.SubContent{
+		    position: relative;
+		    width: auto;
+		    height: auto;
+		    display: grid;
+		    place-items: center;
+		    margin-bottom: 10vh;
+		}
+
+		.SubHstack{
+		    position: relative;
+		    width: calc(100% - 12vh);
+		    height: 40vh;
+		    display: flex;
+		    flex-direction: row;
+		    flex-shrink: 0;
+		}
+
+		.SubText{
+		    position: relative;
+		    height: 100%;
+		    width: 65%;
+		    height: 100%;
+		    display: grid;
+		    place-items: center;
+		    margin-right: 20vw;
+		}
+
+		.SubVStack{
+		    position: relative;
+		    height: auto;
+		    width: 100%;
+		    display: flex;
+		    flex-direction: column;
+		    flex-shrink: 0;
+		}
+
+		.SignULabelDiv , .SubBottomLabelDiv{
+		    position: relative;
+		    width: 100%;
+		    height: auto;
+		}
+
+		.SubBottomLabelDiv{
+		    margin-top: 3vh;
+		}
+
+		.SignUpLabel{
+		    position: relative;
+		    font-size: 5vh;
+		    color: black;
+		    font-weight: 700;
+		}
+
+		.SubBottomLabel{
+		    position: relative;
+		    font-size: 3.8vh;
+		    color: black;
+		    font-weight: 700;
+		    /* color: #FFC842; */
+		}
+
+
+
+		.SignUpButtonDiv{
+		    position: relative;
+		    height: 100%;
+		    width: 35%;
+		    height: 100%;
+		    display: grid;
+		    place-items: center;
+		}
+
+		.SignUpButton{
+		    position: relative;
+		    height: 30vh;
+		    width: 40vh;
+		    background-color: #428FFF;
+		    border-radius: 0.5vh;
+		    box-shadow: 0 0.5vh 1vh #2d548fc4;
+		    display: grid;
+		    place-items: center;
+		    transition: all 0.3s ease-in-out;
+		}
+
+		.SignUpButton:active{
+		    box-shadow: 0 0.5vh 0.3vh #2d548fc4;
+		}
+
+		.SignUpButonLabel{
+		    position: relative;
+		    font-size: 3.4vh;
+		    color: white;
+		    font-weight: 600;
+		}
+
+
+
+
+
+
+		.Save{
+		    position: absolute;
+		    height: auto;
+		    width: calc(100% - 12vh);
+		    left: 6vh;
+		    bottom: 20vh;
+		    display: grid;
+		    place-items: center;
+		}
+
+		.SaveInline{
+		    position: relative;
+		    width: auto;
+		    height: auto;
+		    display: inline-block;
+		}
+		.SaveLabel{
+		    position: relative;
+		    text-align: center;
+		    font-size: 4vh;
+		    color: black;
+		    font-weight: 700;
+		}
+		.Percent{
+		    position: relative;
+		    text-align: center;
+		    font-size: 4.3vh;
+		    color: black;
+		    font-weight: 800;
+		    margin-left: 1vh;
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		.SubHStack{
+		    position: relative;
+		    width: 80%;
+		    height: 80%;
+		    display: flex;
+		    flex-direction: row;
+		    flex-shrink: 0;
+		}
+
+
+		.OptionsDiv{
+		    position: relative;
+		    width: calc(33% - 3vh);
+		    height: 100%;
+		    display: flex;
+		    flex-direction: column;
+		    flex-shrink: 0;
+		    /* background-color: red; */
+		}
+
+
+		.NoSubDiv{
+		    position: relative;
+		    width: calc(15% - 3vh);
+		    height: 100%;
+		    /* margin-left: 3vh; */
+		    display: flex;
+		    flex-direction: column;
+		    flex-shrink: 0;
+		    /* background-color: blue; */
+		}
+
+
+		.SubDiv{
+		    position: relative;
+		    width: calc(15% - 3vh);
+		    height: 100%;
+		    /* margin-left: 3vh; */
+		    display: flex;
+		    flex-direction: column;
+		    flex-shrink: 0;
+		    /* background-color: yellow; */
+		}
+
+
+		.OptionTitleDiv{
+		    position: relative;
+		    width: 100%;
+		    height: 12vh;
+		    background-color: white;
+		}
+
+
+
+		.GrayStack{
+		    position: relative;
+		    background-color: rgb(233, 233, 233);
+		    width: 100%;
+		    height: 10vh;
+		    /* border-radius: 0.9vh; */
+		}
+
+
+
+		.WhiteStack{
+		    position: relative;
+		    background-color: white;
+		    width: 100%;
+		    height: 10vh;
+		}
+
+		.BlackUnderline{
+		    position: relative;
+		    background-color: rgba(0, 0, 0, 0.5);
+		    width: calc(100%);
+		    height: 0.2vh;
+		    margin-bottom: 2vh;
+		}
+
+
+		.CenterCheck{
+		    position: relative;
+		    width: 100%;
+		    height: 100%;
+		    display: grid;
+		    place-items: center;
+		}
+
+		.CheckUI{
+		    position: relative;
+		    width: 5vh;
+		    height: 5vh;
+		    object-fit: contain;
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+		.Footer{
+		    position: relative;
+		    background-color: black;
+		    height: 15vh;
+		    width: 100%;
+		}
+
+
+}

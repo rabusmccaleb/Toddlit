@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+
+<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" type="text/css" href="tagSignInStyleRefference.css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="icon" href="../Toddlit-Logo.png">
+	<title>Toddlit Sign In</title>
+</head>
+<body>
+        <div class="Background">
+          <div class="SignUpTab">
+            <div class="SignUpForm">
+                <div class = "LogoEmialPassword">
+                    <img class="logo" src="ToddWebSignInLogo.png"  alt= "Toddlit Logo" width="40%"; height="40%" draggable="false">
+
+                    <div class="SignInLabelDiv">
+                      <label class="SignInLabel">Sign In</label>
+                    </div>
+                    <div class="EmialPassword">
+                        <div class="EmailDiv">
+                          <input type="email" id="Email" placeholder="Email"/>
+                          <label class="ForgotEmial">Forgot Emial?</label>
+                        </div>
+
+                        <div class = "PasswordDiv" >
+                          <input type = "password" id="Password" placeholder=" Password"/>
+                          <a class="ForgotPassword" href="">Forgot Password?</a>
+                        </div>
+
+                        <div class="ErrorLabelDiv">
+                          <label class="ErrorLabel" style="display: none;"> Error</label>
+                        </div>
+
+                    </div>
+                    <button id = "SubmitButton" style="color:white;">Sign In</button>
+
+                    <div class="LodingSymbolDiv">
+                    <div class="LoadingSymbol" style="display: none;"><div></div><div></div><div></div><div></div></div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+
+
+ <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+ <link type="text/css" rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
+  <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
+	<script src="tagSignInFunctionality.js"></script>
+</body>
+</html>

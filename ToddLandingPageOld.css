@@ -1,0 +1,747 @@
+html, body{
+	margin: 0;
+	padding: 0;
+	height:  100%;
+	width: 100%;
+    background-color:white;
+    font-family:"Avenir Next", Roboto , cursive, Arial, sans-serif;
+    overflow: hidden;
+
+}
+
+body {
+    height: 100%; 
+    width: 100%; 
+    position: absolute;
+    background-color : white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    overflow: hidden;
+    font-family:"Avenir Next", Roboto , cursive, Arial, sans-serif;
+
+}
+/*  He */
+.Page{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.Header{
+    position: relative;
+    width: 100%;
+    height: 10vh;
+    background-color: white;
+    box-shadow: 0vh 0.2vh 0.2vh rgb(0, 0, 0, 0.25);
+    z-index: 3;
+}
+.HStackLogoAbout{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.logoDiv{
+    position: relative;
+    width: 5vh;
+    height: 5vh;
+    left: 6vh;
+    top: calc(50% - 2.5vh);
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+}
+
+.logo{
+    position: relative;
+    width: auto;
+    height: 5vh;
+    margin-right: 1vh;
+}
+
+.Home , .About , .Miassion , .Subscriptions{
+    position: relative;
+    color: rgb(100, 100, 100, 0.75);
+    border: none;
+    font-weight: 600;
+    font-size: 2vh;
+    background-color: transparent;
+    margin-left: 6.5vh;
+    display : inline-block ;
+    white-space: nowrap; 
+    outline: none;
+}
+
+
+
+
+.HomeAboutContactCreatives{
+    position: relative;
+    width: 3vh;
+    height: 4.5vh;
+    left : calc(100% - 11vh);
+    top: calc(50% - 2.25vh);
+    flex-shrink: 0;
+}
+
+.HomeAboutContactCreativesBox{
+    position: absolute;
+    width: auto;
+    right: 100%;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.SignIn{
+    position: relative;
+    color: rgb(80, 80, 80);
+    border: none;
+    font-weight: 600;
+    font-size: 2vh;
+    background-color: transparent;
+    margin-left: 6.5vh;
+    display : inline-block ;
+    white-space: nowrap;
+    outline: none;
+}
+
+.SignIn:hover{
+    transition: all .3s ease-in;
+    transform: scale(1.0, 1.0);
+
+ }
+ .SignIn:not(:hover){
+    transition: all .3s ease-in;
+    transform: scale(1.0, 1.0);
+
+ }
+ .SignIn:active{
+     opacity: 0.35;
+ }
+
+
+
+#Creatives{
+    position: relative;
+    background: transparent;
+    width: 11.3vh;
+    height: 4.5vh;
+    color :#FFC842;
+    border: 0.15vh solid #FFC842;;
+    white-space: nowrap;
+    font-weight: bold;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 4vh;
+    font-size: 1.7vh;
+    font-family: "Avenir Next", Roboto, cursive, Arial, sans-serif;
+    text-align: center;
+    outline: none;
+    white-space: nowrap;
+    margin-left: 4vh;
+     
+ 
+ }
+
+#Creatives:hover{
+    border: rgb(231, 208, 73);
+    border-radius: 0.4vh;
+    transition: all .3s ease-in;
+    transform: scale(1.0, 1.0);
+    background: #FFC842; 
+    color :white;
+ }
+#Creatives:not(:hover){
+    transition: all .3s ease-in;
+    transform: scale(1.0, 1.0);
+
+ }
+#Creatives:active{
+     background:rgb(207, 163, 51);
+     
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Content{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    flex-grow: 0;
+    
+}
+
+.BlueDivider{
+    position: relative;
+    width: 100%;
+    height: 3vh;
+    background-color: #428FFF;
+    box-shadow: 0vh 0.2vh 0.2vh rgb(0, 0, 0, 0.25);
+    z-index: 2;
+    flex-shrink: 0;
+}
+
+.LanderImageDiv{
+    position: relative;
+    width: 100vw;
+    height: 95vh;
+    flex-shrink: 0;
+    overflow: hidden;
+    top: 0vh;
+    background-color: black;
+}
+.LanderImage{
+    position: relative;
+    width: 100vw;
+    height: 95vh;
+    object-fit: cover;
+    flex-shrink: 0;
+    opacity: 0.75;
+}
+
+.ContentOverLanderImage{
+    position: relative;
+    width: 100vw;
+    height: 60vh;
+    bottom: 77.5vh;
+    z-index: 3;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.BigTextDiv{
+    position: relative;
+    height: 100%;
+    width: 60%;
+    display: grid;
+    place-items: center;
+    bottom: 1vh;
+}
+
+.ToddlitText{
+    position: relative;
+    font-size: 7vh;
+    font-weight: bolder;
+    color: #FFC842;
+}
+
+.Underline{
+    position: relative;
+    width: 100%;
+    height: 0.8vh;
+    border-radius: 0.8vh;
+    background-color: #FFC842; 
+}
+
+.DiscoverText{
+    position: relative;
+    font-size: 5vh;
+    font-weight: bolder;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.BigConceptsText{
+    position: relative;
+    font-size: 3.3vh;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.80);
+}
+
+
+
+.MissionMoadalDiv{
+    position: absolute;
+    width: 40%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    left: 60%;
+    top: 30%;
+}
+.MissionStatementModal{
+    position: relative;
+    height: 45vh;
+    width: 35vh;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 2vh;
+    box-shadow: 0vh 0.3vh 0.3vh rgb(0, 0, 0, 0.25);
+    display: grid;
+    place-items: center ;
+}
+
+.MissionStatementCenterDiv{
+    position: relative;
+    height: 30vh;
+    width: 22.5vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.MissionStatmentText{
+    position: relative;
+    font-size: 3vh;
+    font-weight: 600;
+    margin-bottom: 0.5vh;
+}
+.MissionStatmentBigBold{
+    position: relative;
+    font-size: 3.3vh;
+    font-weight: bolder;
+    margin-right: 1vh;
+    margin-bottom: 2vh;
+}
+.MissionStatmentTextDiv{
+    position: relative;
+    height: 3.3vh;
+    width: 3.3vh;
+    top: 0.3vh;
+
+}
+
+.HStack{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.VStack{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.ThroughStoryPng{
+    position: relative;
+    width: 5vh;
+    height: 5vh;
+    object-fit: contain;
+    margin-right: 0.5vh;
+}
+
+.ThroughStoryTextDiv{
+    position: relative;
+    height: 3vh;
+    width: 3vh;
+    top: 1.5vh;
+    white-space: nowrap;
+}
+
+.ThroughStoryText{
+    position: relative;
+    font-size: 3vh;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
+.DividerAndContent{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.BlackDivider{
+    position: relative;
+    width: 100%;
+    height: 15vh;
+    background-color: black;
+    flex-shrink: 0;
+    box-shadow: 0vh 0.2vh 0.2vh rgb(0, 0, 0, 0.25);
+    z-index: 2;
+}
+
+.grayDivider{
+    position: relative;
+    width: 100%;
+    height: 0.3vh;
+    background-color: rgb(0, 0, 0, 0.5);
+    flex-shrink: 0;
+}
+
+.ToddContent{
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: white;
+}
+
+
+
+/* Purpose UI's *//* Purpose UI's *//* Purpose UI's *//* Purpose UI's *//* Purpose UI's */
+/* Purpose UI's *//* Purpose UI's *//* Purpose UI's *//* Purpose UI's *//* Purpose UI's */ 
+/* Purpose UI's *//* Purpose UI's *//* Purpose UI's *//* Purpose UI's *//* Purpose UI's */
+/* Purpose UI's *//* Purpose UI's *//* Purpose UI's *//* Purpose UI's *//* Purpose UI's */
+/* Purpose UI's *//* Purpose UI's *//* Purpose UI's *//* Purpose UI's *//* Purpose UI's */
+/* Purpose UI's *//* Purpose UI's *//* Purpose UI's *//* Purpose UI's *//* Purpose UI's */
+/* Purpose UI's *//* Purpose UI's *//* Purpose UI's *//* Purpose UI's *//* Purpose UI's */
+/* Purpose UI's *//* Purpose UI's *//* Purpose UI's *//* Purpose UI's *//* Purpose UI's */
+/* Purpose UI's *//* Purpose UI's *//* Purpose UI's *//* Purpose UI's *//* Purpose UI's */
+
+.CorePurposeDiv{
+    position: relative;
+    height: auto;
+    width: 94vw;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    margin-top: 18vh;
+    margin-bottom: 12vh;
+    left: 3vh;
+}
+
+.CoreTitleStack{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: grid;
+    place-items: center;
+}
+
+.CorePurposeLabelTitle{
+    position: relative;
+    color: rgba(0, 0, 0, 1);
+    font-weight: 700;
+    font-size: 5vh;
+    margin-bottom: 0.7vh ;
+}
+
+
+.CoreDefStack{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: grid;
+    place-items: center;
+    margin-top: 3vh;
+}
+
+.CorePurposeDefinition{
+    position: relative;
+    color: rgba(0, 0, 0, 0.75);
+    font-weight: 600;
+    font-size: 3vh;
+    margin-bottom: 0.7vh ;
+    text-align: center;
+}
+
+
+/* UI Phone Content *//* UI Phone Content *//* UI Phone Content *//* UI Phone Content */
+/* UI Phone Content *//* UI Phone Content *//* UI Phone Content *//* UI Phone Content */
+/* UI Phone Content *//* UI Phone Content *//* UI Phone Content *//* UI Phone Content */
+/* UI Phone Content *//* UI Phone Content *//* UI Phone Content *//* UI Phone Content */
+/* UI Phone Content *//* UI Phone Content *//* UI Phone Content *//* UI Phone Content */
+/* UI Phone Content *//* UI Phone Content *//* UI Phone Content *//* UI Phone Content */
+/* UI Phone Content *//* UI Phone Content *//* UI Phone Content *//* UI Phone Content */
+/* UI Phone Content *//* UI Phone Content *//* UI Phone Content *//* UI Phone Content */
+/* UI Phone Content *//* UI Phone Content *//* UI Phone Content *//* UI Phone Content */
+/* UI Phone Content *//* UI Phone Content *//* UI Phone Content *//* UI Phone Content */
+/* UI Phone Content *//* UI Phone Content *//* UI Phone Content *//* UI Phone Content */
+/* UI Phone Content *//* UI Phone Content *//* UI Phone Content *//* UI Phone Content */
+/* UI Phone Content *//* UI Phone Content *//* UI Phone Content *//* UI Phone Content */
+/* UI Phone Content *//* UI Phone Content *//* UI Phone Content *//* UI Phone Content */
+/* UI Phone Content *//* UI Phone Content *//* UI Phone Content *//* UI Phone Content */
+/* UI Phone Content *//* UI Phone Content *//* UI Phone Content *//* UI Phone Content */
+/* UI Phone Content *//* UI Phone Content *//* UI Phone Content *//* UI Phone Content */
+/* UI Phone Content *//* UI Phone Content *//* UI Phone Content *//* UI Phone Content */
+/* UI Phone Content *//* UI Phone Content *//* UI Phone Content *//* UI Phone Content */
+/* UI Phone Content *//* UI Phone Content *//* UI Phone Content *//* UI Phone Content */
+.UIContent{
+    position: relative;
+    width: 94vw;
+    height: auto;
+    left: 6vw;
+    margin-top: 5vh ;
+    margin-bottom: 5vh ;
+
+    /* background-color: rebeccapurple; */
+}
+
+.UIContentHStack{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+.UIComment{
+    position: relative;
+    width: 30%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.CommentMoadal{
+    position: relative;
+    width: 100%;
+    height: 90%;
+    background-color: white;
+    /* border-radius: 1vh;
+    box-shadow: 0 0 0.4vh rgba(0, 0, 0, 0.5); */
+    display: grid;
+    place-items: center;
+}
+
+.UIAdjectivesDiv{
+    position: relative;
+    margin-top: 2vh;
+    width: auto;
+    height: auto;
+    margin-left: 1.5vh ;
+}
+
+.UIContentimgDiv{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.CommentLogo{
+    position: relative;
+    width: auto;
+    height: 7vh;
+    object-fit: contain;
+}
+
+.SenctenceAdjectives{
+    position: relative;
+    color: rgba(0, 0, 0, 0.75);
+    font-weight: 600;
+    font-size: 2.7vh;
+    margin-bottom: 2vh ;
+    margin-top: 2vh;
+}
+
+.ColorLabel{
+    color: #ff4242;
+    font-size: 2.7vh;
+    font-weight: 700;
+
+}
+
+.ConceptsLabel{
+    color: #428FFF;
+    font-size: 2.7vh;
+    font-weight: 700;
+}
+
+.GCSLabel{
+    color: #FFC842;
+    font-size: 2.7vh;
+    font-weight: 700;
+}
+
+.UIAdjectives{
+    position: relative;
+    color: rgba(0, 0, 0, 0.80);
+    font-weight: 700;
+    font-size: 4vh;
+    margin-bottom: 0.7vh ;
+}
+
+
+
+
+
+
+.UIPhonesDiv{
+    position: relative;
+    width: 70%;
+    height: 90%;
+    display: grid;
+    place-items: center;
+}
+.HomeViewUI{
+    position: relative;
+    width: auto;
+    height: auto;
+}
+.HomeUIImage{
+    position: relative;
+    width: auto;
+    height: 70vh;
+    object-fit: contain;
+    /* left: calc(9.75vh); */
+    
+}
+
+.ContentViewUI{
+    position: relative;
+    width: auto;
+    height: auto;
+    z-index: 1;
+    right: calc(10.5vh);
+    /* top: 35vh; */
+    
+}
+
+.ContentUIImage{
+    position: relative;
+    width: 70vh;
+    height: auto;
+    object-fit: contain;
+    top: 35vh;
+    /* left: calc(9.75vh); */
+}
+
+/* Parental Controls *//* Parental Controls *//* Parental Controls *//* Parental Controls *//* Parental Controls *//* Parental Controls */
+/* Parental Controls *//* Parental Controls *//* Parental Controls *//* Parental Controls *//* Parental Controls *//* Parental Controls */
+/* Parental Controls *//* Parental Controls *//* Parental Controls *//* Parental Controls *//* Parental Controls *//* Parental Controls */
+/* Parental Controls *//* Parental Controls *//* Parental Controls *//* Parental Controls *//* Parental Controls *//* Parental Controls */
+/* Parental Controls *//* Parental Controls *//* Parental Controls *//* Parental Controls *//* Parental Controls *//* Parental Controls */
+/* Parental Controls *//* Parental Controls *//* Parental Controls *//* Parental Controls *//* Parental Controls *//* Parental Controls */
+/* Parental Controls *//* Parental Controls *//* Parental Controls *//* Parental Controls *//* Parental Controls *//* Parental Controls */
+/* Parental Controls *//* Parental Controls *//* Parental Controls *//* Parental Controls *//* Parental Controls *//* Parental Controls */
+/* Parental Controls *//* Parental Controls *//* Parental Controls *//* Parental Controls *//* Parental Controls *//* Parental Controls */
+/* Parental Controls *//* Parental Controls *//* Parental Controls *//* Parental Controls *//* Parental Controls *//* Parental Controls */
+/* Parental Controls *//* Parental Controls *//* Parental Controls *//* Parental Controls *//* Parental Controls *//* Parental Controls */
+/* Parental Controls *//* Parental Controls *//* Parental Controls *//* Parental Controls *//* Parental Controls *//* Parental Controls */
+/* Parental Controls *//* Parental Controls *//* Parental Controls *//* Parental Controls *//* Parental Controls *//* Parental Controls */
+
+.ParentalControlsDiv{
+    position: relative;
+    height: auto;
+    width: 94vw;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+    left: 3vh;
+}
+
+.ParentTitleStack{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: grid;
+    place-items: center;
+}
+
+.ParentLabelTitle{
+    position: relative;
+    color: rgba(0, 0, 0, 1);
+    font-weight: 700;
+    font-size: 5vh;
+    margin-bottom: 0.7vh ;
+}
+
+.PControlsHStack{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+}
+
+.PControlStack{
+    position: relative;
+    width: 60%;
+    height: auto;
+    display: grid;
+    place-items: center;
+    margin-top: 3vh;
+}
+
+.ParentCDefinition{
+    position: relative;
+    color: rgba(0, 0, 0, 0.75);
+    font-weight: 600;
+    font-size: 3vh;
+    margin-bottom: 0.7vh ;
+    text-align: start;
+    text-align: left;    
+}
+
+.ParentalControlsUI{
+    position: relative;
+    width: 40%;
+    height: auto;
+    object-fit: contain;
+}
+
+
+/* Footer *//* Footer *//* Footer *//* Footer *//* Footer *//* Footer *//* Footer *//* Footer *//* Footer *//* Footer *//* Footer *//* Footer */
+/* Footer *//* Footer *//* Footer *//* Footer *//* Footer *//* Footer *//* Footer *//* Footer *//* Footer *//* Footer *//* Footer *//* Footer */
+/* Footer *//* Footer *//* Footer *//* Footer *//* Footer *//* Footer *//* Footer *//* Footer *//* Footer *//* Footer *//* Footer *//* Footer */
+/* Footer *//* Footer *//* Footer *//* Footer *//* Footer *//* Footer *//* Footer *//* Footer *//* Footer *//* Footer *//* Footer *//* Footer */
+/* Footer *//* Footer *//* Footer *//* Footer *//* Footer *//* Footer *//* Footer *//* Footer *//* Footer *//* Footer *//* Footer *//* Footer */
+/* Footer *//* Footer *//* Footer *//* Footer *//* Footer *//* Footer *//* Footer *//* Footer *//* Footer *//* Footer *//* Footer *//* Footer */
+/* Footer *//* Footer *//* Footer *//* Footer *//* Footer *//* Footer *//* Footer *//* Footer *//* Footer *//* Footer *//* Footer *//* Footer */
+/* Footer *//* Footer *//* Footer *//* Footer *//* Footer *//* Footer *//* Footer *//* Footer *//* Footer *//* Footer *//* Footer *//* Footer */
+/* Footer *//* Footer *//* Footer *//* Footer *//* Footer *//* Footer *//* Footer *//* Footer *//* Footer *//* Footer *//* Footer *//* Footer */
+/* Footer *//* Footer *//* Footer *//* Footer *//* Footer *//* Footer *//* Footer *//* Footer *//* Footer *//* Footer *//* Footer *//* Footer */
+/* Footer *//* Footer *//* Footer *//* Footer *//* Footer *//* Footer *//* Footer *//* Footer *//* Footer *//* Footer *//* Footer *//* Footer */
+/* Footer *//* Footer *//* Footer *//* Footer *//* Footer *//* Footer *//* Footer *//* Footer *//* Footer *//* Footer *//* Footer *//* Footer */
+
+.Footer{
+    position: relative;
+    background-color: black;
+    height: 15vh;
+    width: 100%;
+}
+
+
+
+@media all and (max-width : 768px){
+    /* For Iphone and Mobile devices : */
+    .Page{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background-color: red;
+    }
+}
+
+
+@media all and (max-width : 375px){
+        /* For Ipad and Tabelt : */
+    .Page{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background-color: blue;
+    }
+
+
+}

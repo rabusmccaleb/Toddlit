@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+    <link rel="stylesheet" type="text/css" href="ToddLandingPage.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+
+    <!-- Animate On Scroll -->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- favicon below and header -->
+    <link rel="icon" href="Toddlit-Logo.png">
+	<title>Toddlit</title>
+</head>
+<body>
+  <!-- <img src="black.jpg" style="display : none;"> -->
+  <!-- <img src="black.jpg" style="display : none;">
+  <img src="e1.png" style="display : none;">
+  <img src="e2.png" style="display : none;">
+  <img src="e3.png" style="display : none;">
+  <img src="e4.png" style="display : none;">
+  <img src="e5.png" style="display : none;"> -->
+  <img src="leader.png" style="display : none;">
+  <img src="WebToddlitTitleLogoPNG.png" style="display : none;">
+  <img src="WebDesign1.png" style="display : none;">
+  <img src="WebDesign2.png" style="display : none;">
+  <img src="Settings.png" style="display : none;">
+
+    <div class="Page">
+        <div class="Header" data-aos="fade-down" data-aos-duration="1000">
+                <div class="HStackLogoAbout">
+                        <div class="logoDiv">
+                            <img class= "logo" alt="Toddlit Logo" src="WebToddlitTitleLogoPNG.png"  draggable="false" data-aos="fade" data-aos-duration="1500">
+                            <div class="HStack" data-aos="fade" data-aos-duration="1500">
+                                <button class="Home">Home</button>
+                                <button class="About">About</button>
+                                <button class="Design">Design</button>
+                                  <button class="Lang">Languages</button>
+                                <button class="Parents">Parents</button>
+                            </div>
+                        </div>
+                    <div class="HomeAboutContactCreatives" data-aos="fade" data-aos-duration="1000">
+                        <div class="HomeAboutContactCreativesBox">
+                            <button class="SignIn" style="display: none;" >Sign In</button>
+                            <button id="Creatives">Creatives</button>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div class="Content">
+            <!-- <div class="BlueDivider"></div> -->
+            <div class="LanderImageDiv">
+                <img class= "LanderImage" src="ToddArtHome.png" draggable="false">
+
+                <div class="ContentOverLanderImage">
+
+                    <div class="BigTextDiv" data-aos="fade-right" data-aos-duration="1000">
+                        <div class="VStack">
+                            <div class="VStack">
+                                <label for="" class="ToddlitText" >Toddlit</label>
+                                <div class="Underline"></div>
+                            </div>
+                            <label for="" class="DiscoverText">Where Kids Discover</label>
+                            <!-- <label for="" class="DiscoverText">DISCOVER</label> -->
+                            <div class="HStack">
+                                <label class="BigConceptsText" for="">Big Concepts through Innovative Storytelling.</label>
+                                <!-- <label class="BigConceptsText" for="">Worlds Full of Color, Big Concepts, and Great Story</label> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="DemoDiv">
+                       <div class="replacementArtDiv">
+                         <img src="leader.png" class="replacementArt">
+                       </div>
+
+                      <!-- <div class="demoHolder">
+                        <img class="demoImages" src="e1.png">
+                      </div> -->
+                    </div>
+
+
+                </div>
+            </div>
+
+
+
+
+            <div class="DividerAndContent">
+                <!-- <div class="BlackDivider"></div>
+                <div class="BlackDivider"></div> -->
+
+
+                <div class="ToddContent">
+
+
+                    <div class="PurposeClass">
+                        <div class="PurposeVStack">
+                            <div class="PurposeTitleDiv">
+                                <div class="PurposeTitle">
+                                    <label class="PurposeTitleLabel">Let's bring big ideas to minds of the future.</label>
+                                </div>
+                            </div>
+
+                            <div class="PurposeContentDiv">
+                                <div class="PurposeContent">
+                                    <label class="PurposeContentLabel">Diaramas and Cartesian Graphs are great, but they miss the fundemental purpose of a good education. They forget to teach the ideas we all need in order to live. At Toddlit that's what we are all about. We use story to place big concepts into the brains of the future. With a world, where the requirements and expectations are perpetually shifting, it is more imporatant than ever to know how to think rather than what to think.</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="BlackDivider"></div>
+                    <div class="BlackDivider"></div> -->
+
+
+
+                    <div class="UIAndMissionClass">
+                        <div class="MissionMoadalDiv">
+
+                            <div class="UILabelDiv">
+                                <label class="UILabel">
+                                    Enjoy Wonderful Story, Beautiful Art, and Better Concepts Everywhere
+                                </label>
+
+                                <div class="UIContentLabelDiv">
+                                    <div class="UIAlignContentLabelDiv">
+                                        <label class="UIContentLabel">
+                                            Kids Can Enjoy Great Content and Great Design on Tablet, Phone, and Laptop.
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="iconHStack">
+                                    <div class="Icons">
+                                        <img src="ios.png" class="UIIcon" id="ios">
+                                    </div>
+
+                                    <div class="Icons">
+                                        <img src="android.png" class="UIIcon" id="android">
+                                    </div>
+                                    <div class="Icons">
+                                        <!-- <div>Icons made by <a href="https://www.flaticon.com/authors/srip" title="srip">srip</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
+                                        <!-- <img src="global.png" class="UIIcon" id="web"> -->
+                                    </div>
+                                </div>
+
+
+                                <div class="ShapesUIDiv">
+                                    <img src="shapes.png" draggable="false" class="shapesUI">
+                                </div>
+
+
+                            </div>
+
+
+
+
+                            <!-- <div class="MissionStatementModal">
+                                <div class="MissionStatementCenterDiv">
+                                    <label for="" class="MissionStatmentText">Let's fill the</label>
+                                    <label for="" class="MissionStatmentText">little minds of</label>
+                                    <label for="" class="MissionStatmentText">the future with</label>
+                                    <div class="HStack">
+                                        <label for="" class="MissionStatmentBigBold">Big </label>
+                                        <div class = "MissionStatmentTextDiv">
+                                            <label for="" class="MissionStatmentText"> Ideas,</label>
+                                        </div>
+                                    </div>
+                                    <div class="HStack">
+                                        <img src="Toddlit-Logo.png" alt="" draggable="false" class="ThroughStoryPng">
+                                        <div class = "ThroughStoryTextDiv">
+                                            <label for="" class="ThroughStoryText">hrough Story.</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+
+
+
+                        <div class="UIMobileDiv">
+                            <div class="UIMobilHStack">
+                                <div class="UIHomeDiv">
+                                    <img src="WebDesign1.png" class="UIHome">
+                                </div>
+                                <div class="UIContentDiv">
+                                    <img src="WebDesign2.png"  draggable="false" class="UIContent">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="TranslateClass">
+                        <div class="UIQotationsAndTitle">
+                            <div class="UIQotationsAndTitleHStack">
+                                <div>
+                                    <img src="QuotationsLeft.png" class="QuotationUI">
+                                </div>
+                                <div>
+                                    <label class="TitleLabel">Toddlit Stories Translated Into Multiple Languages</label>
+                                </div>
+                                <div>
+                                    <img src="QuotationsRight.png" class="QuotationUI">
+                                </div>
+                            </div>
+
+                            <div class="TranslateExplainationDiv">
+                                <div class="TranslateExplainationPlacment">
+                                    <label class="TranslateExplaination"> Have A diverse Family? We tranlate all of our stories into multiple languages, so no matter what culture your family comes from, your kids can still have the opportunity to gain a foothold on big ideas.</label>
+                                </div>
+                            </div>
+
+                            <div class="TranslateExplainationLangDiv">
+                                <div class="TranslateLangPlacment">
+                                    <div class="TranslateHStack">
+
+                                        <div class="TranlsatedLangHStack">
+
+                                            <div class="centerObjectDiv">
+                                                <div class="EnglishColor"></div>
+                                            </div>
+                                            <div class="centerObjectDiv">
+                                                <label class="TranslateLanguages">English</label>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="TranlsatedLangHStack">
+
+                                            <div class="centerObjectDiv">
+                                                <div class="SpanishColor"></div>
+                                            </div>
+                                            <div class="centerObjectDiv">
+                                                <label class="TranslateLanguages">Spanish</label>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="TranlsatedLangHStack">
+
+                                            <div class="centerObjectDiv">
+                                                <div class="FrenchColor"></div>
+                                            </div>
+                                            <div class="centerObjectDiv">
+                                                <label class="TranslateLanguages">French</label>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="TranlsatedLangHStack">
+                                            <div class="centerObjectDiv">
+                                                <div class="GermanColor"></div>
+                                            </div>
+                                            <div class="centerObjectDiv">
+                                                <label class="TranslateLanguages">German</label>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="TranslateExplainationDivFunfact">
+                                <div class="TranslateExplainationPlacmentFunFact">
+                                    <div class="FunFact">
+                                        <label class="TranslateFunFact">Fun Fact to share with your friends "Toddlit" translates to "Toddlit" in all languages...</label>
+                                    </div>
+                                    <div class="SooooDiv">
+                                        <label class="SoooooClass">Sooooooooooo ¯\_(ツ)_/¯</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="PControlsDiv">
+                        <div class="PCContorlsCenter">
+
+                            <div class="UIPCDiv">
+                                <div class="UISettingsUI">
+                                    <div class="SettingsDiv">
+                                        <img src="Settings.png" class="SettinsUI">
+                                    </div>
+                                </div>
+
+                                <div class="PCContentCenter">
+                                    <div class="PCContentDiv">
+                                        <label class="UIPCTitle">Have Control Over What Your Kid Sees.</label>
+                                        <label class="UIPCText">
+                                            It's important for us all to burst out of our bubble and understand the world beyond us, but some things should be left not understood.
+                                            We give control to the parents to make that decision.
+                                        </label>
+                                        <!-- <label class="UIPCText2">We give control to the parents to make that decision.</label> -->
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="BottomContent">
+
+
+                            <div class="TopPC">
+
+                                <div class="PCHStack" id="PCHStack1">
+                                    <div class="PCControlHStack">
+                                        <div class="PCUIsDiv">
+                                            <img src="profiles.png" class="PCUIs">
+                                        </div>
+
+                                        <div class="PCUILabelsDiv">
+                                            <label class="PCUILabels">
+                                                Mangage Accounts.
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="PCHStack" >
+                                    <div class="PCControlHStack" id="PCHStack2">
+                                        <div class="PCUIsDiv">
+                                            <img src="parentalControl.png" class="PCUIs">
+                                        </div>
+
+                                        <div class="PCUILabelsDiv">
+                                            <label class="PCUILabels">
+                                                Control of each account for each child. You can even mangage their time on the app.
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="BottomPC">
+
+                                <div class="PCHStack" id="PCHStack3">
+                                    <div class="PCControlHStack">
+                                        <div class="PCUIsDiv">
+                                            <img src="Security.png" class="PCUIs">
+                                        </div>
+
+                                        <div class="PCUILabelsDiv">
+                                            <label class="PCUILabels">
+                                                Keeping your data private and secure.
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="PCHStack">
+                                    <div class="PCControlHStack" id="PCHStack4">
+                                        <div class="PCUIsDiv">
+                                            <img src="HelpUSY.png" class="PCUIs">
+                                        </div>
+
+                                        <div class="PCUILabelsDiv">
+                                            <label class="PCUILabels">
+                                                Getting a understanding on the values you want instilled in your child.
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+                    <div class="SusbscriptionDiv" style="display: none;">
+                        <div class="SubscriptionContent">
+                            <div class="SubContent">
+                                <div class="SubHstack">
+
+
+                                    <div class="SubText">
+                                        <div class="SubVStack">
+                                            <div class="SignULabelDiv">
+                                                <Label class="SignUpLabel">Sign Up</Label>
+                                            </div>
+
+                                            <div class="SubBottomLabelDiv">
+                                                <Label class="SubBottomLabel">Let your kids try Toddlit Free for 7 days!</Label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="SignUpButtonDiv">
+                                        <div class="SignUpButton"><label class="SignUpButonLabel">Sign Up</label></div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="Save">
+                            <div class="SaveInline">
+                                <label class="SaveLabel">Set up your subscription on our website and save</label><label class="Percent">30%</label>
+                            </div>
+                        </div>
+
+
+
+
+                        <!-- <div class="SubHStack">
+
+
+                            <div class="OptionsDiv">
+                                <div class="OptionTitleDiv">
+                                    <label class="OptionTitle">Our Set of Packages</label>
+                                </div>
+
+
+                                <div class="BlackUnderline" style="border-bottom-left-radius: 0.9vh; border-top-left-radius: 0.9vh;"></div>
+
+
+                                <div class="WhiteStack">
+                                    <label class="ContentLabels">View A litnay of Great Stories</label>
+                                </div>
+                                <div class="GrayStack">
+                                    <label class="ContentLabels">Enjoy on many devices</label>
+                                </div>
+
+                                <div class="WhiteStack">
+                                    <label class="ContentLabels">Have Up to 5 profiles</label>
+                                </div>
+
+                                <div class="GrayStack">
+                                    <label class="ContentLabels">Download Content</label>
+                                </div>
+                                <div class="WhiteStack">
+                                    <label class="ContentLabels">No Ads</label>
+                                </div>
+
+                            </div>
+
+
+                            <div class="NoSubDiv">
+
+                                <div class="OptionTitleDiv">
+                                    <label class="OptionTitle">Free</label>
+                                </div>
+
+
+                                <div class="BlackUnderline"></div>
+
+
+                                <div class="GrayStack">
+                                    <div class="CenterCheck">
+                                        <img src="BlackCheck.png" draggable="false" class="CheckUI">
+                                    </div>
+                                </div>
+
+                                <div class="WhiteStack">
+                                    <div class="CenterCheck">
+                                        <img src="BlackCheck.png" draggable="false" class="CheckUI">
+                                    </div>
+                                </div>
+
+                                <div class="GrayStack">
+                                    <div class="CenterCheck">
+                                        <img src="BlackCheck.png" draggable="false" class="CheckUI">
+                                    </div>
+                                </div>
+
+                                <div class="WhiteStack">
+                                </div>
+
+                                <div class="GrayStack">
+                                </div>
+
+                            </div>
+
+
+                            <div class="SubDiv">
+
+                                <div class="OptionTitleDiv">
+                                    <label class="OptionTitle">Subscription</label>
+                                    <label class="OptionTitle">(cancel anytime)</label>
+                                </div>
+
+                                <div class="BlackUnderline" style="border-bottom-right-radius: 0.9vh; border-top-right-radius: 0.9vh;"></div>
+
+                                <div class="WhiteStack">
+                                    <div class="CenterCheck">
+                                        <img src="BlackCheck.png" draggable="false" class="CheckUI">
+                                    </div>                                </div>
+                                <div class="GrayStack">
+                                    <div class="CenterCheck">
+                                        <img src="BlackCheck.png" draggable="false" class="CheckUI">
+                                    </div>                                </div>
+
+                                <div class="WhiteStack">
+                                    <div class="CenterCheck">
+                                        <img src="BlackCheck.png" draggable="false" class="CheckUI">
+                                    </div>                                </div>
+                                <div class="GrayStack">
+                                    <div class="CenterCheck">
+                                        <img src="BlackCheck.png" draggable="false" class="CheckUI">
+                                    </div>                                </div>
+                                <div class="WhiteStack">
+                                    <div class="CenterCheck">
+                                        <img src="BlackCheck.png" draggable="false" class="CheckUI">
+                                    </div>                                </div>
+
+                            </div>
+
+
+                        </div> -->
+                    </div>
+
+                    <!-- <div class="Footer">
+                        <div>
+                            <div>
+                                <label for=""> Save 30% by setting up your Subscription here on our website.</label>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+        </div>
+
+        <img class="demoImages" src="e1.png" style="display : none;">
+        <img class="demoImages" src="e2.png" style="display : none;">
+        <img class="demoImages" src="e3.png" style="display : none;">
+        <img class="demoImages" src="e4.png" style="display : none;">
+        <img class="demoImages" src="e5.png" style="display : none;">
+    </div>
+
+    <!-- All Content Ends Here -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!-- On Scroll animations js 3 differnt libraries here: "AnimateOnScroll" (AOS), ScrollMagic , TweenMax/greensok-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+
+
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
+
+    <script data-ad-client="ca-pub-5619224767870187" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+
+    <link type="text/css" rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
+    <script src="ToddlitLandingPage.js" ></script>
+</body>
+</html>

@@ -1,0 +1,3522 @@
+html, body{
+	margin: 0;
+	padding: 0;
+	height:  100%;
+	width: 100%;
+	background-color:white;
+}
+
+body {
+	height: 100%;
+  width: 100%;
+  position: absolute;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+  overflow: hidden;
+  font-family:"Avenir Next", Roboto , cursive, Arial, sans-serif;
+  background-color: black;
+}
+
+
+.EntireView{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    border-radius: 2vh;
+    overflow: hidden;
+    background-color : rgb(253, 253, 253);
+    background-color: white;
+    overflow: hidden;
+}
+
+
+.topControl{
+    position: relative;
+    width: 100%;
+    height: 8vh;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.125);
+    /* box-shadow: 0px 0.1vh 0.2vh rgba(145, 144, 144, 0.753); */
+    z-index: 30;
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    border-top-right-radius: 2vh;
+    border-top-left-radius: 2vh;
+}
+
+.LogoDiv{
+    position: relative;
+    width: 17vw;
+    height: 100%;
+    background-color: white;
+    box-shadow: 0px 0.1vh 0.2vh rgba(145, 144, 144, 0.753);
+    border-top-left-radius: 2vh;
+    display: grid;
+    place-items: center;
+}
+
+.logo{
+    position: relative;
+    width: auto;
+    height: 5vh;
+    /* left: 6vh ; */
+    /* top: calc(50% - 2.5vh) */
+}
+
+
+
+
+
+.userTopTab{
+    position: absolute;
+    display:flex;
+    flex-direction: row;
+    top: calc(50% - 3.25vh);
+    right: calc(11vh);
+}
+
+
+
+#UserName{
+    position: relative;
+    font-weight: bold;
+    font-size: 1.5vh;
+    top: calc(2.75vh - 0.25vh  );
+    left: -8px;
+    font-family:"Avenir Next" , cursive, Arial, sans-serif;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+#UserIdImage{
+    position: relative;
+    top: 0.5vh;
+    height: 5.5vh;
+    width: 5.5vh;
+    border-radius: 5.5vh;
+    object-fit: cover;
+}
+
+
+.notificationButton{
+    position: absolute;
+    right: 6vh;
+    height: 3vh;
+    width: 3vh;
+    top: calc(50% - 1.5vh);
+    z-index: 6;
+    /* transform: rotate(-30deg); */
+}
+
+.BellIcon{
+    position: relative;
+    height: 3vh;
+    width: 3vh;
+    object-fit: contain;
+    opacity: 0.75;
+}
+
+
+.NotificationsDiv{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-color: transparent;
+}
+
+.Notifications{
+    position: absolute;
+    height: 40vh;
+    width: 35vh;
+    top: 7vh;
+    right: 6.5vh;
+    z-index: 5;
+    display: none;
+    border-radius: 1.5vh;
+    overflow: hidden;
+    box-shadow: 0 0 0.2vh rgba(0, 0, 0, 0.5);
+}
+
+.NotificationModal{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 1.5vh;
+}
+
+.NoNotifLabelDiv{
+    position: relative;
+    width: 36vh;
+    height: auto;
+    top: 1.5vh;
+    margin-left: 1.5vh;
+}
+
+.NoNotifLabel{
+    position: relative;
+    font-size: 2vh;
+    font-weight: 700;
+    font-style: italic;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+
+
+
+.Controls{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    background-color: #4e4e4e05;
+    bottom: 8vh;
+}
+
+
+/* Side Menu Side Menu Side Menu Side Menu Side Menu Side Menu */
+/* Side Menu Side Menu Side Menu Side Menu Side Menu Side Menu */
+/* Side Menu Side Menu Side Menu Side Menu Side Menu Side Menu */
+/* Side Menu Side Menu Side Menu Side Menu Side Menu Side Menu */
+/* Side Menu Side Menu Side Menu Side Menu Side Menu Side Menu */
+/* Side Menu Side Menu Side Menu Side Menu Side Menu Side Menu */
+/* Side Menu Side Menu Side Menu Side Menu Side Menu Side Menu */
+/* Side Menu Side Menu Side Menu Side Menu Side Menu Side Menu */
+/* Side Menu Side Menu Side Menu Side Menu Side Menu Side Menu */
+/* Side Menu Side Menu Side Menu Side Menu Side Menu Side Menu */
+/* Side Menu Side Menu Side Menu Side Menu Side Menu Side Menu */
+/* Side Menu Side Menu Side Menu Side Menu Side Menu Side Menu */
+/* Side Menu Side Menu Side Menu Side Menu Side Menu Side Menu */
+/* Side Menu Side Menu Side Menu Side Menu Side Menu Side Menu */
+/* Side Menu Side Menu Side Menu Side Menu Side Menu Side Menu */
+/* Side Menu Side Menu Side Menu Side Menu Side Menu Side Menu */
+
+.sideMenu{
+    position: absolute;
+    left: 0;
+    width: 17vw;
+    height: calc(100% - 8vh);
+    background-color: white;
+		/* background: linear-gradient( #ff42420c , #428eff15); */
+		/* #ffc9421a   #428eff15       idea not default: #21488115*/
+		/* background: linear-gradient(  #ffc9421a , #428eff15); */
+    background: linear-gradient(  white , white);
+    box-shadow: 0px 0.1vh 0.2vh rgba(145, 144, 144, 0.753);
+    top: 8vh;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.VerticleMenuDiv{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+
+
+
+
+
+
+
+.SideCreateNewProjectsDiv{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: grid;
+    place-items: center;
+    margin-top: 1.5vh;
+    margin-bottom: 1vh;
+
+}
+
+.SideCreateNewProjectsButton{
+    position: relative;
+    width: calc(17vw - 5vh);
+    height: 7vh;
+    background-color: white;
+    /* box-shadow: 0 0 0.3vh rgba(0, 0, 0, 0.25); */
+    border-radius: 6vh;
+    display: grid;
+    place-items: center;
+    box-shadow: 0px 0.2vh 1vh #224d8d79;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+
+.SideCreateNewProjectsButton:active{
+    box-shadow: 0px 0.1vh 0.1vh #1c407554;
+}
+
+.SideCreateNewProjectsHStack{
+    position: relative;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+}
+
+
+.SideAddNewProjectUIDiv{
+    position: relative;
+    height: 6vh;
+    width: auto;
+    display: grid;
+    place-items: center;
+}
+
+.SideAddNewProjectUI{
+    position: relative;
+    width: 3vh;
+    height: 3vh;
+    object-fit: contain;
+}
+
+.SideAddNewProjectLabelDiv{
+    position: relative;
+    height: 6vh;
+    width: auto;
+    display: grid;
+    place-items: center;
+    margin-left: 1vh;
+}
+
+.SideAddNewProjectLabel{
+    position: relative;
+    font-size: 1.6vh;
+    font-weight: 700;
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+.SideCreateNewScriptDiv{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: grid;
+    place-items: center;
+    margin-top: 0.5vh;
+    margin-bottom: 1vh;
+}
+
+.SideCreateScriptButton{
+    position: relative;
+    width: calc(17vw - 5vh);
+    height: 6vh;
+    background-color: white;
+    box-shadow: 0 0 0.3vh rgba(0, 0, 0, 0.25);
+    border-radius: 6vh;
+    display: grid;
+    place-items: center;
+    transition: all 0.1s ease-in-out;
+    overflow: hidden;
+}
+
+.SideCreateScriptButton:active{
+    box-shadow: 0 0 0.1vh rgba(0, 0, 0, 0.25);
+}
+
+.SideCreateNewScriptHStack{
+    position: relative;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    opacity: 0.85;
+}
+
+
+.SideAddNewScriptUIDiv{
+    position: relative;
+    height: 5vh;
+    width: auto;
+    display: grid;
+    place-items: center;
+}
+
+.SideAddNewScriptUI{
+    position: relative;
+    width: 2.5vh;
+    height: 2.5vh;
+    object-fit: contain;
+}
+
+.SideAddNewScriptLabelDiv{
+    position: relative;
+    height: 5vh;
+    width: auto;
+    display: grid;
+    place-items: center;
+    margin-left: 1vh;
+}
+
+.SideAddNewScriptLabel{
+    position: relative;
+    font-size: 1.5vh;
+    font-weight: 700;
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+.Main , .Analytics , .Tools , .User , .Pay{
+    position: relative;
+    width: calc(100%);
+    height: auto;
+    display: grid;
+    place-items: center;
+    transition: all .1s ease-in;
+    /* background-color: white; */
+    /* border-left: 0.5vh solid rgba(0, 0, 0, 0); */
+}
+
+.Main:hover , .Analytics:hover , .Tools:hover , .User:hover , .Pay:hover{
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+
+
+.MainSideMoveLeft{
+    position: relative;
+    height: 4vh;
+    width: 70%;
+    left: 0;
+    margin-top: 2.5vh;
+    display: grid;
+    place-items: center;
+    bottom: 0.75vh;
+}
+
+
+.SideMenuCenter{
+    position: absolute;
+    left: 0;
+    width: auto;
+    height: auto;
+    margin-left: 3vh;
+}
+
+.SideMenuHStack{
+    position: relative;
+    width: calc(100% - 2vh);
+    height: 3.5vh;
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    bottom: 1.35vh;
+}
+
+
+#Main , #Analytics , #Tools , #User , #Pay{
+    position: relative;
+    height: 3vh;
+    width: auto;
+    margin-top: 1vh;
+    display: flex;
+    flex-direction: row;
+    transition: all 1s ease-in-out;
+
+}
+
+#Pay{
+    position: relative;
+    height: 3.7vh;
+    width: auto;
+    margin-top: 1vh;
+    display: flex;
+    flex-direction: row;
+    transition: all 1s ease-in-out;
+}
+
+
+.SideLabelDiv{
+    position: relative;
+    width: auto;
+    height: 3.5vh;
+    display: grid;
+    place-items: center;
+    margin-left: 1vh;
+    top : 0.75vh;
+}
+
+.MenuLabels{
+    position: relative;
+    margin-top: 0.8vh;
+    font-size: 1.6vh;
+    font-weight: 600;
+    color: rgb(95, 95, 95);
+    transition: all 0.5s ease-in-out;
+}
+
+.MainHomeLabel{
+    position: relative;
+    margin-top: 0.8vh;
+    font-size: 1.6vh;
+    font-weight: 600;
+    color: #428FFF;
+    transition: all 0.5s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+.AnalyticsDropDown{
+    position: relative;
+    width: calc(100%);
+    height: 0vh;
+    display: none;
+    display: grid;
+    place-items: center;
+    transition: all .3s ease-in;
+    background-color: rgba(0, 0, 0, 0.125);
+    margin-top: 0vh;
+    /* background-color: white; */
+    /* border-left: 0.5vh solid rgba(0, 0, 0, 0); */
+}
+
+
+.AnalyticsMainSideMoveLeft{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+
+.AnalyticsSideMenuCenter{
+    position: absolute;
+    left: 2vw;
+    width: calc(100% - 2vw - 3vh);
+    height: 5vh;
+    margin-left: 3vh;
+}
+
+.AnalyticsSideLabelDiv{
+    position: relative;
+    width: 100%;
+    height: 5vh;
+    display: none;
+}
+
+.AnalyticsMenuLabels{
+    position: relative;
+    margin-top: 0.8vh;
+    font-size: 1.6vh;
+    font-weight: 600;
+    color: rgb(95, 95, 95);
+    transition: all 0.5s ease-in-out;
+    display: inline-block;
+}
+
+
+
+
+
+
+
+
+.sideMenuUI{
+    position: relative;
+    width: calc(5vh);
+    height: calc(5vh);
+}
+
+
+.SignOutDiv{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 3vh;
+    display: grid;
+    place-items: center;
+    margin-bottom: 3vh;
+    overflow: visible;
+    /* background-color: white; */
+
+}
+
+.grayDivider{
+    position: relative;
+    width: 100%;
+    height: 0.2vh;
+    background-color: rgb(215, 215, 215);
+    margin-bottom: 1.5vh;
+}
+
+
+.SignOutAllign{
+    position: relative;
+    width: 100%;
+    height: 5vh;
+    display: grid;
+    place-items: center;
+}
+
+#SignOut{
+    position: relative;
+    font-weight: bold;
+    font-size: 1.7vh;
+    background-color:rgba(0, 0, 0, 0);
+    color:#428FFF;
+
+    background:transparent;
+    border:none;
+    outline: none;
+}
+
+#SignOut:active{
+    color:#2b5ba3;
+    transition: all 0.5s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contentControls{
+    position: relative;
+    width: calc(100% - 17vw);
+    height: 100%;
+    left: calc(17vw);
+		background-color: rgb(252, 252, 252) ;
+		/* background-color: white; */
+}
+
+#video-js{
+	width:calc(100% - 17vw - 6vh);
+	height: 49vw;
+	border-radius: 1vh;
+	margin-left: 3vh;
+	margin-bottom: 3vh;
+}
+
+
+/* Updates Updates Updates *//* Updates Updates Updates */
+/* Updates Updates Updates *//* Updates Updates Updates */
+/* Updates Updates Updates *//* Updates Updates Updates */
+/* Updates Updates Updates *//* Updates Updates Updates */
+/* Updates Updates Updates *//* Updates Updates Updates */
+/* Updates Updates Updates *//* Updates Updates Updates */
+/* Updates Updates Updates *//* Updates Updates Updates */
+/* Updates Updates Updates *//* Updates Updates Updates */
+/* Updates Updates Updates *//* Updates Updates Updates */
+/* Updates Updates Updates *//* Updates Updates Updates */
+/* Updates Updates Updates *//* Updates Updates Updates */
+/* Updates Updates Updates *//* Updates Updates Updates */
+/* Updates Updates Updates *//* Updates Updates Updates */
+/* Updates Updates Updates *//* Updates Updates Updates */
+/* Updates Updates Updates *//* Updates Updates Updates */
+/* Updates Updates Updates *//* Updates Updates Updates */
+
+.UpdatesNewProjectsDiv{
+    position: relative;
+    width: 100%;
+    height: calc(100%);
+    top: 0vh;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    /* overflow: hidden; */
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border-top-right-radius: 2vh;
+
+}
+
+
+.ToolsBoard, .AnalyticsBoard , .UserBoard , .PayBoard {
+    position: relative;
+    width: 100%;
+    height: calc(100%);
+    top: 0vh;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    /* scroll-behavior: smooth; */
+    /* background-color: blue; */
+}
+
+
+
+.HomeLanderImageAndLabel{
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    /* border-bottom-left-radius: 9vh; */
+}
+
+.HomeLanderImageDiv{
+    position: relative;
+    width: calc(100%);
+    height: calc(100% - 0.3vh);
+    background-color: black;
+    /* border-bottom-left-radius: 4.5vh; */
+    display: grid;
+    place-items: center;
+
+}
+.HomeLanderImage{
+    position: relative;
+    width: calc(100%);
+    height: calc(100%);
+    object-fit: cover;
+    opacity: 0.95;
+    /* border-bottom-left-radius: 4.5vh; */
+    border-bottom: 0.2vh solid rgb(110, 110, 110);
+    /* box-shadow: 0 0.1vh 0.2vh rgba(0, 0, 0, 0.25); */
+}
+
+
+.HomeLanderButtonDiv{
+    position: absolute;
+    bottom: 3vh;
+    right: 6vh;
+}
+
+.homeLanderNewProjectsButton{
+    position: relative;
+    width: calc(16vw - 2vh);
+    height: 8vh;
+    background-color: rgba(255, 255, 255, 1);
+    /* box-shadow: 0 0 0.3vh rgba(0, 0, 0, 0.25); */
+    border-radius: 6vh;
+    display: grid;
+    place-items: center;
+    /* box-shadow: 0px 0.2vh 0.8vh #1c407554; */
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+
+
+.HomeLabelAndDividerDiv{
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    bottom: 60vh;
+}
+
+
+.DashboardLabel{
+    position: absolute;
+    margin-top: 0.8vh;
+    color: black;
+    bottom: -2vh;
+    margin-bottom: 1vh;
+    margin-left: 2vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.DashboardLabelTodd{
+    position: relative;
+    margin-top: 0.8vh;
+    font-size: 5.75vh;
+    font-weight: 700;
+    color: #FFC842;
+    bottom: -1vh;
+    margin-left: 2vh;
+}
+
+.DashboardLabelCreDash{
+    position: relative;
+    font-size: 7vh;
+    font-weight: 700;
+    /* color: rgb(100, 100, 100); */
+    /* color:rgb(255, 255, 255 , 0.75); */
+    color: white;
+    /* opacity: 0.65; */
+    /* left: 0.5vh; */
+    bottom: 0;
+    margin-bottom: 1vh;
+    margin-left: 2vh;
+}
+
+
+
+
+
+
+
+.ProjectsTutorialsUpdates{
+    position: relative;
+    width: calc(100% - 4vh);
+    height: auto;
+    left: 3vh;
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+
+
+
+.NewProjectDivStation{
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    overflow: visible;
+		/* margin-top: 3vh; */
+}
+
+.NewProjectModal{
+    position: relative;
+    height: calc(100% - 1vh);
+    top: calc(0.5vh);
+    width: calc(100% - 3vh);
+    left: 0.5vh;
+    background-color: white;
+    border-radius: 1vh;
+    box-shadow: 0 0 1.5vh #20478136; /*rgba(0, 0, 0, 0.5);*/
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+
+}
+
+.NewProjectDiv{
+    position: relative;
+    width: calc(35% - 3vh);
+    height: calc(100% - 4vh);
+    margin-top: 2vh;
+    margin-left: 2vh;
+    margin-right: 1vh;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+
+.NewProjectsTitleLabel{
+    position: relative;
+    font-size: 2.2vh;
+    font-weight: 700;
+    display: inline-block;
+    white-space: nowrap;
+    color: black;
+}
+
+.AddNewProjectsButtonDiv{
+    position: relative;
+    width: auto;
+    height: auto;
+    margin-top: 4vh;
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+}
+
+.NewProjectCenterDiv{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: grid;
+    place-items: center;
+}
+
+.AddButton{
+    position: relative;
+    width: 13vh;
+    height: 13vh;
+    background-color: transparent;
+    outline: none;
+    display: grid;
+    place-items: center;
+    border-radius: 2.8vh;
+    /* border: 0.2vh solid rgba(0, 0, 0, 0.15); */
+    color: #234d8d36;
+    box-shadow: 0px 0.45vh 2vh #1c407554;
+    transition: all .2s ease-in;
+
+    animation-name: ButtonHoveringOut ;
+    animation-timing-function: ease-in;
+    animation-duration: 1.61834s ;
+    /* animation-iteration-count: 1; */
+    top: 1vh;
+}
+
+
+@keyframes ButtonHoveringOut {
+0%   {box-shadow: 0px 0vh 0vh rgba(0, 0, 0, 0.25);}
+
+100% {box-shadow: 0px 0.45vh 2vh #1c407554;}
+}
+
+/* @keyframes ButtonHoveringIn {
+    0% {box-shadow: 0px 0.45vh 1.7vh rgba(0, 0, 0, 0.25);}
+
+    100%   {box-shadow: 0px 0.25vh 1.3vh rgba(0, 0, 0, 0.25);}
+    } */
+
+.AddButtonVStack{
+    position: relative;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+.AddNewProjectUI{
+    position: relative;
+    width: 7vh;
+    height: 7vh;
+}
+
+.AddButton:active{
+    opacity: 0.8;
+    transition: all .2s ease-out;
+    box-shadow: 0 0.25vh 0.3vh rgba(0, 0, 0, 0.25);
+
+}
+
+.AddNewProjectLabel{
+    position: relative;
+    margin-top: 1vh;
+    font-size: 1.4vh;
+    color: #428FFF;
+    font-weight: 700;
+}
+
+
+
+
+
+.ScriptButton{
+    position: relative;
+    height: 11vh;
+    width: 11vh;
+    top: 1vh;
+    margin-left: 5vh;
+    background-color: white;
+    /* border-radius: 11vh; */
+    border-radius: 2.8vh;
+
+    display: grid;
+    place-items: center;
+    box-shadow: 0.3vh 0.35vh 0.7vh rgba(0, 0, 0, 0.25);
+    transition: all .2s ease-in;
+
+    animation-name: ButtonHoveringOutScript ;
+    animation-timing-function: ease-in;
+    animation-duration: 1.61834s ;
+}
+
+@keyframes ButtonHoveringOutScript {
+    0%   {box-shadow: 0px 0vh 0vh rgba(0, 0, 0, 0.25);}
+
+    100% {box-shadow: 0.3vh 0.35vh 0.7vh rgba(0, 0, 0, 0.25);}
+    }
+
+.ScriptButton:active{
+    opacity: 0.8;
+    transition: all .2s ease-out;
+    box-shadow: 0.1vh 0.175vh 0.3vh rgba(0, 0, 0, 0.25);
+}
+
+.ScriptUI{
+    position: relative;
+    height: 5vh;
+    width: 5vh;
+    opacity: 0.85;
+}
+
+
+
+
+
+
+
+
+
+
+
+.OldProjectDiv{
+    position: relative;
+    width: calc(100% - 3vh);
+    height: calc(100% - 4vh);
+    margin-top: 2vh;
+    margin-left: 1vh;
+    margin-right: 2vh;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    /* background-color: red; */
+    overflow-x: hidden;
+    overflow-y: hidden;
+    /* border-left: 0.2vh solid rgba(0, 0, 0, 0.25); */
+}
+
+
+.OldProjectsTitleLabel{
+    position: relative;
+    font-size: 2.5vh;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 1);
+    margin-left: 2vh;
+}
+
+.OldProjectsVStack{
+    position: relative;
+    display: flex;
+		height: auto;
+		width: 100%;
+    flex-direction: column;
+    flex-shrink: 0;
+    margin-left: 2vh;
+    margin-top: 2vh;
+
+}
+
+.scrollableOldProjects{
+    position: relative;
+		width: 100%;
+		height: 25vh;
+		overflow-y: hidden;
+		overflow-x: scroll;
+}
+
+.OldProjectsHStack{
+	position: relative;
+	width: auto;
+	height: auto;
+	display: flex;
+	flex-direction: row;
+	flex-shrink: 0;
+}
+
+
+.NoProjectsLabel, .NoProjectsLabelPublicScripts{
+    position: relative;
+    font-size: 1.8vh;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.5);
+    margin-left: 2vh;
+    margin-left: 2vh;
+    font-style: italic;
+}
+
+.PublicScriptsMini{
+	position: relative;
+	width: 98%;
+	left: 0.5%;
+}
+
+
+
+
+
+.HundredStories{
+	position: relative;
+	width: 100%;
+	height: 20vh;
+	display: grid;
+	place-items: center;
+	margin-top: 3vh;
+	margin-bottom: 1vh;
+}
+
+.HundredStoriesModal{
+	position: relative;
+	height: calc(100%);
+	top: calc(0.5vh);
+	width: calc(100% - 3vh);
+	right: 0.5vh;
+	background-color: white;
+	border-radius: 1vh;
+	box-shadow: 0 0 0.3vh rgba(0, 0, 0, 0.5);
+}
+
+
+
+.HundredStoriesVStack{
+	position: relative;
+	width: 95%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	flex-shrink: 0;
+}
+
+.HundredCountLabel{
+	position: relative;
+	color: black;
+	font-weight: 700;
+	font-size: 3vh;
+
+}
+
+.HundredProgressBar{
+	position: relative;
+	width: 95%;
+	height: 1.5vh;
+	background-color: rgba(0,0,0,0.25);
+	border-radius: 1.5vh;
+	margin-top: 3vh;
+	margin-left: 3vh;
+	overflow: hidden;
+
+}
+
+.HundredProgress{
+	position: relative;
+	width: 0%;
+	height: 1.5vh;
+	background-color: #428FFF;
+	border-radius: 1.5vh;
+}
+
+
+
+
+
+.Project, .publicScript{
+	position: relative;
+	width: 22.5vh;
+	height: 22.5vh;
+	display: grid;
+	place-items: center;
+	margin-left: 2vh;
+	margin-top: 0.25vh;
+}
+
+.ProjectCard{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	border-radius: 1.5vh;
+	background-color: white;
+	box-shadow: 0 0 0.4vh rgb(0,0,0, 0.5);
+	overflow: hidden;
+
+}
+
+.ProjectCard:active{
+		box-shadow: 0 0 0.1vh rgb(0,0,0, 0.5);
+		transition: all 0.3s ease-in-out;
+}
+
+
+.ProjectVStack{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	flex-shrink: 0;
+}
+
+
+.UIProjectDiv{
+	position: relative;
+	width: 100%;
+	height: 15.75vh;
+	display: grid;
+	place-items: center;
+}
+
+
+.UIProject{
+	position: relative;
+	width: 100%;
+	height: 80%;
+	object-fit: contain;
+	opacity: 0.75;
+}
+
+
+.ProjectLabelDiv{
+	position: relative;
+	width: 100%;
+	height: 6.75vh;
+	display: grid;
+	place-items: center;
+
+	font-size: 1.6vh;
+	font-weight: 600;
+	color: rgb(0,0,0, 0.75);
+
+	text-align: center;
+}
+
+.projectStory{}
+
+.projectScript{}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.TutorialContentDiv{
+    position: relative;
+    width: calc(100%);
+    height: calc(26%);
+    /* margin-bottom: 3vh; */
+}
+
+
+.TutorialsModal{
+    position: relative;
+    height: calc(100%);
+    width: calc(100% - 3vh);
+    left: 0.5vh;
+    margin-top: 2vh;
+    /* border-left: 0.2vh solid rgba(0, 0, 0, 0.125);
+    border-right: 0.2vh solid rgba(0, 0, 0, 0.125); */
+}
+
+.TutorialContent{
+    position: relative;
+    width: auto;
+    height: auto;
+		border-left: 0.2vh solid rgba(0, 0, 0, 0.25);
+		border-right: 0.2vh solid rgba(0, 0, 0, 0.25);
+}
+
+.TutorialVerticalDiv{
+    position: relative;
+    width: auto;
+    height: 90%;
+    margin-left: 1.5vh;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+.TutorialTitleLabel{
+    position: relative;
+    color: rgba(0, 0, 0, 1);
+    font-weight: 600;
+    font-size: 2.5vh;
+    margin-bottom: 0.7vh ;
+}
+
+.TutorialsDiv{
+    position: relative;
+    width: calc(100% + 1.5vh);
+    height: auto;
+    right: 1.5vh;
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+.TutorialsVStack{
+    position: relative;
+    display: flex;
+    height: auto;
+    width: 13vh;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    margin-left: 2.4vh;
+}
+
+
+.ImagePlayButton{
+    position: relative;
+    width: 12.5vh;
+    height: 12.5vh;
+    left: 0.75vh;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    border-radius: 12.5vh;
+
+    background-color: black;
+}
+
+.TutorialThumbnail{
+    position: relative;
+    width: 12.5vh;
+    height: 12.5vh;
+    border-radius: 12.5vh;
+    object-fit: cover;
+    opacity: 0.85;
+}
+
+.PlayUI{
+    position: relative;
+    z-index: 1;
+    height: 5vh;
+    width: auto;
+    object-fit: contain;
+    bottom: calc( 12.5vh - 50% + 2.5vh);
+    display: none;
+}
+
+.TutorialsTitoloDiv{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+.TutorialsTitolo{
+    position: relative;
+    margin-top: 1vh;
+    text-align: center;
+    font-size: 1.5vh;
+    font-weight: 600;
+    color:rgba(0, 0, 0, 0.75);
+    text-align: center;
+    line-height: 1.2;
+}
+
+
+
+
+
+.UpdatedContentDiv{
+    position: relative;
+    /* height: calc(92vh - 6vh); */
+		height: auto;
+    width: calc(100% - 3vh);
+    top: 0.5vh;
+    bottom: 3vh;
+    left: 0.5vh;
+    margin-top: 2vh;
+    background-color: white;
+    border-radius: 1vh;
+    box-shadow: 0 0 0.2vh rgba(0, 0, 0, 0.5);
+    top: 3vh;
+		margin-bottom: 6vh;
+}
+
+
+.UpdatesVerticleDiv{
+    position: relative;
+    width: calc(100% - 4vh);
+    margin-left: calc(4vh);
+    height: 100%;
+    margin-top: calc(4vh);
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+
+.UpdatesTitle{
+    position: relative;
+    color: rgba(0, 0, 0, 1);
+    font-weight: 700;
+    font-size: 5vh;
+    margin-bottom: 0.7vh ;
+}
+
+.WelcomeDiv{
+	position: relative;
+	width: calc(100% - 4vh);
+	height: auto;
+	/* margin-right: 4vh; */
+}
+.welcomeImgAndDemos{
+	position: relative;
+	width: calc(100% - 4vh);
+	/* width: auto; */
+	height: 50vh;
+	display: grid;
+	place-items: center;
+}
+
+
+#WelcomeImage{
+	position: relative;
+	width: calc(100%);
+	height: 50vh;
+	object-fit: contain;
+	margin-bottom: 2.5vh;
+}
+
+.welcomeControls{
+	position: absolute;
+	top: 0vh;
+	left:0vh;
+	height: 50vh;
+	width: 100%;
+	/* background-color: red; */
+	/* opacity: 0.25; */
+}
+
+
+.PreButton{
+	position: absolute;
+	width: 5vh;
+	height: 5vh;
+	top: calc(50% - 2.5vh);
+	left: 3vh;
+	border-radius: 5vh;
+	background-color: white;
+	display: grid;
+	place-items:center;
+	box-shadow: 0 0 1vh rgb(0,0,0, 0.25);
+}
+
+.NextButton{
+	position: absolute;
+	width: 5vh;
+	height: 5vh;
+	top: calc(50% - 2.5vh);
+	right: 3vh;
+	border-radius: 5vh;
+	background-color: white;
+	display: grid;
+	place-items:center;
+	box-shadow: 0 0 1vh rgb(0,0,0, 0.25);
+}
+
+.PreButton:active{
+	box-shadow: 0 0 0.25vh rgb(0,0,0, 0.25);
+	transition: all 0.2s ease-in-out;
+}
+
+.NextButton:active{
+	box-shadow: 0 0 0.25vh rgb(0,0,0, 0.25);
+	transition: all 0.2s ease-in-out;
+}
+
+.WelcomeLeftArrow, .WelcomeRightArrow{
+	position: relative;
+	width: 2.5vh;
+	height: 2.5vh;
+	object-fit: contain;
+	opacity: 0.5;
+}
+
+.WelcomeLeftArrow{
+	margin-right: 0.25vh;
+}
+.WelcomeRightArrow{
+	margin-left: 0.25vh;
+}
+.welcomeInstructLabelDiv{
+	position: relative;
+	height: 4vh;
+	width: 100%;
+	display: grid;
+	place-items:center;
+	margin-top: 3vh
+}
+.welcomeInstructLabel{
+	position: relative;
+	font-size: 3vh;
+	font-weight: 700;
+	color: black;
+}
+
+
+
+
+
+
+.UpdatesTitleDiv{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+
+}
+
+.UpdatesTitle{
+    position: relative;
+
+}
+
+
+.AddNewProjectAcrossTabsDiv{
+    position: absolute;
+    height: 10vh;
+    width: 10vh;
+    bottom: 0;
+    right: 0;
+    margin-right: 4vh;
+    margin-bottom: 4vh;
+    z-index: 2;
+}
+
+.AddNewProjectAcrossTabsButton{
+    position: relative;
+    height: 10vh;
+    width: 10vh;
+    border-radius: 10vh;
+    background-color: #428FFF;
+    display: grid;
+    place-items: center;
+    box-shadow: 0 0.9vh 2vh #2d6ecfc4;
+    transition: all .3s ease-in;
+}
+
+.AddNewProjectsButtonUI{
+    position: relative;
+    height: 5vh;
+    width: 5vh;
+    object-fit: contain;
+}
+
+.AddNewProjectAcrossTabsButton:active{
+    box-shadow: 0 0.2125vh 0.5vh #2d6ecfc4;
+    transition: all .3s ease-in;
+}
+
+
+
+
+
+
+.IphoneDiv{
+	position: relative;
+	width: 100%;
+	height: 45vh;
+	margin-top: 5vh;
+	margin-bottom: 3vh;
+	margin-left: 1vh;
+
+}
+
+.IphoneDemoContentHStack{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-shrink: 0;
+}
+
+.IphoneTextContent{
+	position: relative;
+	height: 45vh;
+	width: calc(32% - 3vh);
+
+	/* background-color: red; */
+}
+
+.IphoneTextContentVStack{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	flex-shrink: 0;
+}
+
+.IphoneLabelTitle{
+	position: relative;
+	font-size: 2.5vh;
+	font-weight: 700;
+	color: black;
+}
+
+.IphoneLabelDef{
+	position: relative;
+	font-size: 2vh;
+	font-weight: 600;
+	color: rgb(0,0,0 , 0.5);
+}
+
+.iphoneDemo{
+	position: relative;
+	height: 45vh;
+	width: 65%;
+
+	background-color: white;
+}
+
+.DemoPlayObject{
+    position: relative;
+    height: 100%;
+    width: 100%;
+		/* background-color: green; */
+		display: grid;
+		place-items : center;
+}
+
+.DemoLabel{
+    z-index: 2;
+    position: absolute;
+    width: auto;
+    height: 100%;
+    font-size: 12px;
+    font-weight: bold;
+    top: 1vh;
+    left: 1.5vh;
+    font-family: "Avenir Next", Roboto , cursive, Arial, sans-serif;
+    color: rgba(255, 255, 255, 0.6);
+
+}
+
+#DemoPlay{
+    z-index: 3;
+    position: relative;
+    border: none;
+    background: rgba(83, 83, 83, 0.76);
+    width: 65px;
+    height: 45px;
+    border: none;
+    resize: none;
+    /* padding-bottom: 20px; */
+    margin-bottom: 20px;
+    left: calc(99% - 65px);
+    border-radius: 30px;
+    top: calc(-65px - 20px);
+    outline: none;
+}
+
+
+ .DemoPlayUI{
+    height: 35px;
+    width: 35px;
+    left: calc(50% - 17.5px);
+    top: calc(50% - 17.5px);
+    align-items: center;
+    align-content: center;
+    vertical-align: middle;
+    padding:2.5px 2.3px ;
+}
+
+.DemoObject{
+    position: relative;
+    right: calc(-98% + 65px);
+    top: calc(98% - 44px);
+}
+
+#DemoPlay:active{
+    background: rgba(83, 83, 83, 0.377);
+}
+
+.DemoPlayUI:active{
+    opacity: 0.5;
+}
+
+.DemoImageObject{
+    z-index: 1;
+    position: relative;
+    width: 42.5vh;
+    height: 42.5vh;
+    /* top: -22px; */
+    /* left: calc(50% - 20.25vh); */
+    overflow: hidden;
+    object-fit: cover;
+		/* border: 0.5px solid red; */
+}
+
+
+
+#DemoImage{
+    position: relative;
+    width: 42.5vh;
+    height: 42.5vh;
+    object-fit: cover;
+    object-position: center;
+		overflow: visible;
+		/* border: 0.5px solid blue; */
+}
+
+.OverlayColor{
+	position: absolute;
+	width: 42.5vh;
+	height: 42.5vh;
+	top: 0px;
+	left: 0px;
+	background-color: transparent;
+	mix-blend-mode: hue;
+	z-index: 10;
+	transition: all 0.0s ease-in-out;
+
+		mix-blend-mode: hue;
+}
+
+.centerDemoStoryTextDiv{
+	position: absolute;
+	height: auto;
+	width: calc(100%);
+	place-items : center;
+}
+
+.DemoStoryTextDiv{
+		position: absolute;
+		height: auto;
+		width: calc(90% - 6vh);
+		bottom: 12vh;
+		/* background-color: red; */
+
+		display: grid;
+		place-items: center;
+		color: white;
+		text-align: center;
+		font-weight: 600;
+		font-size: 1.8vh;
+		z-index: 20;
+		left: calc(3.8vh + 5%);
+}
+
+.DemoStoryText{
+	background-color: rgb(0,0,0,0.5);
+}
+
+.iphoneUIDiv{
+	position: absolute;
+	top: -1vh;
+	left : 0px;
+	height: 45.5vh;
+	width: 100%;
+	object-fit: contain;
+	z-index: 10;
+	display: grid;
+	place-items : center;
+
+}
+
+.DemoIphone{
+	position: relative;
+	width: auto;
+	height: 100%;
+	object-fit: contain;
+}
+/* Analytics Tab *//* Analytics Tab *//* Analytics Tab *//* Analytics Tab *//* Analytics Tab */
+/* Analytics Tab *//* Analytics Tab *//* Analytics Tab *//* Analytics Tab *//* Analytics Tab */
+/* Analytics Tab *//* Analytics Tab *//* Analytics Tab *//* Analytics Tab *//* Analytics Tab */
+/* Analytics Tab *//* Analytics Tab *//* Analytics Tab *//* Analytics Tab *//* Analytics Tab */
+/* Analytics Tab *//* Analytics Tab *//* Analytics Tab *//* Analytics Tab *//* Analytics Tab */
+/* Analytics Tab *//* Analytics Tab *//* Analytics Tab *//* Analytics Tab *//* Analytics Tab */
+/* Analytics Tab *//* Analytics Tab *//* Analytics Tab *//* Analytics Tab *//* Analytics Tab */
+/* Analytics Tab *//* Analytics Tab *//* Analytics Tab *//* Analytics Tab *//* Analytics Tab */
+/* Analytics Tab *//* Analytics Tab *//* Analytics Tab *//* Analytics Tab *//* Analytics Tab */
+/* Analytics Tab *//* Analytics Tab *//* Analytics Tab *//* Analytics Tab *//* Analytics Tab */
+/* Analytics Tab *//* Analytics Tab *//* Analytics Tab *//* Analytics Tab *//* Analytics Tab */
+/* Analytics Tab *//* Analytics Tab *//* Analytics Tab *//* Analytics Tab *//* Analytics Tab */
+/* Analytics Tab *//* Analytics Tab *//* Analytics Tab *//* Analytics Tab *//* Analytics Tab */
+/* Analytics Tab *//* Analytics Tab *//* Analytics Tab *//* Analytics Tab *//* Analytics Tab */
+/* Analytics Tab *//* Analytics Tab *//* Analytics Tab *//* Analytics Tab *//* Analytics Tab */
+.AnalyticsTabDiv{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    border-top-right-radius: 2vh;
+}
+
+.ScrollablePage{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    box-shadow: 0 0  0.5vh rgba(0, 0, 0, 0.5);
+    /* display: grid;
+    place-items: center; */
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.Overview{
+    position: relative;
+    width: 100%;
+    height: 92vh;
+    display: grid;
+    place-items: center;
+    top : 8vh;
+}
+
+.OverViewVStack{
+    position: relative;
+    height: 89vh;
+    width: 87vw;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+
+}
+
+
+.OverViewLabelDiv{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-left: 5vh;
+}
+
+.OverViewLabel{
+    position: relative;
+    text-align: center;
+    font-size: 4vh;
+    color: black;
+    font-weight: 700;
+}
+
+.SpaceLabelsDiv{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-left: 5vh;
+}
+
+.SpaceLabel{
+    position: relative;
+    text-align: left;
+    font-size: 2vh;
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 600;
+    top: 4vh;
+}
+
+.SpacerDiv{
+    position: relative;
+    width: 100%;
+    height: 5vh;
+    margin-top: 5vh;
+}
+
+
+
+.SmallAnalytics{
+    position: relative;
+    width: 100%;
+    height: 30vh;
+    margin-top: 4vh;
+    display: grid;
+    place-items: center;
+}
+
+.homeSmallAnalytics{
+    position: relative;
+    width: 100%;
+    height: 30vh;
+    margin-top: 4vh;
+		overflow: visible;
+		z-index: 1;
+    /* display: grid;
+    place-items: center; */
+}
+
+.BottomSmallAnalytics{
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    margin-top: 4vh;
+    display: grid;
+    place-items: center;
+}
+
+.smallHStack{
+    position: relative;
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+}
+
+.HomeSmallHStack{
+    position: relative;
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+		overflow: visible;
+}
+
+.BottomSmallHStack{
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+}
+
+
+.SmallViews{
+    position: relative;
+    width: 30vh;
+    height: 30vh;
+    background-color: white;
+    border-radius: 1vh;
+    box-shadow: 0 0.5vh 1vh #20478136;
+    margin-left: 5vh;
+}
+
+.homeSmallViews, .homeSmalLikes, .homeSmallSub, .homeSmallNa{
+    position: relative;
+    width: 23%;
+    height: 25vh;
+    background-color: white;
+    border-radius: 1vh;
+    box-shadow: 0 0.5vh 1vh #20478136;
+    margin-left: 3vh;
+}
+.homeSmallViews{
+	margin-left: 0.5vh;
+}
+
+.BottomSmallViews{
+    position: relative;
+    width: 50vh;
+    height: 50vh;
+    background-color: white;
+    border-radius: 1vh;
+    box-shadow: 0 0.5vh 1vh #20478136;
+    margin-left: 5vh;
+}
+
+
+.SmallLikes{
+    position: relative;
+    width: 30vh;
+    height: 30vh;
+    background-color: white;
+    border-radius: 1vh;
+    box-shadow: 0 0.5vh 1vh #20478136;
+    margin-left: 5vh;
+}
+
+.SmallSub, .SmallNa{
+    position: relative;
+    width: 30vh;
+    height: 30vh;
+    background-color: white;
+    border-radius: 1vh;
+    box-shadow: 0 0.5vh 1vh #20478136;
+    margin-left: 5vh;
+}
+
+
+
+.SmallVStack{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+.BottomSmallVStack{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+.smallLabelDiv{
+    position: relative;
+    width: auto;
+    height: 5vh;
+    font-size: 2vh;
+    color: black;
+    font-weight: 600;
+    left: 2vh;
+    top: 2vh;
+}
+
+.smallLabel{
+    padding-top: 1vh;
+}
+
+
+
+
+.smallDataDiv{
+    position: relative;
+    height: 18vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+}
+
+
+.BottomSmallDataDiv{
+    position: relative;
+    height: 35vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+}
+
+#AnimationObjects{
+    width: calc(100vw - 13vw - 5vw - 50vh - 16vh);
+}
+
+
+.SmallDataDiv{
+    position: relative;
+    width: 60%;
+    height: 100%;
+    font-size: 10vh;
+    color: #428FFF;
+    font-weight: 700;
+    left: 2vh;
+}
+.Klabel{
+    font-size: 4vh;
+    color: rgba(0, 0, 0, 0.25);
+    font-weight: 700;
+}
+
+
+
+.IndicatorDiv{
+    position: relative;
+    width: 40%;
+    height: 100%;
+    font-size: 2vh;
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 600;
+}
+
+.indicatorVStack{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+.indicatorUIDiv{
+    position: relative;
+    height: 50%;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.IndicatorUI{
+    position: relative;
+    height: 5vh;
+    width: 5vh;
+}
+
+
+
+
+
+
+
+
+
+.smallTimeLabelDiv{
+    position: relative;
+    width: auto;
+    height: 5vh;
+    font-size: 1.5vh;
+    font-style: italic;
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 600;
+    margin-left: 1.5vh;
+    margin-bottom: 1vh;
+}
+
+.smallTimeLabel{
+    padding-bottom: 1vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.BigAnalytics{
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    /* background-color: red; */
+    margin-top: 4vh;
+    /* display: grid;
+    place-items: center; */
+    box-shadow: 0 0 0.5 rgba(0, 0, 0, 0.25);
+}
+
+
+.BigLabelExplaination{
+    position: relative;
+    width: calc(100%);
+    height: auto;
+}
+
+.BigVStack{
+    position: relative;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.LabelBig{
+    position: relative;
+    font-size: 2.5vh;
+    color: black;
+    font-weight: 700;
+}
+
+.ExplanaitionBig{
+    position: relative;
+    font-size: 1.8vh;
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 600;
+}
+
+
+
+
+.OverviewBigChart{
+    position: relative;
+    width: 70vw;
+    height: 70vh;
+    background-color: white;
+    box-shadow: 0 0 0.5vh rgba(0, 0, 0, 0.25);
+    display: grid;
+    place-items: center;
+    margin-top: 2vh;
+
+    border-radius: 1.5vh;
+    padding: 5vh;
+    margin-bottom: 5vh;
+    margin-left: 5vh;
+
+
+}
+
+.OverViewChart{
+    position: relative;
+    width: 40vh;
+    height: 40vh;
+    /* background-color:#FFC842 red; */
+}
+
+
+
+
+.AnalyticsCenter{
+    position: relative;
+    width: 100%;
+    height: calc(100% - 8vh);
+    display: grid;
+    place-items: center;
+    top: 8vh;
+}
+
+.AnalyticsVStack{
+    position: relative;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+
+
+
+
+
+
+
+.ChartsDiv{
+    position: relative;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+
+.ViewCountChartDiv , .LikeCountChartDiv{
+    position: relative;
+    width: 65vw;
+    height: 75vh;
+    /* background-color: #428eff70; */
+    box-shadow: 0 0 0.5 rgba(0, 0, 0, 0.25);
+    border-radius: 4vh;
+    display: grid;
+    place-items: center;
+    margin-top: 2vh;
+}
+
+
+#myChart , #myChart2{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Tools Tab *//* Tools Tab *//* Tools Tab *//* Tools Tab */
+/* Tools Tab *//* Tools Tab *//* Tools Tab *//* Tools Tab */
+/* Tools Tab *//* Tools Tab *//* Tools Tab *//* Tools Tab */
+/* Tools Tab *//* Tools Tab *//* Tools Tab *//* Tools Tab */
+/* Tools Tab *//* Tools Tab *//* Tools Tab *//* Tools Tab */
+/* Tools Tab *//* Tools Tab *//* Tools Tab *//* Tools Tab */
+/* Tools Tab *//* Tools Tab *//* Tools Tab *//* Tools Tab */
+/* Tools Tab *//* Tools Tab *//* Tools Tab *//* Tools Tab */
+/* Tools Tab *//* Tools Tab *//* Tools Tab *//* Tools Tab */
+/* Tools Tab *//* Tools Tab *//* Tools Tab *//* Tools Tab */
+/* Tools Tab *//* Tools Tab *//* Tools Tab *//* Tools Tab */
+/* Tools Tab *//* Tools Tab *//* Tools Tab *//* Tools Tab */
+/* Tools Tab *//* Tools Tab *//* Tools Tab *//* Tools Tab */
+/* Tools Tab *//* Tools Tab *//* Tools Tab *//* Tools Tab */
+/* Tools Tab *//* Tools Tab *//* Tools Tab *//* Tools Tab */
+/* Tools Tab *//* Tools Tab *//* Tools Tab *//* Tools Tab */
+
+.ToolsTabDiv{
+    position: relative;
+    width: 100%;
+    height: calc(100% - 8vh);
+    display: grid;
+    place-items: center;
+    border-top-right-radius: 2vh;
+		top: 8vh;
+}
+
+
+.ToodlsDiv{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow-y: scroll;
+	overflow-x: scroll;
+	display: grid;
+	place-items: center;
+	/* background-color: red; */
+
+}
+
+
+.ToolsCenter{
+	position: relative;
+	width: calc(100% - 6vh);
+	height: calc(100%);
+}
+
+
+.ToolsVStack{
+	position: relative;
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	flex-shrink: 0;
+}
+
+
+.TutorialsToolsDiv{
+	position: relative;
+	width: 81vw;
+	height: 25vh;
+	overflow-x: visible;
+	overflow-y: hidden;
+	margin-bottom: 3vh;
+}
+
+.ToolsLabelDiv{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-top: 3vh;
+}
+
+.ToolsLabel{
+    position: relative;
+    text-align: center;
+    font-size: 4vh;
+    color: black;
+    font-weight: 700;
+}
+
+
+
+.PublicScriptsDiv{
+	position: relative;
+	width: 100%;
+	height: 40vh;
+	margin-top: 4vh
+}
+
+.vjs-theme-forest{
+	--vjs-theme-forest--primary:#428FFF;
+	--vjs-theme-forest--secondary:#FFC842;
+}
+
+.PublicScriptsModal{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background: white;
+	border-radius: 1vh;
+	/* box-shadow: 0 0 0.5vh rgba(0, 0, 0, 0.25); */
+	box-shadow: 0 0 0.3vh rgba(0, 0, 0, 0.5);
+}
+
+
+.PublicScriptsStation{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	flex-shrink: 0;
+}
+
+
+.PublicScriptsStationLabel{
+	position: relative;
+	font-size: 2.5vh;
+	font-weight: 600;
+	color: black;
+	margin-top: 2vh;
+	margin-left: 3vh
+}
+
+.PublicScriptsStationLabelDef{
+	position: relative;
+	font-size: 2vh;
+	font-weight: 600;
+	color: rgb(0, 0, 0, 0.5);
+	margin-top: 1.5vh;
+	margin-left: 3vh
+}
+
+
+.PublicScriptsHStack{
+	position: relative;
+	width: auto;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-shrink: 0;
+	margin-left : 3vh;
+	margin-top: 1vh;
+}
+
+
+.ThreeToolsDiv{
+	position: relative;
+	height: 50vh;
+	width: 100%;
+	display: grid;
+	place-items: center;
+	margin-top: 4vh;
+}
+
+.oneToolsDiv{
+	position: relative;
+	height: 80vh;
+	width: 100%;
+	display: grid;
+	place-items: center;
+	margin-top: 4vh;
+}
+
+.HStackThreeToolsDiv{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-shrink: 0;
+}
+
+.TextureDiv , .BackgroundArtDiv , .StoryTitleGenorator , .CharacterGenDiv , .PosingArtDiv , .ArtTricksDiv{
+	position: relative;
+	height: 100%;
+	/* width: calc(33% - 2vh); */
+	width: calc(50% - 2vh);
+}
+
+.TextureDiv{
+	position: relative;
+	height: 100%;
+	/* width: calc(33% - 2vh); */
+	width: calc(100% - 1vh);
+}
+
+
+.ThreeToolsContentDiv{
+	position: relative;
+	width: 100%;
+	height: 100%;
+
+}
+
+.TextureViewAndDownloadButton{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: grid;
+	place-items : center;
+}
+
+.TextureVStacK{
+	position: relative;
+	width: calc(100% - 6vh);
+	height: calc(100% - 6vh);
+	display: flex;
+	flex-direction: column;
+	flex-shrink: 0;
+}
+
+.TexturesDiv{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	display: grid;
+	place-items : center;
+}
+
+.Textures{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+.DownloadNextPreviousButtons{
+	position: relative;
+	width: 100%;
+	height: auto;
+	margin-top: 4vh;
+}
+
+.HStackTextureButtons{
+	position: relative;
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: row;
+	flex-shrink: 0;
+
+}
+
+.textureButtonDiv{
+    position: relative;
+    width: calc(100%);
+    height: calc(5vh);
+    display: grid;
+    place-items: center;
+		/* margin-top: 8vh; */
+}
+
+.textureButton{
+	position: relative;
+	width: calc(11.75vh);
+	height: calc(4vh);
+	display: grid;
+	place-items: center;
+	background-color: #428FFF;
+	color: white;
+	font-size: 2vh;
+	font-weight: 700;
+	border-radius: 5vh;
+	bottom: 3vh;
+}
+
+.textureButton:active{
+	opacity: 0.65;
+	transition: all 0.3s ease-in-out;
+}
+
+
+
+.BackgroundArtDiv, .StoryTitleGenorator, .PosingArtDiv , .ArtTricksDiv{
+	margin-left: 3vh;
+}
+
+.ThreeToolsDivCard{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background: white;
+	border-radius: 1vh;
+	box-shadow: 0 0 0.3vh rgba(0, 0, 0, 0.25);
+
+}
+
+
+.ThreeToolsVStack{
+	position: relative;
+	width: calc(100% - 6vh);
+	height: calc(100% - 6vh);
+	margin-left: 3vh;
+	top: 3vh;
+	display: flex;
+	flex-direction: column;
+	flex-shrink: 0;
+}
+
+
+.ThreeToolsLabelDiv{
+	position: relative;
+	height: auto;
+	width: 100%;
+	font-size: 2vh;
+	font-weight: 600;
+	color: rgba(0, 0, 0, 0.5);
+}
+
+.ThreeToolsContentDiv{
+	position: relative;
+	height: calc(100% - 4vh);
+	width: calc(100%);
+	display: grid;
+	place-items : center;
+}
+
+.GenVStack{
+	position: relative;
+	height: auto;
+	width: auto;
+	display: flex;
+	flex-direction: column;
+	flex-shrink: 0;
+	margin-top: 4vh;
+
+}
+
+.GenInputType{
+	position: relative;
+	height: calc(6vh);
+	width: calc(100% - 6vh);
+	display: grid;
+	place-items : center;
+}
+
+.GenContentDiv{
+	position: relative;
+	height: auto;
+	width: calc(100%);
+	display: grid;
+	place-items : center;
+	font-size: 3vh;
+	color: black;
+	font-weight: 700;
+}
+
+.GenButtonDiv{
+    position: relative;
+    width: calc(100%);
+    height: calc(5vh);
+    display: grid;
+    place-items: center;
+		margin-top: 8vh;
+}
+
+.GenButton{
+	position: relative;
+	width: calc(12.75vh);
+	height: calc(5vh);
+	display: grid;
+	place-items: center;
+	background-color: #428FFF;
+	color: white;
+	font-size: 2vh;
+	font-weight: 700;
+	border-radius: 5vh;
+	bottom: 3vh;
+
+}
+
+
+
+
+/* User Tab: *//* User Tab: *//* User Tab: *//* User Tab: */
+/* User Tab: *//* User Tab: *//* User Tab: *//* User Tab: */
+/* User Tab: *//* User Tab: *//* User Tab: *//* User Tab: */
+/* User Tab: *//* User Tab: *//* User Tab: *//* User Tab: */
+/* User Tab: *//* User Tab: *//* User Tab: *//* User Tab: */
+/* User Tab: *//* User Tab: *//* User Tab: *//* User Tab: */
+/* User Tab: *//* User Tab: *//* User Tab: *//* User Tab: */
+/* User Tab: *//* User Tab: *//* User Tab: *//* User Tab: */
+/* User Tab: *//* User Tab: *//* User Tab: *//* User Tab: */
+/* User Tab: *//* User Tab: *//* User Tab: *//* User Tab: */
+/* User Tab: *//* User Tab: *//* User Tab: *//* User Tab: */
+/* User Tab: *//* User Tab: *//* User Tab: *//* User Tab: */
+/* User Tab: *//* User Tab: *//* User Tab: *//* User Tab: */
+/* User Tab: *//* User Tab: *//* User Tab: *//* User Tab: */
+/* User Tab: *//* User Tab: *//* User Tab: *//* User Tab: */
+/* User Tab: *//* User Tab: *//* User Tab: *//* User Tab: */
+/* User Tab: *//* User Tab: *//* User Tab: *//* User Tab: */
+
+.UserBackGroundImageDiv{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top : 8vh;
+    opacity: 1;
+}
+
+.UserBlackBackgroundImageDiv{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* background-color: ; */
+}
+
+.UserBackgroundUI{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.05;
+    filter : blur(3px);
+    /* display: none; */
+}
+
+
+
+
+
+
+.UserTabDiv{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    /* display: grid;
+    place-items: center; */
+    border-top-right-radius: 2vh;
+}
+
+.ScrollUserTab{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.UserTab{
+    position: relative;
+    width: 90%;
+    height: calc(100%);
+    background-color: rgba(255, 255, 255, 0);
+    /* box-shadow: 0 0  0.5vh rgba(0, 0, 0, 0.5); */
+    border-radius: 1.5vh;
+    top: 8vh;
+    /* overflow-y: scroll;
+    overflow-x: hidden; */
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+
+.UserSettingLabelDiv{
+    position: relative;
+    width: calc(100% - 12vh - 4vh);
+    height: 4.5vh;
+    margin-top: 7vh;
+    margin-left: 3vh;
+    /* border-bottom: 0.2vh solid rgba(0, 0, 0, 0.25); */
+}
+
+.UserSettingsLabel{
+    position: relative;
+    font-size: 3.5vh;
+    display: inline;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 1);
+    padding-bottom: 1vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+.ProfilePhotoDivAndArtistName{
+    position: relative;
+    width: calc(100% - 12vh);
+    height: 35vh;
+    margin-top: 3vh;
+    margin-left: 6vh;
+    background-color: white;
+    border-radius: 1.5vh;
+    box-shadow: 0 0 0.3vh rgba(0, 0, 0, 0.25);
+    display: grid;
+    place-items: center;
+}
+
+.PhotoNameLinerDiv{
+    position: relative;
+    width: calc(100% - 8vh);
+    height: 25vh;
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+}
+
+.ProfilePhotoDiv{
+    position: relative;
+    width: 20vh;
+    height: 20vh;
+}
+
+.ProfileImage{
+    position: relative;
+    width: 25vh;
+    height: 25vh;
+    object-fit: cover;
+    border-radius: 20vh;
+    box-shadow: 0 0 2vh rgba(0, 0, 0, 0.25);
+}
+
+.ArtistNameDiv{
+    position: relative;
+    width: calc(100% - 43vh);
+    height: 25vh;
+    display: grid;
+    place-items: center;
+    margin-left: 8vh;
+
+}
+
+
+
+.ArtistName{
+    position: relative;
+    width: calc(100%);
+    font-size: 3vh;
+    font-weight: 600;
+    outline: none;
+    border: none;
+    border-bottom: 0.2vh solid rgba(0, 0, 0, 0.75);
+    background-color: transparent;
+}
+
+
+
+
+
+
+
+
+
+.SummaryDiv{
+    position: relative;
+    width: calc(100% - 12vh);
+    height: 35vh;
+    margin-top: 2.5vh;
+    margin-left: 6vh;
+    display: grid;
+    place-items: center;
+    background-color: white;
+    border-radius: 1.5vh;
+    box-shadow: 0 0 0.3vh rgba(0, 0, 0, 0.25);
+    padding-bottom: 3vh;
+}
+
+.SummaryVStack{
+    position: relative;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+.SummaryLabel{
+    position: relative;
+    font-size: 3vh;
+    /* width: 10vh; */
+    height: auto;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 2vh ;
+    margin-left: 3vh;
+}
+
+.Summary{
+    position: relative;
+    width: calc(100% - 6vh);
+    height: 25vh;
+    border: none;
+    vertical-align: top;
+    font-weight: 700;
+    font-weight: normal;
+    font-size: 2vh;
+    font-family: "Avenir Next", Roboto , cursive, Arial, sans-serif;
+    resize: none;
+    overflow-wrap: break-word;
+    word-break: break-all;
+    background-color: transparent;
+    left: 3vh;
+}
+
+
+
+
+
+
+
+
+.RefPassNameDiv{
+    position: relative;
+    height: 40vh;
+    width: calc(100% - 12vh);
+    margin-top: 2.5vh;
+    /* padding-top: 5vh; */
+    left: 6vh;
+    display: grid;
+    place-items: center;
+    background-color: white;
+    border-radius: 1.5vh;
+    box-shadow: 0 0 0.3vh rgba(0, 0, 0, 0.25);
+padding-bottom: 3vh;
+}
+
+.RefferenceLinksDiv{
+    position: relative;
+    height: auto;
+    width: calc(100% );
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    /* margin-top: 4vh; */
+    margin-left: 6vh;
+}
+
+.ReffernceTitle{
+    position: relative;
+    font-size: 2vh;
+    /* width: 10vh; */
+    height: auto;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.ReffLinksHStack{
+    position: relative;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    margin-top: 3vh;
+}
+
+.BlackUIbackground{
+    position: relative;
+    margin-left: 3vh;
+    /* height: 4vh;
+    widows: 4vh;
+    border-radius: 4vh;
+    background-color: black;
+    overflow: hidden;
+    display: grid;
+    place-items: center; */
+}
+
+.Pinterest , .Instagram , .Portfolio{
+    position: relative;
+    height: 4vh;
+    widows: 4vh;
+    object-fit: contain;
+    border-radius: 4vh;
+    transition: all 0.3s ease-in-out;
+    opacity: 0.9;
+    /* mix-blend-mode: color-burn; */
+}
+
+.Pinterest:active , .Instagram:active , .Portfolio:active{
+    box-shadow: 0 0 0.1vh rgba(0, 0, 0, 0.25);
+    opacity: 0.85;
+}
+
+
+.Pinterest{
+    margin-left: 0;
+}
+
+
+.CreateUpdateRefferenceDiv{
+    position: absolute;
+    width: auto;
+    height: auto;
+    right: 6vh;
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+}
+
+
+.RefLabel{
+    position: relative;
+    font-size: 2vh;
+    /* width: 10vh; */
+    height: auto;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.ReffInput{
+    position: relative;
+    width: calc(23vw - 2vh);
+    font-size: 2vh;
+    font-weight: 600;
+    outline: none;
+    border: none;
+    border-bottom: 0.15vh solid rgba(0, 0, 0, 0.25);
+    padding: 0;
+    margin: 0;
+    margin-left: 1vh;
+}
+
+
+.AddRefButtom{
+    position: relative;
+    height: 4vh;
+    width: 4vh;
+    display: grid;
+    place-items: center;
+    background-color: #428FFF;
+    border-radius: 4vh;
+}
+
+.AddRef{
+    position: relative;
+    font-size: 1.8vh;
+    color: white;
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
+.EmailPasswordHStack , .FirstNameAndLastName{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    margin-top: 0vh;
+}
+
+
+.EmailDiv, .FirstNameDiv{
+    position: relative;
+    width: calc(100% - 12vh);
+    height: auto;
+    margin-top: 3vh;
+    margin-left: 3vh;
+}
+
+.EmailHStack , .FirstNameHStack{
+    position: relative;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+}
+
+.UserEmailLabel, .UserFirsNameLabel{
+    position: relative;
+    font-size: 2vh;
+    /* width: 10vh; */
+    height: auto;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.5);
+    display: inline-block;
+}
+
+
+.Email, .FirstName{
+    position: relative;
+    width: calc(20vw - 2vh);
+    font-size: 2vh;
+    font-weight: 600;
+    outline: none;
+    border: none;
+    border-bottom: 0.15vh solid rgba(0, 0, 0, 0.25);
+    padding: 0;
+    margin: 0;
+    margin-left: 1vh;
+}
+
+
+
+
+
+.PasswordDiv, .LastNameDiv{
+    position: relative;
+    width: calc(100% - 12vh);
+    height: auto;
+    margin-top: 3vh;
+    margin-left: 6vh;
+}
+
+.PassowrdHStack, .LastNameHStack{
+    position: relative;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+}
+
+.UserPassowrdLabel, .LastNameLabel{
+    position: relative;
+    font-size: 2vh;
+    /* width: 10vh; */
+    height: auto;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.5);
+    display: inline-block;
+}
+
+.Password, .LastName{
+    position: relative;
+    width: calc(20vw - 2vh);
+    font-size: 2vh;
+    font-weight: 600;
+    outline: none;
+    border: none;
+    border-bottom: 0.15vh solid rgba(0, 0, 0, 0.25);
+    padding: 0;
+    margin: 0;
+    margin-left: 1vh;
+
+}
+
+
+
+.SaveData{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: grid;
+    place-items: center;
+    margin-top: 6vh;
+}
+
+.SaveNewDataButton{
+    position: relative;
+    width: calc(9.75vh);
+    height: calc(6.5vh);
+    display: grid;
+    place-items: center;
+    background-color: #428FFF;
+    color: white;
+    font-size: 2.3vh;
+    font-weight: 700;
+    border-radius: 5vh;
+    bottom: 3vh;
+    transition: all 0.2s ease-in-out;
+}
+
+.SaveNewDataButton:active{
+    background-color: #234e8d;
+    outline: rgba(0, 0, 0, 0.25);
+
+}
+
+
+
+
+
+/* Pay Tab *//* Pay Tab *//* Pay Tab *//* Pay Tab *//* Pay Tab *//* Pay Tab *//* Pay Tab */
+/* Pay Tab *//* Pay Tab *//* Pay Tab *//* Pay Tab *//* Pay Tab *//* Pay Tab *//* Pay Tab */
+/* Pay Tab *//* Pay Tab *//* Pay Tab *//* Pay Tab *//* Pay Tab *//* Pay Tab *//* Pay Tab */
+/* Pay Tab *//* Pay Tab *//* Pay Tab *//* Pay Tab *//* Pay Tab *//* Pay Tab *//* Pay Tab */
+/* Pay Tab *//* Pay Tab *//* Pay Tab *//* Pay Tab *//* Pay Tab *//* Pay Tab *//* Pay Tab */
+/* Pay Tab *//* Pay Tab *//* Pay Tab *//* Pay Tab *//* Pay Tab *//* Pay Tab *//* Pay Tab */
+/* Pay Tab *//* Pay Tab *//* Pay Tab *//* Pay Tab *//* Pay Tab *//* Pay Tab *//* Pay Tab */
+/* Pay Tab *//* Pay Tab *//* Pay Tab *//* Pay Tab *//* Pay Tab *//* Pay Tab *//* Pay Tab */
+/* Pay Tab *//* Pay Tab *//* Pay Tab *//* Pay Tab *//* Pay Tab *//* Pay Tab *//* Pay Tab */
+/* Pay Tab *//* Pay Tab *//* Pay Tab *//* Pay Tab *//* Pay Tab *//* Pay Tab *//* Pay Tab */
+/* Pay Tab *//* Pay Tab *//* Pay Tab *//* Pay Tab *//* Pay Tab *//* Pay Tab *//* Pay Tab */
+/* Pay Tab *//* Pay Tab *//* Pay Tab *//* Pay Tab *//* Pay Tab *//* Pay Tab *//* Pay Tab */
+/* Pay Tab *//* Pay Tab *//* Pay Tab *//* Pay Tab *//* Pay Tab *//* Pay Tab *//* Pay Tab */
+/* Pay Tab *//* Pay Tab *//* Pay Tab *//* Pay Tab *//* Pay Tab *//* Pay Tab *//* Pay Tab */
+/* Pay Tab *//* Pay Tab *//* Pay Tab *//* Pay Tab *//* Pay Tab *//* Pay Tab *//* Pay Tab */
+/* Pay Tab *//* Pay Tab *//* Pay Tab *//* Pay Tab *//* Pay Tab *//* Pay Tab *//* Pay Tab */
+/* Pay Tab *//* Pay Tab *//* Pay Tab *//* Pay Tab *//* Pay Tab *//* Pay Tab *//* Pay Tab */
+/* Pay Tab *//* Pay Tab *//* Pay Tab *//* Pay Tab *//* Pay Tab *//* Pay Tab *//* Pay Tab */
+
+.PayTabDiv{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* display: grid;
+    place-items: center; */
+    border-top-right-radius: 2vh;
+}
+
+.HomeColorDivider{
+    position: absolute;
+    background-color: #428FFF;
+    width: 100%;
+    height: 58vh;
+    box-shadow: 0 0 0.3vh rgba(0, 0, 0, 0.5) ;
+}
+
+
+
+.PayCard{
+    position: relative;
+    height: 80vh;
+    width: 80%;
+    top : calc(50% - 40vh + 4vh);
+    left: calc(50% - 40%);
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background-color: white;
+    box-shadow: 0 0  0.3vh rgba(0, 0, 0, 0.5);
+    border-radius: 1.5vh;
+}
+
+.payVStack{
+    position: relative;
+    width: calc(100%);
+    /* margin-left: 3vh; */
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+
+}
+
+.Title{
+    position: relative;
+    width: calc(100%);
+    height: auto;
+}
+
+
+
+.UIAndExplaainationHStack{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-top: 3vh;
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+}
+
+.Explaination{
+    position: relative;
+    width: calc(50% - 3vh);
+    height: auto;
+    margin-left: 3vh;
+}
+
+
+.explainationDiv{
+    position: relative;
+    width: calc(100% - 6vh);
+    height: auto;
+    margin-right: 3vh;
+}
+
+.PayContentVStack{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+.PayFirstHalf, .PaySecondHalf{
+    position: relative;
+    font-size: 2.3vh;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+
+
+.UIDiv{
+    position: relative;
+    width: 50%;
+    height: 35vh;
+}
+.CardUI{
+    position: absolute;
+    right: -3vh;
+    width: auto;
+    height: 35vh;
+    background-color: rgba(0, 0, 0, 0.15);
+    border-top-left-radius: 10vh;
+    border-bottom-left-radius: 10vh;
+    box-shadow: 0 0 0.5vh rgba(0, 0, 0, 0.25);
+    opacity: 0.75;
+}
+
+.PayPalButtonDiv{
+    position: relative;
+    width: calc(100%);
+    height: auto;
+    display: grid;
+    place-items: center;
+    margin-top: 2vh;
+}
+
+
+.paddingDiv{
+    position: relative;
+    width: 100%;
+    height: 5vh;
+    margin-top: 15vh;
+}
+
+
+
+
+
+
+
+.PreviewScriptModal{
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	top: 0vh;
+	left: 0vh;
+	z-index: 35;
+	display: grid;
+	place-items:center;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.DialogeAndDiscriptionBubblesStation{
+    position: relative;
+    height: calc(100% - 15vh);
+    width: calc(100%);
+    display: grid;
+    place-items: center;
+    /* background-color: red; */
+}
+
+.PaperDiv{
+    position: relative;
+    height: calc(100% - 10vh);
+    width: 55vw;
+    background-color: white;
+		border-radius: 1vh;
+
+    box-shadow: 0 0 1vh rgb(0,0,0,0.25);
+    left: 1.5vh;
+    display: grid;
+    place-items: center;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+}
+
+.PaperBottomPusher{
+    position: absolute;
+    height: auto;
+    bottom: 0;
+    left: 5%;
+    width: calc(70%);
+}
+.ContentHolder{
+    position: relative;
+    height: auto;
+    bottom: 0;
+    width: calc(70%);
+		list-style: none;
+}
+
+
+
+
+.DialogueDiv{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-top: 3vh;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    font-family: 'Courier Prime', monospace;
+    transition: all 0.4s ease-in-out;
+}
+.CharcterNameDiv{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: grid;
+    place-items: center;
+}
+.CharacterName{
+    position: relative;
+    width: auto;
+    height: auto;
+    text-align: cneter;
+    font: 500;
+    font-size: 2vh;
+    color: rgb(66, 66, 66);
+    margin-bottom: 1vh;
+}
+
+.PublicScriptTitleDiv{
+	position: relative;
+	width: 100%;
+	height: auto;
+	display: grid;
+	place-items: center;
+}
+
+.PublciScriptTitle{
+	position: relative;
+	width: auto;
+	height: auto;
+	font: 600;
+	font-family: 'Courier Prime', monospace;
+	font-size: 2.5vh;
+	color: rgb(66, 66, 66);
+	outline: none;
+	resize: none;
+	text-decoration: underline;
+}
+
+
+.DialogueLabel, .ArtDesciptionLabel, .SlugLabel, .NoteLabel{
+    position: relative;
+    width: auto;
+    height: auto;
+    font: 500;
+    font-size: 2vh;
+    color: rgb(66, 66, 66);
+		outline: none;
+		resize: none;
+}
+
+
+.ArtDesciptionDiv{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-top: 3vh;
+    font-family: 'Courier Prime', monospace;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.4s ease-in-out;
+}
+
+.ArtDesciptionTitle{
+    position: relative;
+    width: auto;
+    height: auto;
+    font: 500;
+    font-size: 2vh;
+    color: rgb(66, 66, 66);
+}
+
+.ArtDesciptionDiv{
+    position: relative;
+    width: auto;
+    height: auto;
+    font: 500;
+    font-size: 2vh;
+    color: rgb(66, 66, 66);
+}
+
+.DialogueLabel, .ArtDesciptionLabel, .SlugLabel, .NoteLabel{
+	border: 2px solid transparent;
+	border-radius: 1vh;
+}
+
+.DialogueLabel:focus , .ArtDesciptionLabel:focus , .SlugLabel:focus , .NoteLabel:focus{
+	border: 2px solid #428FFF;
+	border-radius: 1vh;
+	transition: all 0.2s ease-in-out;
+}
+
+.SlugLabel{
+	width: 85%;
+	height: 2vh;
+	padding: 0px;
+	margin: 0px;
+	top: 0.525vh;
+	padding-left: 1vh;
+}
+.SlugLabel:focus {
+	border: 1px solid #428FFF;
+	border-radius: 1vh;
+	transition: all 0.2s ease-in-out;
+}
+
+
+
+.SlugDiv{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    margin-top: 3vh;
+    font-family: 'Courier Prime', monospace;
+    transition: all 0.4s ease-in-out;
+}
+
+.IntLabel{
+    position: relative;
+    width: auto;
+    height: auto;
+    font: 600;
+    font-size: 2vh;
+    color: rgb(66, 66, 66);
+    margin-right: 1vh;
+}
+/* .SlugLabel{
+    position: relative;
+    width: auto;
+    height: auto;
+    font: 600;
+    font-size: 2vh;
+    color: rgb(66, 66, 66);
+    font-family: 'Courier Prime', monospace;
+} */
+
+
+
+
+
+.NoteDiv{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-top: 3vh;
+    transition: all 0.4s ease-in-out;
+    /* display: grid;
+    place-items: center; */
+}
+
+.NoteVStack{
+    position: relative;
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.NoteTitle{
+    position: relative;
+    width: auto;
+    height: auto;
+    font: 600;
+    font-size: 1.7vh;
+    color: rgb(66, 66, 66);
+}
+.NoteLabel{
+    position: relative;
+    width: auto;
+    height: auto;
+    font: 600;
+    font-size: 1.7vh;
+    color: rgb(66, 66, 66);
+}
