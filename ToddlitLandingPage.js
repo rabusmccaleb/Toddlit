@@ -1,14 +1,11 @@
 //Loading the landing page:
   // Your web app's Firebase configuration
   var firebaseConfig = {
-    apiKey: "AIzaSyDJnxq7zqipMs8oVl8DpK0URsK0QlLb32Y",
     authDomain: "todd-1point0.firebaseapp.com",
     databaseURL: "https://todd-1point0.firebaseio.com",
     projectId: "todd-1point0",
     storageBucket: "todd-1point0.appspot.com",
     messagingSenderId: "1020057772233",
-    appId: "1:1020057772233:web:664c29aa9d2c4a74e6ad18",
-    measurementId: "G-0K75HV3D2G"
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
